@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathFun - Aprenda Brincando</title>
+  <!-- Biblioteca para cálculos matemáticos precisos -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+  <style>
+    :root {
+      --bg-color: #FAF8F5;
+      --card-bg: #FFFFFF;
+      --text-color: #2D3748;
+      --primary-purple: #8B5CF6;
+      --primary-green: #10B981;
+      --primary-orange: #F59E0B;
+      --primary-blue: #3B82F6;
+      --primary-red: #EF4444;
+      --border-radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Fredoka', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 430px;
+      background: var(--card-bg);
+      border-radius: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    header {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #F0EFEA;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: var(--primary-purple);
+      cursor: pointer;
+    }
+
+    .user-status {
+      display: flex;
+      gap: 12px;
+      background: #F3F0FF;
+      padding: 6px 12px;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .screen {
+      display: none;
+      padding: 20px;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+
+    .screen.active {
+      display: block;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 3px solid #E2E8F0;
+      border-radius: var(--border-radius);
+      padding: 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 0 #E2E8F0;
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    .card:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #E2E8F0;
+    }
+
+    .avatar-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 15px 0;
+    }
+
+    .avatar-option {
+      border: 3px solid #E2E8F0;
+      border-radius: 15px;
+      padding: 8px;
+      text-align: center;
+      cursor: pointer;
+      background: #FAFAFA;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+
+    .avatar-option.selected {
+      border-color: var(--primary-purple);
+      background: #F3F0FF;
+    }
+
+    .avatar-display-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid var(--primary-purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      background: #F3F0FF;
+    }
+
+    .turma-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 15px 0;
+    }
+
+    .turma-option {
+      border: 3px solid #E2E8F0;
+      border-radius: 15px;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 0.95rem;
+      background: #FAFAFA;
+    }
+
+    .turma-option.selected {
+      border-color: var(--primary-purple);
+      background: #F3F0FF;
+    }
+
+    .btn-main {
+      width: 100%;
+      background: var(--primary-purple);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: var(--border-radius);
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0 4px 0 #6D28D9;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-main:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #6D28D9;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 2px solid #E2E8F0;
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    .level-bar-container {
+      background: #E2E8F0;
+      height: 16px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .level-bar-fill {
+      background: var(--primary-green);
+      height: 100%;
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .quiz-option {
+      background: #F8FAFC;
+      border: 2px solid #CBD5E1;
+      border-radius: 15px;
+      padding: 12px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .quiz-option:hover {
+      background: #E2E8F0;
+    }
+
+    .flashcard {
+      background: #F3F0FF;
+      border: 3px solid var(--primary-purple);
+      border-radius: var(--border-radius);
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      min-height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-bottom: 15px;
+      white-space: pre-line;
+    }
+
+    .chat-box {
+      background: #F8FAFC;
+      border: 2px solid #E2E8F0;
+      border-radius: 15px;
+      padding: 12px;
+      height: 220px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .chat-msg {
+      margin-bottom: 8px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    .chat-user {
+      background: #E0E7FF;
+      text-align: right;
+    }
+
+    .chat-ia {
+      background: #F3F0FF;
+      border: 1px solid #C084FC;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .admin-controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .admin-btn {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: none;
+      font-weight: bold;
+      font-size: 0.8rem;
+      cursor: pointer;
+      color: white;
+    }
+
+    .btn-edit { background: var(--primary-orange); }
+    .btn-delete { background: var(--primary-red); }
+
+    .admin-badge {
+      background: var(--primary-orange);
+      color: white;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 8px;
+      margin-left: 5px;
+    }
+
+    .admin-footer-btn {
+      position: absolute;
+      bottom: 60px;
+      right: 15px;
+      background: transparent;
+      border: none;
+      font-size: 0.8rem;
+      color: #94A3B8;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .duvida-item {
+      background: #F8FAFC;
+      border: 2px solid #CBD5E1;
+      border-radius: 15px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    .resposta-box {
+      background: #ECFDF5;
+      border-left: 4px solid #10B981;
+      padding: 8px 12px;
+      margin-top: 8px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      border-top: 2px solid #F0EFEA;
+      background: white;
+    }
+
+    .nav-item {
+      border: none;
+      background: none;
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #94A3B8;
+      cursor: pointer;
+    }
+
+    .nav-item.active {
+      color: var(--primary-purple);
+    }
+  </style>
+</head>
+<body>
+
+<div class="app-container">
+  <header>
+    <div class="logo" onclick="switchScreen('screen-home')">🎮 MathFun</div>
+    <div class="user-status">
+      <span>⭐ <span id="stars-count">0</span></span>
+      <span>🔥 <span id="streak-count">1</span></span>
+    </div>
+  </header>
+
+  <!-- Perfil / Login Inicial -->
+  <div id="screen-setup" class="screen active">
+    <h2>Bem-vindo! 👋</h2>
+    <p style="color: #64748B;">Digite seu nome e escolha seu avatar:</p>
+
+    <input type="text" id="user-name-input" class="input-field" placeholder="Seu nome ou apelido" onkeypress="handleEnter(event, saveProfile)">
+
+    <h3 style="margin-top: 15px;">Escolha seu Mascote</h3>
+    <div class="avatar-grid">
+      <div class="avatar-option selected" onclick="selectAvatar('🦉', this)">🦉</div>
+      <div class="avatar-option" onclick="selectAvatar('🤖', this)">🤖</div>
+      <div class="avatar-option" onclick="selectAvatar('🐱', this)">🐱</div>
+      <div class="avatar-option" onclick="selectAvatar('🦊', this)">🦊</div>
+      <div class="avatar-option" onclick="selectAvatar('🐶', this)">🐶</div>
+      <div class="avatar-option" onclick="selectAvatar('🦋', this)">🦋</div>
+      <div class="avatar-option" onclick="selectAvatar('🦁', this)">🦁</div>
+      <div class="avatar-option" onclick="selectAvatar('🐼', this)">🐼</div>
+      <div class="avatar-option" onclick="selectAvatar('🦄', this)">🦄</div>
+      <div class="avatar-option" onclick="selectAvatar('🐲', this)">🐲</div>
+      <div class="avatar-option" onclick="selectAvatar('🦖', this)">🦖</div>
+      <div class="avatar-option" onclick="selectAvatar('👨‍🚀', this)">👨‍🚀</div>
+    </div>
+
+    <h3>Sua Turma</h3>
+    <div class="turma-grid">
+      <div class="turma-option selected" onclick="selectTurma('1º Ano', this)">1º Ano</div>
+      <div class="turma-option" onclick="selectTurma('2º Ano', this)">2º Ano</div>
+      <div class="turma-option" onclick="selectTurma('3º Ano', this)">3º Ano</div>
+      <div class="turma-option" onclick="selectTurma('4º Ano', this)">4º Ano</div>
+      <div class="turma-option" onclick="selectTurma('5º Ano', this)">5º Ano</div>
+    </div>
+
+    <button class="btn-main" onclick="saveProfile()">Entrar no Jogo!</button>
+    <button class="admin-footer-btn" onclick="promptAdminLogin()">⚙️ Admin</button>
+  </div>
+
+  <!-- Home -->
+  <div id="screen-home" class="screen">
+    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+      <div id="display-avatar-container" class="avatar-display-img">🦉</div>
+      <div>
+        <h3>Olá, <span id="display-user-name">Estudante</span>! <span id="admin-indicator" class="admin-badge" style="display:none;">ADMIN</span></h3>
+        <p id="display-turma" style="color: #64748B; font-weight: bold;">Turma: 1º Ano</p>
+      </div>
+    </div>
+
+    <div class="card" style="border-color: #C084FC; cursor: default;">
+      <div style="display: flex; justify-content: space-between;">
+        <span id="display-level" style="font-weight: bold; color: var(--primary-purple);">Nível 1</span>
+        <span id="display-xp" style="font-size: 0.9rem;">0/50 XP</span>
+      </div>
+      <div class="level-bar-container">
+        <div id="xp-bar" class="level-bar-fill"></div>
+      </div>
+    </div>
+
+    <h3>O que vamos fazer?</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+      <div class="card" style="border-color: #93C5FD; text-align: center;" onclick="switchScreen('screen-quizzes')">
+        <div style="font-size: 2rem;">🧮</div>
+        <strong>Quizzes</strong>
+      </div>
+      <div class="card" style="border-color: #FBCFE8; text-align: center;" onclick="switchScreen('screen-flashcards')">
+        <div style="font-size: 2rem;">🃏</div>
+        <strong>Flashcards</strong>
+      </div>
+      <div class="card" style="border-color: #FDE047; text-align: center;" onclick="switchScreen('screen-videos')">
+        <div style="font-size: 2rem;">📺</div>
+        <strong>Vídeo-Aulas</strong>
+      </div>
+      <div class="card" style="border-color: #A7F3D0; text-align: center;" onclick="switchScreen('screen-tutor')">
+        <div style="font-size: 2rem;">👨‍🏫</div>
+        <strong>Tutor Humano</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quizzes -->
+  <div id="screen-quizzes" class="screen">
+    <h2>Quizzes 🧮</h2>
+    <p style="color: #64748B; margin-bottom: 15px;">Escolha a dificuldade:</p>
+
+    <div class="card" style="border-color: var(--primary-green);" onclick="startGeneratedQuiz('fácil')">
+      <strong style="color: var(--primary-green);">🌱 Fácil</strong>
+      <p style="font-size: 0.85rem; color: #64748B;">5 Questões Rápidas • +10 XP</p>
+    </div>
+
+    <div class="card" style="border-color: var(--primary-orange);" onclick="startGeneratedQuiz('médio')">
+      <strong style="color: var(--primary-orange);">⭐ Médio</strong>
+      <p style="font-size: 0.85rem; color: #64748B;">5 Questões Intermediárias • +20 XP</p>
+    </div>
+
+    <div class="card" style="border-color: var(--primary-red);" onclick="startGeneratedQuiz('difícil')">
+      <strong style="color: var(--primary-red);">🔥 Difícil</strong>
+      <p style="font-size: 0.85rem; color: #64748B;">5 Desafios Avançados • +30 XP</p>
+    </div>
+  </div>
+
+  <!-- Player do Quiz -->
+  <div id="screen-quiz-player" class="screen">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <span id="quiz-progress" style="font-weight: bold; color: var(--primary-purple);">Pergunta 1/5</span>
+      <span id="quiz-difficulty-tag" style="font-size: 0.85rem; background: #E2E8F0; padding: 4px 8px; border-radius: 10px;">Fácil</span>
+    </div>
+
+    <div class="card" style="border-color: var(--primary-purple); min-height: 100px; display: flex; align-items: center; justify-content: center; text-align: center;">
+      <h3 id="quiz-question-text">Quanto é 2 + 2?</h3>
+    </div>
+
+    <div id="quiz-options-container"></div>
+  </div>
+
+  <!-- Flashcards -->
+  <div id="screen-flashcards" class="screen">
+    <h2>Flashcards 🃏</h2>
+    <p style="color: #64748B; margin-bottom: 15px;">Toque no cartão para ver a resposta:</p>
+
+    <div class="flashcard" id="flashcard-box" onclick="flipFlashcard()">
+      <span id="flashcard-text">Clique para iniciar</span>
+    </div>
+
+    <button class="btn-main" onclick="nextFlashcard()">Próximo Cartão ➔</button>
+  </div>
+
+  <!-- Vídeo-Aulas -->
+  <div id="screen-videos" class="screen">
+    <h2>Vídeo-Aulas 📺</h2>
+
+    <div id="admin-video-panel" style="display:none; background: #F1F5F9; padding: 12px; border-radius: 15px; margin-bottom: 15px; border: 2px dashed #94A3B8;">
+      <strong style="color: var(--primary-purple);">➕ Cadastrar Aula (Admin)</strong>
+      <input type="text" id="video-title-input" class="input-field" placeholder="Título da Aula" onkeypress="handleEnter(event, addYoutubeVideo)">
+      <input type="text" id="video-url-input" class="input-field" placeholder="Link do YouTube" onkeypress="handleEnter(event, addYoutubeVideo)">
+      <button class="btn-main" style="padding: 8px; font-size: 0.9rem;" onclick="addYoutubeVideo()">Adicionar Vídeo</button>
+    </div>
+
+    <div id="video-list-container"></div>
+  </div>
+
+  <!-- Tela do Tutor Humano (Envio e Respostas) -->
+  <div id="screen-tutor" class="screen">
+    <h2>Tutor Humano 👨‍🏫</h2>
+    
+    <!-- Visão do Aluno -->
+    <div id="aluno-tutor-panel">
+      <p style="color: #64748B; margin-bottom: 10px;">Escreva sua dúvida abaixo. O professor responderá em até 24 horas!</p>
+      <textarea id="duvida-texto" class="input-field" rows="3" placeholder="Ex: Professor, não entendi a conta 45 x 12..."></textarea>
+      <button class="btn-main" onclick="enviarDuvida()">Enviar Dúvida</button>
+
+      <h3 style="margin-top: 20px; margin-bottom: 10px;">Minhas Dúvidas:</h3>
+      <div id="minhas-duvidas-lista"></div>
+    </div>
+
+    <!-- Visão do Admin -->
+    <div id="admin-tutor-panel" style="display: none;">
+      <div style="background: #FEF3C7; border: 2px solid #F59E0B; padding: 10px; border-radius: 12px; margin-bottom: 15px;">
+        <strong>⚙️ Modo Administrador</strong>
+        <p style="font-size: 0.85rem;">Aqui você pode visualizar e responder às dúvidas enviadas pelos alunos.</p>
+      </div>
+      <h3>Dúvidas Enviadas:</h3>
+      <div id="todas-duvidas-lista" style="margin-top: 10px;"></div>
+    </div>
+  </div>
+
+  <!-- Recompensas -->
+  <div id="screen-rewards" class="screen">
+    <h2>Minhas Recompensas 🏆</h2>
+    <div class="card" id="badge-1" style="border-color: #CBD5E1;">
+      <strong>🥇 Primeiro Passo</strong>
+      <p style="font-size: 0.85rem; color: #64748B;">Complete sua primeira questão.</p>
+    </div>
+    <div class="card" id="badge-2" style="border-color: #CBD5E1;">
+      <strong>⭐ Mestre dos Números</strong>
+      <p style="font-size: 0.85rem; color: #64748B;">Alcance 100 XP.</p>
+    </div>
+  </div>
+
+  <nav>
+    <button class="nav-item active" onclick="switchScreen('screen-home', this)">🏠 Início</button>
+    <button class="nav-item" onclick="switchScreen('screen-quizzes', this)">🧮 Quizzes</button>
+    <button class="nav-item" onclick="switchScreen('screen-rewards', this)">🏆 Prêmios</button>
+    <button class="nav-item" onclick="switchScreen('screen-setup', this)">👤 Perfil</button>
+  </nav>
+</div>
+
+<script>
+  let userData = JSON.parse(localStorage.getItem('mathfun_v5_user')) || {
+    name: 'Estudante',
+    avatar: '🦉',
+    turma: '1º Ano',
+    isAdmin: false,
+    xp: 0,
+    level: 1,
+    stars: 0,
+    streak: 1
+  };
+
+  let videoDatabase = JSON.parse(localStorage.getItem('mathfun_v5_videos')) || [
+    { id: 'k621-NglEts', title: 'Aprenda Adição Básica' }
+  ];
+
+  let duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
+
+  const bancoDeConhecimentoIA = [
+    { palavrasChave: ["somar", "soma", "adicao", "adição"], resposta: "🧮 **Adição**: Para somar números, você junta as quantidades! Exemplo: 5 + 3 = 8." },
+    { palavrasChave: ["subtrair", "subtracao", "subtração", "menos"], resposta: "📉 **Subtração**: Significa tirar uma quantidade de outra. Exemplo: 10 - 4 = 6." },
+    { palavrasChave: ["multiplicar", "multiplicacao", "multiplicação", "vezes"], resposta: "✖️ **Multiplicação**: É somar o mesmo número várias vezes! Exemplo: 3 x 4 = 12." },
+    { palavrasChave: ["dividir", "divisao", "divisão"], resposta: "➗ **Divisão**: É repartir um número em partes iguais. Exemplo: 10 ÷ 2 = 5." },
+    { palavrasChave: ["porcentagem", "%"], resposta: "📊 **Porcentagem**: Representa uma parte de 100. Exemplo: 50% de 80 é 40." },
+    { palavrasChave: ["perimetro", "perímetro"], resposta: "📐 **Perímetro**: É a soma das medidas de todos os lados." },
+    { palavrasChave: ["area", "área"], resposta: "🟦 **Área**: Medida da superfície interna (Base x Altura)." },
+    { palavrasChave: ["fracao", "fração", "fracoes", "frações"], resposta: "🍕 **Fração**: Parte de um todo. Numerador em cima, Denominador embaixo." }
+  ];
+
+  const flashcardsAvancados = [
+    { frente: "📐 Perímetro vs Área", verso: "Perímetro: Soma dos lados.\nÁrea: Espaço interno (Base x Altura)." },
+    { frente: "🍕 Fração", verso: "Numerador (cima): Partes consideradas.\nDenominador (baixo): Total de partes." }
+  ];
+
+  let currentQuizGenerated = [];
+  let currentQuizIndex = 0;
+  let currentDifficulty = 'fácil';
+  let flashcardIndex = 0;
+  let flashcardFlipped = false;
+
+  window.onload = () => {
+    document.getElementById('user-name-input').value = userData.name !== 'Estudante' ? userData.name : '';
+    updateUI();
+    renderVideos();
+  };
+
+  function saveData() {
+    localStorage.setItem('mathfun_v5_user', JSON.stringify(userData));
+    localStorage.setItem('mathfun_v5_videos', JSON.stringify(videoDatabase));
+    localStorage.setItem('mathfun_v5_duvidas', JSON.stringify(duvidasDatabase));
+  }
+
+  function handleEnter(event, callback) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      callback();
+    }
+  }
+
+  function promptAdminLogin() {
+    const password = prompt("Área Restrita do Professor/Admin.\nDigite a senha de acesso:");
+    if (password === "admin123") {
+      userData.isAdmin = true;
+      saveData();
+      updateUI();
+      renderVideos();
+      alert("Modo Administrador ativado com sucesso!");
+    } else if (password !== null) {
+      alert("Senha incorreta!");
+    }
+  }
+
+  function selectAvatar(emoji, el) {
+    userData.avatar = emoji;
+    document.querySelectorAll('.avatar-option').forEach(e => e.classList.remove('selected'));
+    el.classList.add('selected');
+  }
+
+  function selectTurma(turma, el) {
+    userData.turma = turma;
+    document.querySelectorAll('.turma-option').forEach(e => e.classList.remove('selected'));
+    el.classList.add('selected');
+  }
+
+  function saveProfile() {
+    const nameInput = document.getElementById('user-name-input').value.trim();
+    if (nameInput) userData.name = nameInput;
+    saveData();
+    updateUI();
+    renderVideos();
+    switchScreen('screen-home', document.querySelectorAll('.nav-item')[0]);
+  }
+
+  function switchScreen(screenId, btn) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(screenId).classList.add('active');
+
+    if (btn) {
+      document.querySelectorAll('.nav-item').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    if (screenId === 'screen-flashcards') showFlashcard();
+    if (screenId === 'screen-tutor') renderTutorScreen();
+  }
+
+  function extractYoutubeId(url) {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+  }
+
+  function addYoutubeVideo() {
+    const title = document.getElementById('video-title-input').value.trim();
+    const url = document.getElementById('video-url-input').value.trim();
+    const videoId = extractYoutubeId(url);
+
+    if (!title || !videoId) {
+      alert("Insira um título e um link válido do YouTube!");
+      return;
+    }
+
+    videoDatabase.push({ id: videoId, title: title });
+    saveData();
+    renderVideos();
+    document.getElementById('video-title-input').value = '';
+    document.getElementById('video-url-input').value = '';
+    alert("Vídeo cadastrado com sucesso!");
+  }
+
+  function editVideo(index) {
+    const currentVideo = videoDatabase[index];
+    const newTitle = prompt("Novo título do vídeo:", currentVideo.title);
+    if (newTitle === null) return;
+
+    const currentUrl = `https://www.youtube.com/watch?v=${currentVideo.id}`;
+    const newUrl = prompt("Novo link do YouTube:", currentUrl);
+    if (newUrl === null) return;
+
+    const newId = extractYoutubeId(newUrl);
+
+    if (!newTitle.trim() || !newId) {
+      alert("Título ou link inválido!");
+      return;
+    }
+
+    videoDatabase[index] = { id: newId, title: newTitle.trim() };
+    saveData();
+    renderVideos();
+    alert("Vídeo atualizado!");
+  }
+
+  function deleteVideo(index) {
+    if (confirm(`Tem certeza que deseja apagar o vídeo "${videoDatabase[index].title}"?`)) {
+      videoDatabase.splice(index, 1);
+      saveData();
+      renderVideos();
+    }
+  }
+
+  function renderVideos() {
+    const container = document.getElementById('video-list-container');
+    const adminPanel = document.getElementById('admin-video-panel');
+
+    adminPanel.style.display = userData.isAdmin ? 'block' : 'none';
+    container.innerHTML = '';
+
+    if (videoDatabase.length === 0) {
+      container.innerHTML = '<p style="color:#64748B;">Nenhum vídeo cadastrado.</p>';
+      return;
+    }
+
+    videoDatabase.forEach((vid, idx) => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.style.cursor = 'default';
+
+      let adminButtonsHtml = '';
+      if (userData.isAdmin) {
+        adminButtonsHtml = `
+          <div class="admin-controls">
+            <button class="admin-btn btn-edit" onclick="editVideo(${idx})">✏️ Editar</button>
+            <button class="admin-btn btn-delete" onclick="deleteVideo(${idx})">🗑️ Apagar</button>
+          </div>
+        `;
+      }
+
+      card.innerHTML = `
+        <strong>🎬 ${vid.title}</strong>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/${vid.id}" allowfullscreen></iframe>
+        </div>
+        ${adminButtonsHtml}
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // --- FUNÇÕES DO TUTOR HUMANO ---
+  function enviarDuvida() {
+    const texto = document.getElementById('duvida-texto').value.trim();
+    if (!texto) {
+      alert("Escreva sua dúvida antes de enviar!");
+      return;
+    }
+
+    const novaDuvida = {
+      id: Date.now(),
+      aluno: userData.name,
+      turma: userData.turma,
+      pergunta: texto,
+      resposta: null,
+      data: new Date().toLocaleDateString('pt-BR')
+    };
+
+    duvidasDatabase.unshift(novaDuvida);
+    saveData();
+    document.getElementById('duvida-texto').value = '';
+    alert("Dúvida enviada com sucesso! O tempo de resposta estimado é de até 24 horas.");
+    renderTutorScreen();
+  }
+
+  function responderDuvida(id) {
+    const duvida = duvidasDatabase.find(d => d.id === id);
+    if (!duvida) return;
+
+    const respostaTexto = prompt(`Responder dúvida de ${duvida.aluno}:\n"${duvida.pergunta}"`);
+    if (respostaTexto && respostaTexto.trim()) {
+      duvida.resposta = respostaTexto.trim();
+      saveData();
+      renderTutorScreen();
+      alert("Resposta gravada!");
+    }
+  }
+
+  function renderTutorScreen() {
+    const adminPanel = document.getElementById('admin-tutor-panel');
+    const alunoPanel = document.getElementById('aluno-tutor-panel');
+
+    if (userData.isAdmin) {
+      adminPanel.style.display = 'block';
+      alunoPanel.style.display = 'none';
+
+      const container = document.getElementById('todas-duvidas-lista');
+      container.innerHTML = '';
+
+      if (duvidasDatabase.length === 0) {
+        container.innerHTML = '<p style="color:#64748B;">Nenhuma dúvida cadastrada.</p>';
+        return;
+      }
+
+      duvidasDatabase.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'duvida-item';
+
+        let statusResposta = item.resposta 
+          ? `<div class="resposta-box"><strong>Sua Resposta:</strong> ${item.resposta}</div>` 
+          : `<button class="btn-main" style="padding: 6px; font-size: 0.85rem; margin-top: 8px; background: var(--primary-orange);" onclick="responderDuvida(${item.id})">✏️ Responder</button>`;
+
+        div.innerHTML = `
+          <strong>👤 ${item.aluno} (${item.turma})</strong> <span style="font-size:0.75rem; color:#64748B;">- ${item.data}</span>
+          <p style="margin-top:5px; color:#334155;">"${item.pergunta}"</p>
+          ${statusResposta}
+        `;
+        container.appendChild(div);
+      });
+
+    } else {
+      adminPanel.style.display = 'none';
+      alunoPanel.style.display = 'block';
+
+      const container = document.getElementById('minhas-duvidas-lista');
+      container.innerHTML = '';
+
+      const minhasDuvidas = duvidasDatabase.filter(d => d.aluno === userData.name);
+
+      if (minhasDuvidas.length === 0) {
+        container.innerHTML = '<p style="color:#64748B; font-size: 0.9rem;">Você ainda não enviou dúvidas.</p>';
+        return;
+      }
+
+      minhasDuvidas.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'duvida-item';
+
+        let respostaHtml = item.resposta 
+          ? `<div class="resposta-box"><strong>Professor:</strong> ${item.resposta}</div>` 
+          : `<p style="font-size: 0.8rem; color: #F59E0B; margin-top: 5px;">⏳ Aguardando resposta do professor (até 24h)...</p>`;
+
+        div.innerHTML = `
+          <p style="color:#334155;"><strong>Pergunta:</strong> "${item.pergunta}"</p>
+          ${respostaHtml}
+        `;
+        container.appendChild(div);
+      });
+    }
+  }
+
+  function generateQuestions(dificuldade) {
+    let list = [];
+    for (let i = 0; i < 5; i++) {
+      let n1 = Math.floor(Math.random() * 10) + 1;
+      let n2 = Math.floor(Math.random() * 10) + 1;
+      let ans = n1 + n2;
+      let options = [ans, ans + 1, Math.max(0, ans - 1)].sort(() => Math.random() - 0.5);
+
+      list.push({
+        pergunta: `Quanto é ${n1} + ${n2}?`,
+        opcoes: options.map(String),
+        correta: options.indexOf(ans)
+      });
+    }
+    return list;
+  }
+
+  function startGeneratedQuiz(dif) {
+    currentDifficulty = dif;
+    currentQuizGenerated = generateQuestions(dif);
+    currentQuizIndex = 0;
+    switchScreen('screen-quiz-player');
+    loadGeneratedQuestion();
+  }
+
+  function loadGeneratedQuestion() {
+    const q = currentQuizGenerated[currentQuizIndex];
+    document.getElementById('quiz-progress').innerText = `Pergunta ${currentQuizIndex + 1}/5`;
+    document.getElementById('quiz-difficulty-tag').innerText = currentDifficulty.toUpperCase();
+    document.getElementById('quiz-question-text').innerText = q.pergunta;
+
+    const container = document.getElementById('quiz-options-container');
+    container.innerHTML = '';
+
+    q.opcoes.forEach((op, idx) => {
+      const btn = document.createElement('div');
+      btn.className = 'quiz-option';
+      btn.innerText = op;
+      btn.onclick = () => checkGeneratedAnswer(idx);
+      container.appendChild(btn);
+    });
+  }
+
+  function checkGeneratedAnswer(idx) {
+    if (idx === currentQuizGenerated[currentQuizIndex].correta) {
+      addXP(10);
+      alert("✨ Resposta Correta!");
+    } else {
+      alert("❌ Tente a próxima!");
+    }
+
+    currentQuizIndex++;
+    if (currentQuizIndex < 5) {
+      loadGeneratedQuestion();
+    } else {
+      alert("🎉 Quiz concluído!");
+      switchScreen('screen-quizzes');
+    }
+  }
+
+  function showFlashcard() {
+    flashcardFlipped = false;
+    document.getElementById('flashcard-text').innerText = flashcardsAvancados[flashcardIndex].frente;
+  }
+
+  function flipFlashcard() {
+    flashcardFlipped = !flashcardFlipped;
+    document.getElementById('flashcard-text').innerText = flashcardFlipped 
+      ? flashcardsAvancados[flashcardIndex].verso 
+      : flashcardsAvancados[flashcardIndex].frente;
+  }
+
+  function nextFlashcard() {
+    flashcardIndex = (flashcardIndex + 1) % flashcardsAvancados.length;
+    showFlashcard();
+  }
+
+  function addXP(amount) {
+    userData.xp += amount;
+    userData.stars += 2;
+
+    let nextLevelXp = userData.level * 50;
+    if (userData.xp >= nextLevelXp) {
+      userData.level++;
+      alert(`🎉 PARABÉNS! Subiu para o Nível ${userData.level}!`);
+    }
+
+    saveData();
+    updateUI();
+  }
+
+  function updateUI() {
+    document.getElementById('display-user-name').innerText = userData.name;
+    document.getElementById('display-avatar-container').innerText = userData.avatar;
+    document.getElementById('display-turma').innerText = 'Turma: ' + userData.turma;
+    document.getElementById('stars-count').innerText = userData.stars;
+    document.getElementById('streak-count').innerText = userData.streak;
+    document.getElementById('admin-indicator').style.display = userData.isAdmin ? 'inline-block' : 'none';
+
+    let nextLevelXp = userData.level * 50;
+    let percentage = (userData.xp / nextLevelXp) * 100;
+
+    document.getElementById('display-level').innerText = `Nível ${userData.level}`;
+    document.getElementById('display-xp').innerText = `${userData.xp}/${nextLevelXp} XP`;
+    document.getElementById('xp-bar').style.width = `${Math.min(percentage, 100)}%`;
+
+    if (userData.xp > 0) document.getElementById('badge-1').style.borderColor = '#10B981';
+    if (userData.xp >= 100) document.getElementById('badge-2').style.borderColor = '#10B981';
+  }
+</script>
+
+</body>
+</html>
