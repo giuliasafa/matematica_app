@@ -540,7 +540,7 @@
     
     <!-- Visão do Aluno -->
     <div id="aluno-tutor-panel">
-      <p style="color: #64748B; margin-bottom: 10px;">Escreva sua dúvida abaixo. O professor responderá em até 24 horas!</p>
+      <p style="color: #64748B; margin-bottom: 10px;">Escreva sua dúvida abaixo. O professor responderá em breve!</p>
       <textarea id="duvida-texto" class="input-field" rows="3" placeholder="Ex: Professor, não entendi a conta 45 x 12..."></textarea>
       <button class="btn-main" onclick="enviarDuvida()">Enviar Dúvida</button>
 
@@ -781,6 +781,8 @@
     });
   }
 
+  // --- LÓGICA DO TUTOR HUMANO COM ENCERRAMENTO DE CHAT ---
+
   function enviarDuvida() {
     const texto = document.getElementById('duvida-texto').value.trim();
     if (!texto) {
@@ -796,13 +798,14 @@
       turma: userData.turma || '1º Ano',
       pergunta: texto,
       resposta: null,
+      status: 'aberta',
       data: new Date().toLocaleDateString('pt-BR')
     };
 
     duvidasDatabase.unshift(novaDuvida);
     saveData();
     document.getElementById('duvida-texto').value = '';
-    alert("Dúvida enviada com sucesso! O tempo de resposta estimado é de até 24 horas.");
+    alert("Dúvida enviada com sucesso! O professor responderá em breve.");
     renderTutorScreen();
   }
 
@@ -814,9 +817,10 @@
     const respostaTexto = prompt(`Responder dúvida de ${duvida.aluno}:\n"${duvida.pergunta}"`);
     if (respostaTexto && respostaTexto.trim()) {
       duvida.resposta = respostaTexto.trim();
+      duvida.status = 'encerrada';
       saveData();
       renderTutorScreen();
-      alert("Resposta gravada!");
+      alert("Resposta enviada e atendimento encerrado com sucesso!");
     }
   }
 
@@ -834,7 +838,7 @@
       container.innerHTML = '';
 
       if (duvidasDatabase.length === 0) {
-        container.innerHTML = '<p style="color:#64748B;">Nenhuma dúvida cadastrada até o momento.</p>';
+        container.innerHTML = '<p style="color:#64748B;">Nenhuma dúvida cadastrada no momento.</p>';
         return;
       }
 
@@ -842,14 +846,16 @@
         const div = document.createElement('div');
         div.className = 'duvida-item';
 
-        let statusResposta = item.resposta 
-          ? `<div class="resposta-box"><strong>Sua Resposta:</strong> ${item.resposta}</div>` 
-          : `<button class="btn-main" style="padding: 6px; font-size: 0.85rem; margin-top: 8px; background: var(--primary-orange);" onclick="responderDuvida(${item.id})">✏️ Responder</button>`;
+        const isEncerrado = item.status === 'encerrada';
+        
+        let conteudoStatus = isEncerrado 
+          ? `<div class="resposta-box"><strong>Sua Resposta:</strong> ${item.resposta}<br><span style="font-size:0.75rem; color:#059669;">🔒 Atendimento Encerrado</span></div>` 
+          : `<button class="btn-main" style="padding: 6px; font-size: 0.85rem; margin-top: 8px; background: var(--primary-orange);" onclick="responderDuvida(${item.id})">✏️ Responder e Encerrar</button>`;
 
         div.innerHTML = `
           <strong>👤 ${item.aluno} (${item.turma})</strong> <span style="font-size:0.75rem; color:#64748B;">- ${item.data}</span>
           <p style="margin-top:5px; color:#334155;">"${item.pergunta}"</p>
-          ${statusResposta}
+          ${conteudoStatus}
         `;
         container.appendChild(div);
       });
@@ -872,9 +878,11 @@
         const div = document.createElement('div');
         div.className = 'duvida-item';
 
-        let respostaHtml = item.resposta 
-          ? `<div class="resposta-box"><strong>Professor:</strong> ${item.resposta}</div>` 
-          : `<p style="font-size: 0.8rem; color: #F59E0B; margin-top: 5px;">⏳ Aguardando resposta do professor (até 24h)...</p>`;
+        const isEncerrado = item.status === 'encerrada';
+
+        let respostaHtml = isEncerrado 
+          ? `<div class="resposta-box"><strong>Professor:</strong> ${item.resposta}<br><span style="font-size:0.75rem; color:#059669;">🔒 Chamado Finalizado</span></div>` 
+          : `<p style="font-size: 0.8rem; color: #F59E0B; margin-top: 5px;">⏳ Aguardando resposta do professor...</p>`;
 
         div.innerHTML = `
           <p style="color:#334155;"><strong>Pergunta:</strong> "${item.pergunta}"</p>
@@ -884,6 +892,8 @@
       });
     }
   }
+
+  // --- DEMAIS FUNÇÕES DO JOGO ---
 
   function generateQuestions(dificuldade) {
     let list = [];
