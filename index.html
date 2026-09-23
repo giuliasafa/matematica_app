@@ -618,7 +618,7 @@
   const defaultVideos = [
     { id: 'k621-NglEts', title: 'Adição Básica para Iniciantes', turma: '1º Ano' },
     { id: 'k621-NglEts', title: 'Aprenda Contar Até 100', turma: '2º Ano' },
-    { id: 'k621-NglEts', title: 'Tabuada e Multiplicação Fácil', turma: '3º Ano' },
+    { id: 'W7wW3DEgZ5U', title: 'Medidas de Massa - Grama e Quilograma', turma: '3º Ano' },
     { id: 'k621-NglEts', title: 'Divisão sem Complicação', turma: '4º Ano' },
     { id: 'k621-NglEts', title: 'Introdução às Frações', turma: '5º Ano' }
   ];
@@ -788,7 +788,6 @@
       return;
     }
 
-    // Carrega novamente para garantir sincronização com outros envios
     duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
 
     const novaDuvida = {
@@ -822,7 +821,6 @@
   }
 
   function renderTutorScreen() {
-    // Sincroniza os dados salvos antes de renderizar
     duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
 
     const adminPanel = document.getElementById('admin-tutor-panel');
