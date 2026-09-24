@@ -1,0 +1,4862 @@
+[
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 3 + 2?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 5 - 2?",
+    "opcoes": [
+      "3",
+      "2",
+      "4"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 7 + 1?",
+    "opcoes": [
+      "8",
+      "7",
+      "9"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 9 - 4?",
+    "opcoes": [
+      "6",
+      "5",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 4 + 4?",
+    "opcoes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 6 - 3?",
+    "opcoes": [
+      "3",
+      "2",
+      "4"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 2 + 6?",
+    "opcoes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 8 - 5?",
+    "opcoes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 1 + 8?",
+    "opcoes": [
+      "9",
+      "8",
+      "10"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 10 - 2?",
+    "opcoes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 10 + 5?",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 15 - 5?",
+    "opcoes": [
+      "10",
+      "5",
+      "8"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 12 + 3?",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 14 - 2?",
+    "opcoes": [
+      "11",
+      "12",
+      "13"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 11 + 4?",
+    "opcoes": [
+      "15",
+      "14",
+      "16"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 16 - 4?",
+    "opcoes": [
+      "11",
+      "12",
+      "13"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 13 + 5?",
+    "opcoes": [
+      "17",
+      "18",
+      "19"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 18 - 3?",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 10 + 9?",
+    "opcoes": [
+      "19",
+      "18",
+      "20"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 20 - 5?",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 20 + 10?",
+    "opcoes": [
+      "30",
+      "25",
+      "40"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 30 - 10?",
+    "opcoes": [
+      "15",
+      "20",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 15 + 10?",
+    "opcoes": [
+      "20",
+      "25",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 25 - 5?",
+    "opcoes": [
+      "20",
+      "15",
+      "22"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 22 + 3?",
+    "opcoes": [
+      "24",
+      "25",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 28 - 4?",
+    "opcoes": [
+      "23",
+      "24",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 31 + 4?",
+    "opcoes": [
+      "34",
+      "35",
+      "36"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 37 - 2?",
+    "opcoes": [
+      "35",
+      "34",
+      "36"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 40 + 5?",
+    "opcoes": [
+      "44",
+      "45",
+      "46"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 49 - 9?",
+    "opcoes": [
+      "39",
+      "40",
+      "41"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 50 + 8?",
+    "opcoes": [
+      "58",
+      "57",
+      "59"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 55 - 5?",
+    "opcoes": [
+      "45",
+      "50",
+      "55"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 10 + 10?",
+    "opcoes": [
+      "15",
+      "20",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 40 - 20?",
+    "opcoes": [
+      "20",
+      "10",
+      "30"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 30 + 20?",
+    "opcoes": [
+      "40",
+      "50",
+      "60"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 50 - 10?",
+    "opcoes": [
+      "30",
+      "40",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 23 + 10?",
+    "opcoes": [
+      "33",
+      "32",
+      "34"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 35 - 10?",
+    "opcoes": [
+      "20",
+      "25",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 42 + 6?",
+    "opcoes": [
+      "47",
+      "48",
+      "49"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 46 - 4?",
+    "opcoes": [
+      "41",
+      "42",
+      "43"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O Pedro tinha 4 carrinhos e ganhou 3. Com quantos ficou?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "A Maria tinha 8 bonecas e deu 2. Com quantas ficou?",
+    "opcoes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O João comprou 5 maçãs e 5 laranjas. Quantas frutas comprou?",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Na caixa havia 10 lápis e sumiram 3. Quantos restaram?",
+    "opcoes": [
+      "7",
+      "6",
+      "8"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O Lucas tinha 12 figurinhas e ganhou 4. Quanto tem agora?",
+    "opcoes": [
+      "15",
+      "16",
+      "17"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "A Sofia tinha 15 chocolates e comeu 3. Quantos sobraram?",
+    "opcoes": [
+      "11",
+      "12",
+      "13"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Há 6 passarinhos na árvore e chegaram mais 4. Quantos são?",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Tinha 9 balões e 4 estouraram. Quantos ficaram?",
+    "opcoes": [
+      "5",
+      "4",
+      "6"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Em um vaso há 7 flores vermelhas e 3 amarelas. Quantas flores há no total?",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Havia 14 gatos e 4 saíram. Quantos gatos sobraram?",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Qual é a dezena inteira depois de 10?",
+    "opcoes": [
+      "15",
+      "20",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quantas unidades formam 1 dezena?",
+    "opcoes": [
+      "5",
+      "10",
+      "15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O número 15 tem quantas dezenas e unidades?",
+    "opcoes": [
+      "1 dezena e 5 unidades",
+      "5 dezenas e 1 unidade",
+      "2 dezenas"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O número 24 é formado por:",
+    "opcoes": [
+      "2 dezenas e 4 unidades",
+      "4 dezenas e 2 unidades",
+      "1 dezena e 4 unidades"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 1 dezena + 3 unidades?",
+    "opcoes": [
+      "12",
+      "13",
+      "14"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 2 dezenas + 0 unidades?",
+    "opcoes": [
+      "10",
+      "20",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Se tirarmos 1 dezena de 30 quanto fica?",
+    "opcoes": [
+      "10",
+      "20",
+      "15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Se somarmos 1 dezena com 1 dezena temos:",
+    "opcoes": [
+      "10",
+      "20",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O número 40 corresponde a:",
+    "opcoes": [
+      "3 dezenas",
+      "4 dezenas",
+      "5 dezenas"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "3 dezenas e 7 unidades formam o número:",
+    "opcoes": [
+      "37",
+      "73",
+      "30"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 14 + 10?",
+    "opcoes": [
+      "23",
+      "24",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 28 - 10?",
+    "opcoes": [
+      "18",
+      "17",
+      "19"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 33 + 10?",
+    "opcoes": [
+      "42",
+      "43",
+      "44"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 45 - 10?",
+    "opcoes": [
+      "34",
+      "35",
+      "36"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 11 + 11?",
+    "opcoes": [
+      "21",
+      "22",
+      "23"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 25 - 11?",
+    "opcoes": [
+      "14",
+      "13",
+      "15"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 12 + 12?",
+    "opcoes": [
+      "22",
+      "24",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 24 - 12?",
+    "opcoes": [
+      "11",
+      "12",
+      "13"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 15 + 15?",
+    "opcoes": [
+      "25",
+      "30",
+      "35"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 30 - 15?",
+    "opcoes": [
+      "15",
+      "10",
+      "20"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "O que vem logo depois de 19 + 1?",
+    "opcoes": [
+      "20",
+      "21",
+      "22"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 29 + 1?",
+    "opcoes": [
+      "28",
+      "30",
+      "31"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 39 + 1?",
+    "opcoes": [
+      "38",
+      "40",
+      "41"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 49 + 1?",
+    "opcoes": [
+      "50",
+      "48",
+      "51"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 20 - 1?",
+    "opcoes": [
+      "18",
+      "19",
+      "21"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 30 - 1?",
+    "opcoes": [
+      "28",
+      "29",
+      "31"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 40 - 1?",
+    "opcoes": [
+      "39",
+      "38",
+      "41"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 50 - 1?",
+    "opcoes": [
+      "48",
+      "49",
+      "51"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 5 + 0?",
+    "opcoes": [
+      "0",
+      "5",
+      "50"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 8 - 0?",
+    "opcoes": [
+      "8",
+      "0",
+      "7"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Ana tem 12 balas e deu 2. Ficou com:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Carlos tem 7 carretéis e achou mais 3. Tem:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Luiz tinha 16 livros e doou 6. Sobraram:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Bia juntou 10 moedas e achou 5. Tem:",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Na árvore havia 18 macacos e 8 saíram. Ficaram:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Um jogo tem 20 peças e perdemos 2. Restam:",
+    "opcoes": [
+      "17",
+      "18",
+      "19"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Havia 13 canetas e compramos mais 3. Temos:",
+    "opcoes": [
+      "15",
+      "16",
+      "17"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Tinha 17 bolinhas e perdi 7. Fiquei com:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Gastei 11 reais e tinha 20. Sobraram:",
+    "opcoes": [
+      "8",
+      "9",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Comprei 14 pães e comi 4. Sobraram:",
+    "opcoes": [
+      "9",
+      "10",
+      "11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 21 + 3?",
+    "opcoes": [
+      "23",
+      "24",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 34 - 3?",
+    "opcoes": [
+      "30",
+      "31",
+      "32"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 43 + 2?",
+    "opcoes": [
+      "44",
+      "45",
+      "46"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 48 - 5?",
+    "opcoes": [
+      "42",
+      "43",
+      "44"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 16 + 3?",
+    "opcoes": [
+      "18",
+      "19",
+      "20"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 19 - 6?",
+    "opcoes": [
+      "12",
+      "13",
+      "14"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 27 + 2?",
+    "opcoes": [
+      "28",
+      "29",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 29 - 4?",
+    "opcoes": [
+      "24",
+      "25",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 36 + 3?",
+    "opcoes": [
+      "38",
+      "39",
+      "40"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "1º Ano",
+    "pergunta": "Quanto é 40 - 5?",
+    "opcoes": [
+      "34",
+      "35",
+      "36"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 45 + 23?",
+    "opcoes": [
+      "67",
+      "68",
+      "69"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 78 - 34?",
+    "opcoes": [
+      "43",
+      "44",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 5 x 4?",
+    "opcoes": [
+      "18",
+      "20",
+      "22"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 12 ÷ 3?",
+    "opcoes": [
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 50 + 49?",
+    "opcoes": [
+      "98",
+      "99",
+      "97"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 99 - 45?",
+    "opcoes": [
+      "53",
+      "54",
+      "55"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 6 x 3?",
+    "opcoes": [
+      "17",
+      "18",
+      "19"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 20 ÷ 4?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 32 + 15?",
+    "opcoes": [
+      "46",
+      "47",
+      "48"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 65 - 21?",
+    "opcoes": [
+      "43",
+      "44",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 7 x 2?",
+    "opcoes": [
+      "13",
+      "14",
+      "15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 18 ÷ 2?",
+    "opcoes": [
+      "8",
+      "9",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 54 + 22?",
+    "opcoes": [
+      "75",
+      "76",
+      "77"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 87 - 53?",
+    "opcoes": [
+      "33",
+      "34",
+      "35"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 8 x 3?",
+    "opcoes": [
+      "22",
+      "24",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 15 ÷ 3?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 61 + 28?",
+    "opcoes": [
+      "88",
+      "89",
+      "90"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 94 - 41?",
+    "opcoes": [
+      "52",
+      "53",
+      "54"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 9 x 2?",
+    "opcoes": [
+      "17",
+      "18",
+      "19"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 16 ÷ 4?",
+    "opcoes": [
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 14 + 35?",
+    "opcoes": [
+      "48",
+      "49",
+      "50"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 58 - 25?",
+    "opcoes": [
+      "32",
+      "33",
+      "34"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 4 x 4?",
+    "opcoes": [
+      "14",
+      "16",
+      "18"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 24 ÷ 6?",
+    "opcoes": [
+      "3",
+      "4",
+      "5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 27 + 42?",
+    "opcoes": [
+      "68",
+      "69",
+      "70"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 76 - 32?",
+    "opcoes": [
+      "43",
+      "44",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 3 x 5?",
+    "opcoes": [
+      "14",
+      "15",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 30 ÷ 5?",
+    "opcoes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 81 + 18?",
+    "opcoes": [
+      "98",
+      "99",
+      "100"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 63 - 31?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 6 x 5?",
+    "opcoes": [
+      "28",
+      "30",
+      "32"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 25 ÷ 5?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 33 + 44?",
+    "opcoes": [
+      "76",
+      "77",
+      "78"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 89 - 47?",
+    "opcoes": [
+      "41",
+      "42",
+      "43"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 7 x 3?",
+    "opcoes": [
+      "20",
+      "21",
+      "22"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 21 ÷ 3?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 16 + 52?",
+    "opcoes": [
+      "67",
+      "68",
+      "69"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 48 - 16?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 10 x 4?",
+    "opcoes": [
+      "30",
+      "40",
+      "50"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 40 ÷ 4?",
+    "opcoes": [
+      "8",
+      "10",
+      "12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Se você tem 3 caixas com 5 lápis em cada uma, quantos lápis tem?",
+    "opcoes": [
+      "12",
+      "15",
+      "18"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Dividindo 12 balas igualmente entre 2 crianças, quantas balas cada uma ganha?",
+    "opcoes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Uma sala tem 4 fileiras com 6 cadeiras. Quantas cadeiras há no total?",
+    "opcoes": [
+      "22",
+      "24",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Repartindo 20 biscoitos entre 4 cachorros, quantos biscoitos cada um recebe?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Comprei 2 pacotes de figurinhas com 8 em cada. Quantas figurinhas tenho?",
+    "opcoes": [
+      "14",
+      "16",
+      "18"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Dividindo 18 maçãs em 3 cestas iguais, quantas maçãs ficam por cesta?",
+    "opcoes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Um gato tem 4 patas. Quantas patas têm 5 gatos juntos?",
+    "opcoes": [
+      "18",
+      "20",
+      "22"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Distribui 15 brinquedos igualmente entre 5 crianças. Quantos brinquedos cada uma ganhou?",
+    "opcoes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Comprei 3 caixas de ovos com 6 ovos cada. Quantos ovos comprei?",
+    "opcoes": [
+      "16",
+      "18",
+      "20"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Repartindo 16 laranjas entre 2 pessoas, quantas laranjas cada uma recebe?",
+    "opcoes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 5 x 5?",
+    "opcoes": [
+      "20",
+      "25",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 35 ÷ 5?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 22 + 66?",
+    "opcoes": [
+      "87",
+      "88",
+      "89"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 98 - 66?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 9 x 3?",
+    "opcoes": [
+      "26",
+      "27",
+      "28"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 27 ÷ 3?",
+    "opcoes": [
+      "8",
+      "9",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 41 + 38?",
+    "opcoes": [
+      "78",
+      "79",
+      "80"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 75 - 42?",
+    "opcoes": [
+      "32",
+      "33",
+      "34"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 4 x 8?",
+    "opcoes": [
+      "30",
+      "32",
+      "34"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 32 ÷ 4?",
+    "opcoes": [
+      "7",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 13 + 74?",
+    "opcoes": [
+      "86",
+      "87",
+      "88"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 86 - 54?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 6 x 4?",
+    "opcoes": [
+      "22",
+      "24",
+      "26"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 28 ÷ 4?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 52 + 37?",
+    "opcoes": [
+      "88",
+      "89",
+      "90"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 93 - 61?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 7 x 4?",
+    "opcoes": [
+      "26",
+      "28",
+      "30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 36 ÷ 4?",
+    "opcoes": [
+      "8",
+      "9",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 25 + 53?",
+    "opcoes": [
+      "77",
+      "78",
+      "79"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 67 - 35?",
+    "opcoes": [
+      "31",
+      "32",
+      "33"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 8 x 2?",
+    "opcoes": [
+      "14",
+      "16",
+      "18"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 14 ÷ 2?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 34 + 43?",
+    "opcoes": [
+      "76",
+      "77",
+      "78"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 59 - 28?",
+    "opcoes": [
+      "30",
+      "31",
+      "32"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 3 x 9?",
+    "opcoes": [
+      "26",
+      "27",
+      "28"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 18 ÷ 3?",
+    "opcoes": [
+      "5",
+      "6",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 46 + 32?",
+    "opcoes": [
+      "77",
+      "78",
+      "79"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 88 - 44?",
+    "opcoes": [
+      "43",
+      "44",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 5 x 6?",
+    "opcoes": [
+      "28",
+      "30",
+      "32"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 30 ÷ 6?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 11 + 88?",
+    "opcoes": [
+      "98",
+      "99",
+      "100"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 97 - 55?",
+    "opcoes": [
+      "41",
+      "42",
+      "43"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 2 x 10?",
+    "opcoes": [
+      "18",
+      "20",
+      "22"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 50 ÷ 5?",
+    "opcoes": [
+      "8",
+      "10",
+      "12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 62 + 25?",
+    "opcoes": [
+      "86",
+      "87",
+      "88"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 79 - 36?",
+    "opcoes": [
+      "42",
+      "43",
+      "44"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 4 x 5?",
+    "opcoes": [
+      "18",
+      "20",
+      "22"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 20 ÷ 2?",
+    "opcoes": [
+      "8",
+      "10",
+      "12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 17 + 71?",
+    "opcoes": [
+      "87",
+      "88",
+      "89"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quanto é 95 - 43?",
+    "opcoes": [
+      "51",
+      "52",
+      "53"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos gramas existem em 1 quilograma (kg)?",
+    "opcoes": [
+      "100 g",
+      "1000 g",
+      "10000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual instrumento usamos para medir a massa (peso) de um objeto?",
+    "opcoes": [
+      "Régua",
+      "Balança",
+      "Termômetro"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual é a unidade principal usada para medir o peso de sacos de arroz ou pessoas?",
+    "opcoes": [
+      "Quilograma (kg)",
+      "Metro (m)",
+      "Litro (L)"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O que é mais pesado: 1 kg de ferro ou 1 kg de algodão?",
+    "opcoes": [
+      "Ferro",
+      "Algodão",
+      "Têm o mesmo peso"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos gramas têm meio quilograma (1/2 kg)?",
+    "opcoes": [
+      "250 g",
+      "500 g",
+      "750 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual símbolo representa o quilograma?",
+    "opcoes": [
+      "g",
+      "kg",
+      "mg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual símbolo representa o grama?",
+    "opcoes": [
+      "g",
+      "kg",
+      "l"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para medir a massa de um clipe de papel usamos melhor o:",
+    "opcoes": [
+      "Grama (g)",
+      "Quilograma (kg)",
+      "Tonelada (t)"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para medir a massa de um elefante usamos melhor o:",
+    "opcoes": [
+      "Grama (g)",
+      "Quilograma (kg)",
+      "Tonelada (t)"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "1 tonelada é equivalente a quantos quilogramas?",
+    "opcoes": [
+      "100 kg",
+      "500 kg",
+      "1000 kg"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um pacote de café tem 250 g, quantos pacotes formam 1 kg?",
+    "opcoes": [
+      "2 pacotes",
+      "4 pacotes",
+      "5 pacotes"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Dois pacotes de 500 g de farinha juntos pesam:",
+    "opcoes": [
+      "1 kg",
+      "2 kg",
+      "500 g"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se uma maçã pesa 100 g, qual o peso de 5 maçãs iguais?",
+    "opcoes": [
+      "400 g",
+      "500 g",
+      "600 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "A Luíza pesa 32 kg e seu irmão pesa 28 kg. Quanto pesam juntos?",
+    "opcoes": [
+      "50 kg",
+      "60 kg",
+      "70 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Um saco de açúcar tem 5 kg. Quantos gramas ele tem?",
+    "opcoes": [
+      "500 g",
+      "5000 g",
+      "50 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se você tem 300 g de queijo e compra mais 200 g, fica com:",
+    "opcoes": [
+      "400 g",
+      "500 g (meio kg)",
+      "600 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma receita pede 1 kg de farinha. Você só tem 600 g. Quanto falta?",
+    "opcoes": [
+      "300 g",
+      "400 g",
+      "500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual produto costuma ser comprado em quilogramas no supermercado?",
+    "opcoes": [
+      "Leite",
+      "Batatas",
+      "Fita adesiva"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um pacote de achocolatado pesa 400 g, dois pacotes pesam:",
+    "opcoes": [
+      "600 g",
+      "800 g",
+      "1 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos gramas faltam para 750 g completarem 1 kg?",
+    "opcoes": [
+      "150 g",
+      "250 g",
+      "350 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Três pacotes de 100 g de biscoito pesam no total:",
+    "opcoes": [
+      "200 g",
+      "300 g",
+      "400 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um cão pesa 12 kg e ganha 3 kg, ele passa a ter:",
+    "opcoes": [
+      "14 kg",
+      "15 kg",
+      "16 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual objeto tem massa mais próxima de 1 grama?",
+    "opcoes": [
+      "Uma caneta cheia",
+      "Uma folha de papel",
+      "Um livro pesado"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para saber se um saco de ração está mais leve que outro usamos:",
+    "opcoes": [
+      "Uma fita métrica",
+      "Uma balança",
+      "Um copo medidor"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma melancia pesa 4 kg e um melão pesa 1 kg. Quantos kg a melancia tem a mais?",
+    "opcoes": [
+      "2 kg",
+      "3 kg",
+      "5 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos pacotes de 200 g são necessários para obter 1 kg (1000 g)?",
+    "opcoes": [
+      "4 pacotes",
+      "5 pacotes",
+      "6 pacotes"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um bolo pesa 1500 g, isso é equivalente a:",
+    "opcoes": [
+      "1 kg e meio",
+      "2 kg",
+      "1005 g"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "A soma de 250 g + 250 g é igual a:",
+    "opcoes": [
+      "400 g",
+      "500 g",
+      "750 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual item é medido em gramas ou quilogramas?",
+    "opcoes": [
+      "Suco de laranja",
+      "Carne moída",
+      "Tecido para roupa"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se colocarmos 800 g de arroz de um lado da balança, quanto falta para dar 1 kg?",
+    "opcoes": [
+      "100 g",
+      "200 g",
+      "300 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quatro pacotes de 250 g de manteiga totalizam:",
+    "opcoes": [
+      "500 g",
+      "1 kg",
+      "2 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma caixa com brinquedos pesa 8 kg. Se tirarmos 2 kg de brinquedos, o peso fica:",
+    "opcoes": [
+      "5 kg",
+      "6 kg",
+      "7 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se 1 kg de feijão custa R$ 8, quanto custam 2 kg?",
+    "opcoes": [
+      "R$ 12",
+      "R$ 16",
+      "R$ 20"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual é a unidade usada para medir coisas extremamente leves como remédios?",
+    "opcoes": [
+      "Miligrama (mg)",
+      "Quilograma (kg)",
+      "Tonelada (t)"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se comprar 3 kg de laranjas e usar 1 kg, fico com:",
+    "opcoes": [
+      "1 kg",
+      "2 kg",
+      "4 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "2000 g é igual a quantos quilogramas?",
+    "opcoes": [
+      "1 kg",
+      "2 kg",
+      "20 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "3500 g é igual a:",
+    "opcoes": [
+      "3 kg e meio",
+      "35 kg",
+      "300 kg"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "A mala de viagem pesa 18 kg. O limite é 20 kg. Quantos kg ainda posso colocar?",
+    "opcoes": [
+      "1 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma embalagem de biscoito pesa 150 g. Duas embalagens pesam:",
+    "opcoes": [
+      "250 g",
+      "300 g",
+      "350 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual destas opções pesa mais?",
+    "opcoes": [
+      "1500 g",
+      "2 kg",
+      "800 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se 1 kg tem 1000 g, quanto tem 3 kg?",
+    "opcoes": [
+      "300 g",
+      "3000 g",
+      "30000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Um pote de sorvete pesa 800 g. Se comermos 300 g, quanto sobra?",
+    "opcoes": [
+      "400 g",
+      "500 g",
+      "600 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para equilibrar uma balança com 1 kg de um lado, do outro preciso de:",
+    "opcoes": [
+      "100 g",
+      "três pacotes de 250 g",
+      "dois pacotes de 500 g"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma barra de chocolate pesa 80 g. Se eu comprar 5 barras, terei:",
+    "opcoes": [
+      "300 g",
+      "400 g",
+      "500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O bebê pesava 3 kg ao nascer e engordou 2 kg. Quanto pesa agora?",
+    "opcoes": [
+      "4 kg",
+      "5 kg",
+      "6 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se 1 kg de maçã tem cerca de 6 maçãs, 2 kg terão cerca de:",
+    "opcoes": [
+      "10 maçãs",
+      "12 maçãs",
+      "15 maçãs"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual instrumento não mede massa?",
+    "opcoes": [
+      "Balança digital",
+      "Balança de pratos",
+      "Termômetro"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se dividirmos 1 kg de ração igualmente entre 2 potes, cada pote terá:",
+    "opcoes": [
+      "250 g",
+      "500 g",
+      "750 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Em 1/4 de kg existem quantos gramas?",
+    "opcoes": [
+      "200 g",
+      "250 g",
+      "500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se você comprar 600 g de presunto e 400 g de queijo, o peso total é:",
+    "opcoes": [
+      "800 g",
+      "1 kg",
+      "1200 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual peso é menor: 450 g ou 1 kg?",
+    "opcoes": [
+      "450 g",
+      "1 kg",
+      "São iguais"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos gramas existem em 10 kg?",
+    "opcoes": [
+      "1000 g",
+      "10000 g",
+      "100000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Um gato pesa 4 kg e um cachorro pesa 16 kg. O cachorro é quantas vezes mais pesado?",
+    "opcoes": [
+      "3 vezes",
+      "4 vezes",
+      "5 vezes"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um saco de batatas de 10 kg for dividido em 5 sacos iguais, cada um terá:",
+    "opcoes": [
+      "1 kg",
+      "2 kg",
+      "3 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual é a soma de 1200 g + 800 g?",
+    "opcoes": [
+      "1800 g",
+      "2000 g (2 kg)",
+      "2500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Um pacote de farinha de 5 kg perdeu 1500 g por um furo. Quanto sobrou?",
+    "opcoes": [
+      "3 kg e meio (3500 g)",
+      "4 kg",
+      "2 kg"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um caminhão carrega 3 toneladas, ele carrega quantos kg?",
+    "opcoes": [
+      "300 kg",
+      "3000 kg",
+      "30000 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual medida é mais adequada para pesar um comprimido?",
+    "opcoes": [
+      "Miligrama (mg)",
+      "Grama (g)",
+      "Quilograma (kg)"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual medida é mais adequada para pesar um carro?",
+    "opcoes": [
+      "Grama (g)",
+      "Quilograma (kg)",
+      "Tonelada (t)"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Comprei 3 pacotes de café de 250 g cada. Quanto falta para formar 1 kg?",
+    "opcoes": [
+      "150 g",
+      "250 g",
+      "350 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se 500 g de carne custam R$ 15, quanto custa 1 kg?",
+    "opcoes": [
+      "R$ 20",
+      "R$ 30",
+      "R$ 45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O peso de uma pessoa é dado em:",
+    "opcoes": [
+      "Litros",
+      "Quilogramas",
+      "Metros"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se tirarmos 500 g de um pacote de 2 kg de arroz, ficam:",
+    "opcoes": [
+      "1 kg",
+      "1 kg e meio (1500 g)",
+      "800 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quanto pesa 1 litro de água pura aproximadamente?",
+    "opcoes": [
+      "100 g",
+      "1 kg",
+      "10 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual destas unidades é maior?",
+    "opcoes": [
+      "Grama",
+      "Quilograma",
+      "Miligrama"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual destas unidades é menor?",
+    "opcoes": [
+      "Grama",
+      "Quilograma",
+      "Miligrama"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma caixa vazia pesa 200 g. Com os brinquedos pesa 1200 g. Quanto pesam os brinquedos?",
+    "opcoes": [
+      "800 g",
+      "1000 g (1 kg)",
+      "1100 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "A metade de 500 g é:",
+    "opcoes": [
+      "200 g",
+      "250 g",
+      "300 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O dobro de 750 g é:",
+    "opcoes": [
+      "1200 g",
+      "1500 g (1,5 kg)",
+      "2000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se juntarmos 400 g + 300 g + 300 g temos:",
+    "opcoes": [
+      "900 g",
+      "1 kg (1000 g)",
+      "1100 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um abacaxi pesa 1200 g, ele pesa mais que 1 kg?",
+    "opcoes": [
+      "Sim 200 g a mais",
+      "Não 200 g a menos",
+      "São exatamente iguais"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma sacola aguenta até 5 kg. Coloquei 3500 g de comida. Quantos gramas ainda posso colocar?",
+    "opcoes": [
+      "1000 g",
+      "1500 g",
+      "2000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Cinco moedas pesam juntas 25 g. Quanto pesa cada moeda se forem iguais?",
+    "opcoes": [
+      "4 g",
+      "5 g",
+      "6 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O que representa a sigla 'mg'?",
+    "opcoes": [
+      "Metro grama",
+      "Miligrama",
+      "Micro grama"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O que representa a sigla 'kg'?",
+    "opcoes": [
+      "Kilo grama",
+      "Quilograma",
+      "Quilo geral"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Quantos sacos de 5 kg de cimento são necessários para ter 20 kg?",
+    "opcoes": [
+      "3 sacos",
+      "4 sacos",
+      "5 sacos"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um livro pesa 450 g e um caderno pesa 150 g, quanto pesam juntos?",
+    "opcoes": [
+      "500 g",
+      "600 g",
+      "700 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para obter 3 kg preciso de quantos pacotes de 500 g?",
+    "opcoes": [
+      "4 pacotes",
+      "6 pacotes",
+      "8 pacotes"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Subtraindo 1000 g de 2500 g obtemos:",
+    "opcoes": [
+      "1200 g",
+      "1500 g",
+      "1800 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O quilo é uma unidade de medida de:",
+    "opcoes": [
+      "Comprimento",
+      "Massa",
+      "Tempo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual valor equivale a 0,5 kg?",
+    "opcoes": [
+      "5 g",
+      "50 g",
+      "500 g"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se comprar 8 pacotes de 125 g de fermento, terei no total:",
+    "opcoes": [
+      "800 g",
+      "1000 g (1 kg)",
+      "1200 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Uma caixa tem 10 pacotes de 100 g de sabão. Qual a massa total?",
+    "opcoes": [
+      "500 g",
+      "1000 g (1 kg)",
+      "2000 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual balança é mais indicada para pesar alimentos na cozinha?",
+    "opcoes": [
+      "Balança rodoviária",
+      "Balança culinária de precisão",
+      "Balança de gado"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se a massa de um pacote é 750 g, faltam quantos gramas para 2 kg?",
+    "opcoes": [
+      "1000 g",
+      "1250 g",
+      "1500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Três melões de 2 kg cada pesam no total:",
+    "opcoes": [
+      "4 kg",
+      "6 kg",
+      "8 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se você divide 3 kg de bolo em 6 fatias iguais, cada fatia pesa:",
+    "opcoes": [
+      "250 g",
+      "500 g",
+      "600 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "O peso de um pacote de pão de fôrma é de aproximadamente:",
+    "opcoes": [
+      "50 g",
+      "500 g",
+      "5 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para transformar quilogramas em gramas devemos:",
+    "opcoes": [
+      "Multiplicar por 1000",
+      "Dividir por 1000",
+      "Somar 100"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para transformar gramas em quilogramas devemos:",
+    "opcoes": [
+      "Multiplicar por 1000",
+      "Dividir por 1000",
+      "Subtrair 1000"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual opção tem massa maior que 1 kg?",
+    "opcoes": [
+      "950 g",
+      "1050 g",
+      "999 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se um mamão pesa 800 g e comemos a metade, a parte comida pesa:",
+    "opcoes": [
+      "300 g",
+      "400 g",
+      "500 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Somando 1,5 kg com 2,5 kg obtemos:",
+    "opcoes": [
+      "3,5 kg",
+      "4 kg",
+      "4,5 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se você colocar 500 g de feijão e 500 g de milho em um saco, ele terá:",
+    "opcoes": [
+      "800 g",
+      "1 kg",
+      "2 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "A metade de 1 tonelada é:",
+    "opcoes": [
+      "100 kg",
+      "500 kg",
+      "1000 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual destas afirmativas é verdadeira?",
+    "opcoes": [
+      "1 kg é menor que 500 g",
+      "1000 g é igual a 1 kg",
+      "2000 g é menor que 1 kg"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Um pote com biscoitos pesa 600 g. O pote vazio pesa 100 g. Quanto pesam os biscoitos?",
+    "opcoes": [
+      "400 g",
+      "500 g",
+      "700 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Se 1 kg de queijo custa R$ 40, quanto custam 500 g?",
+    "opcoes": [
+      "R$ 10",
+      "R$ 20",
+      "R$ 30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Qual das opções representa exatamente 2 kg e meio?",
+    "opcoes": [
+      "2050 g",
+      "2500 g",
+      "2005 g"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "3º Ano",
+    "pergunta": "Para pesar uma maçã a unidade mais conveniente é:",
+    "opcoes": [
+      "Miligrama",
+      "Grama",
+      "Tonelada"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 50% de 100?",
+    "opcoes": [
+      "25",
+      "50",
+      "75"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 25% de 200?",
+    "opcoes": [
+      "25",
+      "50",
+      "100"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A fração 1/2 corresponde a qual porcentagem?",
+    "opcoes": [
+      "20%",
+      "50%",
+      "100%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A fração 1/4 corresponde a qual porcentagem?",
+    "opcoes": [
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo que possui todos os ângulos internos agudos (menores que 90°) é chamado de:",
+    "opcoes": [
+      "Retângulo",
+      "Acutângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo que possui um ângulo interno reto (igual a 90°) é chamado de:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo que possui um ângulo interno obtuso (maior que 90°) é chamado de:",
+    "opcoes": [
+      "Acutângulo",
+      "Obtusângulo",
+      "Equilátero"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A soma dos ângulos internos de qualquer triângulo é sempre igual a:",
+    "opcoes": [
+      "90°",
+      "180°",
+      "360°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se juntarmos dois triângulos retângulos iguais pelo lado da hipotenusa, podemos compor qual polígono?",
+    "opcoes": [
+      "Círculo",
+      "Retângulo ou Quadrado",
+      "Pentágono"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Decompondo um hexágono regular a partir do seu centro, obtemos quantos triângulos?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 10% de 80?",
+    "opcoes": [
+      "8",
+      "10",
+      "16"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 100% de 45?",
+    "opcoes": [
+      "0",
+      "45",
+      "90"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um produto custa R$ 100 e tem 20% de desconto, qual o seu novo valor?",
+    "opcoes": [
+      "R$ 70",
+      "R$ 80",
+      "R$ 90"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo com ângulos internos medindo 60°, 60° e 60° é classificado como:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo com ângulos de 90°, 45° e 45° é classificado como:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo com ângulos de 120°, 30° e 30° é classificado como:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se dividirmos um quadrado ao meio por uma diagonal, obtemos dois polígonos chamados:",
+    "opcoes": [
+      "Retângulos",
+      "Triângulos retângulos",
+      "Trapézios"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A composição de dois trapézios idênticos unidos pela base maior pode formar um:",
+    "opcoes": [
+      "Hexágono",
+      "Círculo",
+      "Triângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 75% de 200?",
+    "opcoes": [
+      "100",
+      "150",
+      "175"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual a porcentagem correspondente ao número decimal 0,10?",
+    "opcoes": [
+      "1%",
+      "10%",
+      "100%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual a porcentagem correspondente ao número decimal 0,5?",
+    "opcoes": [
+      "5%",
+      "50%",
+      "500%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo tem dois ângulos de 50° e 60°, qual o valor do terceiro ângulo?",
+    "opcoes": [
+      "60°",
+      "70°",
+      "80°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "O ângulo de 70° é classificado como:",
+    "opcoes": [
+      "Agudo",
+      "Reto",
+      "Obtuso"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "O ângulo de 110° é classificado como:",
+    "opcoes": [
+      "Agudo",
+      "Reto",
+      "Obtuso"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A união de dois triângulos equiláteros colados por um lado forma um:",
+    "opcoes": [
+      "Losango",
+      "Pentágono",
+      "Octógono"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se decompormos um paralelogramo com um corte reto perpendicular, podemos obter:",
+    "opcoes": [
+      "Dois trapézios retângulos",
+      "Dois círculos",
+      "Três triângulos"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Em uma sala com 40 alunos, 50% são meninas. Quantas são as meninas?",
+    "opcoes": [
+      "15",
+      "20",
+      "25"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Uma calça de R$ 80 teve um aumento de 10%. Qual é o novo preço?",
+    "opcoes": [
+      "R$ 82",
+      "R$ 88",
+      "R$ 90"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 20% de 50?",
+    "opcoes": [
+      "5",
+      "10",
+      "15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "É possível existir um triângulo com dois ângulos retos (90°)?",
+    "opcoes": [
+      "Sim sempre",
+      "Não pois a soma ultrapassaria 180°",
+      "Sim se for grande"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo retângulo pode ser obtusângulo ao mesmo tempo?",
+    "opcoes": [
+      "Sim",
+      "Não",
+      "Apenas se for isósceles"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Ao cortar um pentágono de um vértice aos outros vértices não vizinhos, formamos quantos triângulos?",
+    "opcoes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se juntarmos um quadrado e um triângulo no topo, compomos a forma de uma:",
+    "opcoes": [
+      "Estrela",
+      "Casinha",
+      "Esfera"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 5% de 100?",
+    "opcoes": [
+      "5",
+      "10",
+      "50"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Representar 3/10 em porcentagem é o mesmo que:",
+    "opcoes": [
+      "3%",
+      "30%",
+      "300%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Representar 1/5 em porcentagem é o mesmo que:",
+    "opcoes": [
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo tem ângulos internos de 30°, 60° e 90°, ele é um triângulo:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo tem ângulos de 20°, 40° e 120°, ele é um triângulo:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A decomposição de uma figura geométrica consiste em:",
+    "opcoes": [
+      "Aumentar seus lados",
+      "Dividi-la em figuras menores",
+      "Mudar sua cor"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A composição de polígonos consiste em:",
+    "opcoes": [
+      "Juntar figuras geométricas para formar uma nova",
+      "Medir seus ângulos com transferidor",
+      "Apagar os vértices"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Em um jogo, Pedro acertou 80% de 50 perguntas. Quantas perguntas ele acertou?",
+    "opcoes": [
+      "35",
+      "40",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se 25% dos alunos de uma turma de 32 alunos usam óculos, quantos usam óculos?",
+    "opcoes": [
+      "6",
+      "8",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um ângulo reto mede exatamente quantos graus?",
+    "opcoes": [
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um ângulo agudo mede:",
+    "opcoes": [
+      "Exatamente 90°",
+      "Menos de 90°",
+      "Mais de 90°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um ângulo obtuso mede:",
+    "opcoes": [
+      "Entre 0° e 90°",
+      "Exatamente 90°",
+      "Entre 90° e 180°"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo tem todos os três ângulos medindo menos de 90°, ele é:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual polígono pode ser decomposto em exatamente 2 triângulos cortando por uma diagonal?",
+    "opcoes": [
+      "Triângulo",
+      "Quadrilátero",
+      "Pentágono"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quantos triângulos são formados ao decompor um octógono regular a partir do centro?",
+    "opcoes": [
+      "6",
+      "8",
+      "10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 15% de 200?",
+    "opcoes": [
+      "20",
+      "30",
+      "40"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se o preço de um livro de R$ 40 foi reduzido em 50%, qual o preço atual?",
+    "opcoes": [
+      "R$ 10",
+      "R$ 20",
+      "R$ 30"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se 100% de um número é 60, quanto é 50% desse mesmo número?",
+    "opcoes": [
+      "20",
+      "30",
+      "40"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo que possui um ângulo de 100° é chamado de:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se os três ângulos de um triângulo medem 50°, 70° e 60°, ele é:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Ao somar os ângulos de um triângulo obtemos 180°. Se dois ângulos somam 110°, quanto mede o terceiro?",
+    "opcoes": [
+      "60°",
+      "70°",
+      "80°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Na decomposição do Tangram tradicional existem quantos triângulos?",
+    "opcoes": [
+      "3",
+      "5",
+      "7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "O Tangram é um quebra-cabeça famoso formado pela composição de quantas peças?",
+    "opcoes": [
+      "5",
+      "7",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Na compra de um brinquedo de R$ 50, recebi 10% de desconto. Quanto paguei?",
+    "opcoes": [
+      "R$ 40",
+      "R$ 45",
+      "R$ 48"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Em um pomar há 100 árvores, e 35% são macieiras. Quantas macieiras há no pomar?",
+    "opcoes": [
+      "25",
+      "35",
+      "45"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A fração 4/4 representa qual porcentagem?",
+    "opcoes": [
+      "4%",
+      "40%",
+      "100%"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual triângulo possui um ângulo interno reto?",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual triângulo possui todos os ângulos internos agudos?",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual triângulo possui um ângulo interno obtuso?",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se juntarmos dois triângulos retângulos isósceles iguais pela hipotenusa, obtemos um:",
+    "opcoes": [
+      "Círculo",
+      "Quadrado",
+      "Hexágono"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A decomposição de uma figura em triângulos ajuda a calcular sua:",
+    "opcoes": [
+      "Área",
+      "Espessura",
+      "Volume em litros"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 30% de 90?",
+    "opcoes": [
+      "18",
+      "27",
+      "36"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um aluno leu 70% de um livro de 100 páginas, quantas páginas faltam ler?",
+    "opcoes": [
+      "20",
+      "30",
+      "40"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 0% de 500?",
+    "opcoes": [
+      "0",
+      "50",
+      "500"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um ângulo de 89° é considerado:",
+    "opcoes": [
+      "Agudo",
+      "Reto",
+      "Obtuso"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um ângulo de 91° é considerado:",
+    "opcoes": [
+      "Agudo",
+      "Reto",
+      "Obtuso"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo retângulo possui um ângulo de 40°, quanto mede o outro ângulo agudo?",
+    "opcoes": [
+      "40°",
+      "50°",
+      "60°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Ao unir 6 triângulos equiláteros iguais pelo vértice comum, compomos um:",
+    "opcoes": [
+      "Pentágono",
+      "Hexágono regular",
+      "Octógono"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se decomparmos um retângulo cortando de canto a canto oposto (pela diagonal), teremos:",
+    "opcoes": [
+      "Dois triângulos retângulos",
+      "Dois quadrados",
+      "Dois trapézios"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Qual é o valor decimal equivalente a 75%?",
+    "opcoes": [
+      "0,25",
+      "0,75",
+      "7,5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Em uma caixa há 20 bolinhas e 25% são azuis. Quantas bolinhas são azuis?",
+    "opcoes": [
+      "4",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 60% de 50?",
+    "opcoes": [
+      "25",
+      "30",
+      "35"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A classificação dos triângulos quanto aos ângulos pode ser:",
+    "opcoes": [
+      "Equilátero, Isósceles e Escaleno",
+      "Acutângulo, Retângulo e Obtusângulo",
+      "Plano, Espacial e Curvo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um triângulo tem ângulos de 45°, 45° e 90°, ele é chamado de:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo com ângulos de 15°, 25° e 140° é chamado de:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se você compor dois triângulos idênticos juntando lados de mesmo tamanho, a nova figura terá no máximo quantos lados?",
+    "opcoes": [
+      "3 ou 4 lados",
+      "6 lados",
+      "8 lados"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A decomposição de um losango pelas suas duas diagonais resulta em quantos triângulos retângulos?",
+    "opcoes": [
+      "2",
+      "4",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Em uma prova de 10 questões, acertei 90%. Quantas questões errei?",
+    "opcoes": [
+      "1",
+      "2",
+      "9"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Quanto é 40% de 200?",
+    "opcoes": [
+      "60",
+      "80",
+      "100"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se a metade de um valor é 50%, a quarta parte é igual a:",
+    "opcoes": [
+      "10%",
+      "25%",
+      "30%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Num triângulo acutângulo, quantos ângulos agudos existem?",
+    "opcoes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Num triângulo retângulo, quantos ângulos retos existem?",
+    "opcoes": [
+      "Apenas 1",
+      "Exatamente 2",
+      "Todos os 3"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Num triângulo obtusângulo, quantos ângulos obtusos existem?",
+    "opcoes": [
+      "Apenas 1",
+      "Dois",
+      "Três"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Podemos compor um trapézio usando:",
+    "opcoes": [
+      "Dois círculos",
+      "Um retângulo e dois triângulos",
+      "Apenas linhas curvas"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Ao decompor um quadrado em 4 quadrados menores e iguais, a área de cada um será qual porcentagem do total?",
+    "opcoes": [
+      "10%",
+      "25%",
+      "50%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um jogo custava R$ 200 e teve 15% de desconto, qual foi o valor do desconto?",
+    "opcoes": [
+      "R$ 20",
+      "R$ 30",
+      "R$ 40"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A fração 1/10 equivale a qual porcentagem?",
+    "opcoes": [
+      "1%",
+      "10%",
+      "100%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A fração 2/5 é equivalente a:",
+    "opcoes": [
+      "20%",
+      "40%",
+      "60%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se um dos ângulos internos de um triângulo mede 90°, os outros dois ângulos juntos devem somar:",
+    "opcoes": [
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se os três ângulos de um triângulo são iguais, cada um mede:",
+    "opcoes": [
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "O triângulo com três ângulos de 60° é classificado como:",
+    "opcoes": [
+      "Acutângulo",
+      "Retângulo",
+      "Obtusângulo"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "A junção de dois triângulos retângulos iguais colados por um cateto adjacente pode compor um:",
+    "opcoes": [
+      "Triângulo isósceles",
+      "Círculo",
+      "Pentágono"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Se dividirmos uma figura em partes iguais e somarmos as porcentagens de todas as partes, teremos no final:",
+    "opcoes": [
+      "50%",
+      "100%",
+      "200%"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual das seguintes frações é equivalente a 1/2?",
+    "opcoes": [
+      "2/3",
+      "2/4",
+      "3/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual fração é equivalente a 2/3?",
+    "opcoes": [
+      "4/6",
+      "3/4",
+      "2/6"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A fração 3/4 é equivalente a:",
+    "opcoes": [
+      "6/8",
+      "5/6",
+      "9/10"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Se dividirmos o numerador e o denominador de 4/8 por 4 obtemos:",
+    "opcoes": [
+      "2/4",
+      "1/2",
+      "1/4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual fração NÃO é equivalente a 1/3?",
+    "opcoes": [
+      "2/6",
+      "3/9",
+      "2/5"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A fração 5/10 reduzida à sua forma mais simples é:",
+    "opcoes": [
+      "1/5",
+      "1/2",
+      "2/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual par de frações é equivalente?",
+    "opcoes": [
+      "1/4 e 3/12",
+      "2/5 e 4/8",
+      "3/7 e 6/10"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Multiplicando o numerador e o denominador de 3/5 por 3 obtemos:",
+    "opcoes": [
+      "6/10",
+      "9/15",
+      "6/15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A fração 6/12 é equivalente a:",
+    "opcoes": [
+      "1/3",
+      "1/2",
+      "2/3"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Comer 2 pedaços de uma pizza de 4 é o mesmo que comer quantos pedaços de uma pizza de 8?",
+    "opcoes": [
+      "2 pedaços",
+      "4 pedaços",
+      "6 pedaços"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A fração 8/10 é equivalente a:",
+    "opcoes": [
+      "4/5",
+      "2/5",
+      "4/10"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é a fração equivalente a 2/7 com denominador 14?",
+    "opcoes": [
+      "4/14",
+      "2/14",
+      "6/14"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Dividindo o numerador e o denominador de 9/12 por 3 temos:",
+    "opcoes": [
+      "3/4",
+      "3/6",
+      "2/3"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual das frações representa a metade (1/2)?",
+    "opcoes": [
+      "7/12",
+      "10/20",
+      "4/10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "As frações 2/4 3/6 e 4/8 são todas equivalentes a:",
+    "opcoes": [
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Na igualdade 1/2 = ?/6 qual número substitui a interrogação?",
+    "opcoes": [
+      "2",
+      "3",
+      "4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Na igualdade 2/5 = 6/? qual é o denominador que falta?",
+    "opcoes": [
+      "10",
+      "12",
+      "15"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 3/4 = ?/12",
+    "opcoes": [
+      "6",
+      "8",
+      "9"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 8/16 = 1/?",
+    "opcoes": [
+      "2",
+      "4",
+      "8"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é o valor de x em 4/5 = x/20?",
+    "opcoes": [
+      "12",
+      "16",
+      "18"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 6/18 = ?/3",
+    "opcoes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Na igualdade ?/8 = 1/2 o valor em falta é:",
+    "opcoes": [
+      "2",
+      "4",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 5/6 = 15/?",
+    "opcoes": [
+      "16",
+      "18",
+      "20"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Descobre o termo: 12/15 = 4/?",
+    "opcoes": [
+      "3",
+      "5",
+      "6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 2/9 = ?/18",
+    "opcoes": [
+      "4",
+      "6",
+      "8"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é o número em falta: 7/10 = 70/?",
+    "opcoes": [
+      "80",
+      "90",
+      "100"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Descobre o numerador: ?/12 = 2/3",
+    "opcoes": [
+      "6",
+      "8",
+      "9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 10/20 = ?/2",
+    "opcoes": [
+      "1",
+      "5",
+      "2"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Na igualdade 3/8 = 12/? qual é o número correto?",
+    "opcoes": [
+      "24",
+      "32",
+      "16"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Completa: 15/30 = 1/?",
+    "opcoes": [
+      "2",
+      "3",
+      "5"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Lucas comeu 2/4 de uma pizza e a Maria 4/8. Quem comeu mais?",
+    "opcoes": [
+      "O Lucas",
+      "A Maria",
+      "Comeram a mesma quantidade"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Ana pintou 1/3 de um muro e o Pedro 2/6. Podemos dizer que:",
+    "opcoes": [
+      "A Ana pintou mais",
+      "O Pedro pintou mais",
+      "Pintaram partes equivalentes"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Uma receita pede 1/2 xícara. Quantos quartos (1/4) de xícara deves usar?",
+    "opcoes": [
+      "1",
+      "2",
+      "3"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Sofia comeu 5 de 10 quadradinhos e a Rita 1 de 2 partes. Qual frase é verdadeira?",
+    "opcoes": [
+      "A Sofia comeu mais",
+      "As duas comeram frações equivalentes",
+      "A Rita comeu mais"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um teste tinha 20 perguntas. O João acertou 10/20 e a Beatriz 3/4. Quem acertou mais?",
+    "opcoes": [
+      "O João",
+      "A Beatriz",
+      "Acertaram o mesmo"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O António vendeu 6/8 das suas maçãs. Qual fração representa a mesma quantidade?",
+    "opcoes": [
+      "1/2",
+      "3/4",
+      "2/3"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um canteiro com 12 partes teve 4 plantadas com rosas. Qual a fração equivalente simplificada?",
+    "opcoes": [
+      "1/3",
+      "1/4",
+      "1/2"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Dois envelopes iguais têm 2/6 e 1/3 da área coberta por selos. A área coberta é a mesma?",
+    "opcoes": [
+      "Sim pois 2/6 e 1/3 são equivalentes",
+      "Não o primeiro tem mais",
+      "Não o segundo tem mais"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Gabriel pintou 4/6 da sua folha. A Clara dividiu a dela em 3 partes. Quanto deve pintar?",
+    "opcoes": [
+      "1 parte (1/3)",
+      "2 partes (2/3)",
+      "3 partes (3/3)"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O atleta A percorreu 8/12 do trajeto e o atleta B percorreu 2/3. O que concluímos?",
+    "opcoes": [
+      "O atleta A está mais avançado",
+      "O atleta B está mais avançado",
+      "Ambas as distâncias são iguais"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é o resultado de 1/5 + 2/5?",
+    "opcoes": [
+      "3/10",
+      "3/5",
+      "2/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Calcula: 2/7 + 4/7 =",
+    "opcoes": [
+      "6/7",
+      "6/14",
+      "8/7"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "3/8 + 1/8 =",
+    "opcoes": [
+      "4/16",
+      "4/8",
+      "2/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O resultado de 2/9 + 5/9 é:",
+    "opcoes": [
+      "7/18",
+      "10/9",
+      "7/9"
+    ],
+    "correta": 2
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Quanto dá 1/4 + 2/4?",
+    "opcoes": [
+      "3/8",
+      "3/4",
+      "2/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "4/10 + 5/10 =",
+    "opcoes": [
+      "9/20",
+      "9/10",
+      "1/10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Efetua a soma: 3/6 + 2/6 =",
+    "opcoes": [
+      "5/6",
+      "5/12",
+      "1/6"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "1/3 + 1/3 =",
+    "opcoes": [
+      "2/6",
+      "2/3",
+      "1/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Quanto é 5/12 + 4/12?",
+    "opcoes": [
+      "9/24",
+      "9/12",
+      "1/12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "2/15 + 7/15 =",
+    "opcoes": [
+      "9/30",
+      "9/15",
+      "14/15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é a soma de 1/7 + 1/7 + 2/7?",
+    "opcoes": [
+      "4/21",
+      "4/7",
+      "2/7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "3/11 + 5/11 =",
+    "opcoes": [
+      "8/11",
+      "8/22",
+      "2/11"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Adicionando 2/6 + 4/6 obtemos:",
+    "opcoes": [
+      "6/12",
+      "6/6 (ou 1 inteiro)",
+      "2/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "4/9 + 4/9 =",
+    "opcoes": [
+      "8/18",
+      "8/9",
+      "16/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "1/8 + 2/8 + 3/8 =",
+    "opcoes": [
+      "6/24",
+      "6/8",
+      "5/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Tomás comeu 2/8 de uma torta ao almoço e 3/8 ao lanche. Quanto comeu no total?",
+    "opcoes": [
+      "5/16",
+      "5/8",
+      "1/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Mariana pintou 3/10 de um painel de manhã e 4/10 de tarde. Que fração está pintada?",
+    "opcoes": [
+      "7/20",
+      "7/10",
+      "1/10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Havia 2/5 de litro de suco e a mãe colocou mais 2/5 de litro. Quanto suco tem agora?",
+    "opcoes": [
+      "4/10 de litro",
+      "4/5 de litro",
+      "1/5 de litro"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um canteiro tem 1/6 com margaridas e 3/6 com tulipas. Qual a fração com flores?",
+    "opcoes": [
+      "4/12",
+      "4/6",
+      "2/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Gonçalo leu 2/7 de um livro no sábado e 3/7 no domingo. Quanto leu no fim de semana?",
+    "opcoes": [
+      "5/14",
+      "5/7",
+      "1/7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Joana usou 1/4 de xícara de açúcar branco e 2/4 de açúcar mascavo. Quanto usou no total?",
+    "opcoes": [
+      "3/8 de xícara",
+      "3/4 de xícara",
+      "1/4 de xícara"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O ônibus percorreu 3/9 do trajeto antes da 1ª parada e 4/9 até a 2ª. Qual a fração total?",
+    "opcoes": [
+      "7/18",
+      "7/9",
+      "1/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Beatriz fez 2/12 do dever no sábado e 7/12 no domingo. Que fração já concluiu?",
+    "opcoes": [
+      "9/24",
+      "9/12",
+      "5/12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um fazendeiro plantou 4/15 com milho e 8/15 com trigo. Que fração da terra foi plantada?",
+    "opcoes": [
+      "12/30",
+      "12/15",
+      "4/15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Marta bebeu 1/5 de um copo de água e mais tarde bebeu 3/5. Quanto bebeu no total?",
+    "opcoes": [
+      "4/10",
+      "4/5",
+      "2/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um álbum teve 2/10 das páginas cheias na 1ª semana e 5/10 na 2ª. Que fração está cheia?",
+    "opcoes": [
+      "7/20",
+      "7/10",
+      "3/10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Bernardo usou 2/6 de fita para um presente e 3/6 para outro. Quanto usou ao todo?",
+    "opcoes": [
+      "5/12",
+      "5/6",
+      "1/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Em uma fruteira 3/14 são maçãs e 5/14 são bananas. Qual a fração das duas juntas?",
+    "opcoes": [
+      "8/28",
+      "8/14",
+      "2/14"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O grupo percorreu 4/11 do percurso de manhã e 5/11 à tarde. Quanto percorreram?",
+    "opcoes": [
+      "9/22",
+      "9/11",
+      "1/11"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Leo usou 1/8 de uma folha e a Maria usou 4/8. Que fração usaram juntos?",
+    "opcoes": [
+      "5/16",
+      "5/8",
+      "3/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Qual é o resultado de 4/5 - 1/5?",
+    "opcoes": [
+      "3/0",
+      "3/5",
+      "5/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Calcula: 6/7 - 2/7 =",
+    "opcoes": [
+      "4/7",
+      "4/0",
+      "4/14"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "5/8 - 2/8 =",
+    "opcoes": [
+      "3/16",
+      "3/8",
+      "7/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O resultado de 8/9 - 5/9 é:",
+    "opcoes": [
+      "3/18",
+      "3/9",
+      "13/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Quanto dá 3/4 - 1/4?",
+    "opcoes": [
+      "2/4",
+      "2/0",
+      "4/4"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "9/10 - 4/10 =",
+    "opcoes": [
+      "5/0",
+      "5/10",
+      "5/20"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Efetua a subtração: 5/6 - 2/6 =",
+    "opcoes": [
+      "3/6",
+      "3/12",
+      "7/6"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "2/3 - 1/3 =",
+    "opcoes": [
+      "1/0",
+      "1/3",
+      "1/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Quanto é 11/12 - 4/12?",
+    "opcoes": [
+      "7/24",
+      "7/12",
+      "15/12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "12/15 - 7/15 =",
+    "opcoes": [
+      "5/30",
+      "5/15",
+      "19/15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "7/8 - 4/8 =",
+    "opcoes": [
+      "3/8",
+      "3/16",
+      "11/8"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "6/11 - 5/11 =",
+    "opcoes": [
+      "1/11",
+      "1/22",
+      "11/11"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Subtraindo 6/6 - 4/6 obtemos:",
+    "opcoes": [
+      "2/6",
+      "2/0",
+      "10/6"
+    ],
+    "correta": 0
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "8/9 - 1/9 =",
+    "opcoes": [
+      "7/18",
+      "7/9",
+      "9/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "7/10 - 3/10 =",
+    "opcoes": [
+      "4/20",
+      "4/10",
+      "10/10"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Rodrigo tinha 7/8 de um chocolate e comeu 3/8. Que fração sobrou?",
+    "opcoes": [
+      "4/16",
+      "4/8",
+      "10/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Havia 9/10 de litro de leite e foram consumidos 6/10. Quanto sobrou?",
+    "opcoes": [
+      "3/20 de litro",
+      "3/10 de litro",
+      "15/10 de litro"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Carolina tinha 5/6 de uma fita e cortou 2/6. Com que fração ficou?",
+    "opcoes": [
+      "3/12",
+      "3/6",
+      "7/6"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Na travessa havia 7/7 de um bolo. As crianças comeram 4/7. Quanto sobrou?",
+    "opcoes": [
+      "3/0",
+      "3/7",
+      "11/7"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O reservatório tinha 8/12 de água e desceu para 3/12. Que fração foi gasta?",
+    "opcoes": [
+      "5/24",
+      "5/12",
+      "11/12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Gabriel tinha 4/5 de um pacote de biscoitos e deu 2/5 ao irmão. Quanto sobrou?",
+    "opcoes": [
+      "2/10",
+      "2/5",
+      "6/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A distância até a escola é 9/10 km. A Inês já andou 5/10 km. Quanto falta?",
+    "opcoes": [
+      "4/20 km",
+      "4/10 km",
+      "14/10 km"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um depósito tinha 6/8 de combustível e ficou com 1/8. Quanto foi consumido?",
+    "opcoes": [
+      "5/16",
+      "5/8",
+      "7/8"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Uma caixa tinha 8/9 das tintas cheias e restaram 2/9. Que fração foi usada?",
+    "opcoes": [
+      "6/18",
+      "6/9",
+      "10/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O Pedro levou 3/4 de garrafa de água para o treino e bebeu 2/4. Quanto sobrou?",
+    "opcoes": [
+      "1/8",
+      "1/4",
+      "5/4"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A horta ocupa 11/15 do terreno e as cenouras 4/15. Quanto sobra para o resto?",
+    "opcoes": [
+      "7/30",
+      "7/15",
+      "15/15"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "A Sofia leu 10/12 do livro. Que fração falta para completar a leitura (12/12)?",
+    "opcoes": [
+      "2/24",
+      "2/12",
+      "22/12"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Em uma estante 7/9 dos livros são de HQ. Se tirarem 3/9 quantos de HQ ficam?",
+    "opcoes": [
+      "4/18",
+      "4/9",
+      "10/9"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "Um saco tinha 5/5 do seu peso e usou-se 2/5. Quanto arroz sobrou?",
+    "opcoes": [
+      "3/10",
+      "3/5",
+      "7/5"
+    ],
+    "correta": 1
+  },
+  {
+    "turma": "4º Ano",
+    "pergunta": "O painel gerou 9/10 de energia mas perdeu 4/10. Que fração foi aproveitada?",
+    "opcoes": [
+      "5/20",
+      "5/10",
+      "13/10"
+    ],
+    "correta": 1
+  }
+]
