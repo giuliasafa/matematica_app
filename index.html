@@ -465,21 +465,22 @@
   <!-- Quizzes -->
   <div id="screen-quizzes" class="screen">
     <h2>Quizzes 🧮</h2>
-    <p style="color: #64748B; margin-bottom: 15px;">Escolha a dificuldade:</p>
+    <p style="color: #64748B; margin-bottom: 8px;">Escolha o modo de pontuação:</p>
+    <p id="question-bank-info" style="color:#64748B; font-size:0.85rem; margin-bottom:15px;">📚 Carregando banco de questões...</p>
 
     <div class="card" style="border-color: var(--primary-green);" onclick="startGeneratedQuiz('fácil')">
       <strong style="color: var(--primary-green);">🌱 Fácil</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 Questões Rápidas • +10 XP por acerto</p>
+      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +10 XP por acerto</p>
     </div>
 
     <div class="card" style="border-color: var(--primary-orange);" onclick="startGeneratedQuiz('médio')">
       <strong style="color: var(--primary-orange);">⭐ Médio</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 Questões Intermediárias • +15 XP por acerto</p>
+      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +15 XP por acerto</p>
     </div>
 
     <div class="card" style="border-color: var(--primary-red);" onclick="startGeneratedQuiz('difícil')">
       <strong style="color: var(--primary-red);">🔥 Difícil</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 Desafios Avançados • +20 XP por acerto</p>
+      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +20 XP por acerto</p>
     </div>
   </div>
 
@@ -615,21 +616,130 @@
     streak: 1
   };
 
+  // Vídeo-aulas estruturadas por turma/módulo.
+  // Para cadastrar um vídeo, coloque o link do YouTube em "embedUrl".
   const defaultVideos = [
-    { id: 'k621-NglEts', title: 'Adição Básica para Iniciantes', turma: '1º Ano' },
-    { id: 'k621-NglEts', title: 'Aprenda Contar Até 100', turma: '2º Ano' },
-    { id: 'W7wW3DEgZ5U', title: 'Medidas de Massa - Grama e Quilograma', turma: '3º Ano' },
-    { id: 'k621-NglEts', title: 'Divisão sem Complicação', turma: '4º Ano' },
-    { id: 'k621-NglEts', title: 'Introdução às Frações', turma: '5º Ano' }
-  ];
+    {
+        "id": "1ano-a1",
+        "titulo": "Aula 1: Adição com unidade e dezena",
+        "turma": "1º Ano",
+        "modulo": "Módulo 1: Operações Básicas",
+        "embedUrl": "",
+        "descricao": "Aprenda a somar números utilizando unidades e dezenas."
+    },
+    {
+        "id": "1ano-a2",
+        "titulo": "Aula 2: Subtração com unidade e dezena",
+        "turma": "1º Ano",
+        "modulo": "Módulo 1: Operações Básicas",
+        "embedUrl": "",
+        "descricao": "Aprenda a subtrair números com unidades e dezenas."
+    },
+    {
+        "id": "2ano-a1",
+        "titulo": "Aula 1: Adição e subtração com unidades e dezenas",
+        "turma": "2º Ano",
+        "modulo": "Módulo 1: Operações e Início de Multiplicação/Divisão",
+        "embedUrl": "",
+        "descricao": "Revisão e aprofundamento em adição e subtração."
+    },
+    {
+        "id": "2ano-a2",
+        "titulo": "Aula 2: Multiplicação e Divisão com unidades e dezenas",
+        "turma": "2º Ano",
+        "modulo": "Módulo 1: Operações e Início de Multiplicação/Divisão",
+        "embedUrl": "",
+        "descricao": "Primeiros conceitos de multiplicação e divisão com unidades e dezenas."
+    },
+    {
+        "id": "3ano-a1",
+        "titulo": "Aula 1: Medidas de massa",
+        "turma": "3º Ano",
+        "modulo": "Módulo 1: Grandezas e Medidas",
+        "embedUrl": "",
+        "descricao": "Entendendo o conceito de massa, grama (g) e quilograma (kg)."
+    },
+    {
+        "id": "3ano-a2",
+        "titulo": "Aula 2: Conversão e exemplos de Medidas de massa",
+        "turma": "3º Ano",
+        "modulo": "Módulo 1: Grandezas e Medidas",
+        "embedUrl": "",
+        "descricao": "Como converter unidades de medida de massa e exemplos práticos do dia a dia."
+    },
+    {
+        "id": "4ano-a1",
+        "titulo": "Aula 1: Adição e subtração de frações com denominadores iguais",
+        "turma": "4º Ano",
+        "modulo": "Módulo 1: Introdução às Frações",
+        "embedUrl": "",
+        "descricao": "Aprenda a somar e subtrair frações mantendo o denominador."
+    },
+    {
+        "id": "4ano-a2",
+        "titulo": "Aula 2: Frações equivalentes",
+        "turma": "4º Ano",
+        "modulo": "Módulo 1: Introdução às Frações",
+        "embedUrl": "",
+        "descricao": "Identificação e cálculo de frações que representam a mesma parte do todo."
+    },
+    {
+        "id": "5ano-a1",
+        "titulo": "Aula 1: Porcentagem",
+        "turma": "5º Ano",
+        "modulo": "Módulo 1: Porcentagem e Geometria",
+        "embedUrl": "",
+        "descricao": "Conceito de porcentagem e resolução de problemas simples."
+    },
+    {
+        "id": "5ano-a2",
+        "titulo": "Aula 2: Composição e decomposição de Polígonos",
+        "turma": "5º Ano",
+        "modulo": "Módulo 1: Porcentagem e Geometria",
+        "embedUrl": "",
+        "descricao": "Estudo sobre figuras geométricas planas, composição e decomposição de polígonos."
+    }
+];
 
-  let videoDatabase = JSON.parse(localStorage.getItem('mathfun_v5_videos')) || defaultVideos;
+  let videoDatabase = JSON.parse(localStorage.getItem('mathfun_v6_videos')) || defaultVideos;
   let duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
 
   const flashcardsAvancados = [
     { frente: "📐 Perímetro vs Área", verso: "Perímetro: Soma dos lados.\nÁrea: Espaço interno (Base x Altura)." },
     { frente: "🍕 Fração", verso: "Numerador (cima): Partes consideradas.\nDenominador (baixo): Total de partes." }
   ];
+
+  // Banco de questões externo. O arquivo questoes.json fica na mesma pasta deste HTML.
+  let questionBank = [];
+  let questionBankReady = false;
+
+  async function loadQuestionBank() {
+    try {
+      const response = await fetch('./questoes.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error('Não foi possível carregar questoes.json');
+      const data = await response.json();
+      if (!Array.isArray(data)) throw new Error('questoes.json precisa conter uma lista de questões');
+      questionBank = data;
+      questionBankReady = true;
+      updateQuestionBankInfo();
+    } catch (error) {
+      console.error('Erro ao carregar banco de questões:', error);
+      questionBank = [];
+      questionBankReady = false;
+      updateQuestionBankInfo();
+    }
+  }
+
+  function updateQuestionBankInfo() {
+    const el = document.getElementById('question-bank-info');
+    if (!el) return;
+    if (!questionBankReady) {
+      el.innerText = '⚠️ Banco de questões não carregado. Verifique se questoes.json está no GitHub.';
+      return;
+    }
+    const qtd = questionBank.filter(q => q.turma === userData.turma).length;
+    el.innerText = `📚 ${qtd} questões disponíveis para ${userData.turma}`;
+  }
 
   let currentQuizGenerated = [];
   let currentQuizIndex = 0;
@@ -641,11 +751,13 @@
     document.getElementById('user-name-input').value = userData.name !== 'Estudante' ? userData.name : '';
     updateUI();
     renderVideos();
+    updateQuestionBankInfo();
+    loadQuestionBank();
   };
 
   function saveData() {
     localStorage.setItem('mathfun_v5_user', JSON.stringify(userData));
-    localStorage.setItem('mathfun_v5_videos', JSON.stringify(videoDatabase));
+    localStorage.setItem('mathfun_v6_videos', JSON.stringify(videoDatabase));
     localStorage.setItem('mathfun_v5_duvidas', JSON.stringify(duvidasDatabase));
   }
 
@@ -680,6 +792,7 @@
     userData.turma = turma;
     document.querySelectorAll('.turma-option').forEach(e => e.classList.remove('selected'));
     el.classList.add('selected');
+    updateQuestionBankInfo();
   }
 
   function saveProfile() {
@@ -688,6 +801,7 @@
     saveData();
     updateUI();
     renderVideos();
+    updateQuestionBankInfo();
     switchScreen('screen-home', document.querySelectorAll('.nav-item')[0]);
   }
 
@@ -739,6 +853,50 @@
     }
   }
 
+  function formatarEmbedUrl(url) {
+    if (!url || url.includes('LINK_DO_VIDEO_AQUI')) return '';
+    if (url.includes('/embed/')) return url;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11)
+      ? `https://www.youtube.com/embed/${match[2]}`
+      : url;
+  }
+
+  function extractYoutubeId(url) {
+    const embed = formatarEmbedUrl(url);
+    if (!embed) return null;
+    const match = embed.match(/youtube\.com\/embed\/([^#?&/]{11})/);
+    return match ? match[1] : null;
+  }
+
+  function addYoutubeVideo() {
+    const title = document.getElementById('video-title-input').value.trim();
+    const url = document.getElementById('video-url-input').value.trim();
+    const turma = document.getElementById('video-turma-input').value;
+    const videoId = extractYoutubeId(url);
+
+    if (!title || !videoId) {
+      alert('Insira um título e um link válido do YouTube!');
+      return;
+    }
+
+    videoDatabase.push({ id: `manual-${Date.now()}`, videoId, title, turma, modulo: 'Aulas adicionais', descricao: '' });
+    saveData();
+    renderVideos();
+    document.getElementById('video-title-input').value = '';
+    document.getElementById('video-url-input').value = '';
+    alert('Vídeo cadastrado com sucesso para a turma: ' + turma);
+  }
+
+  function deleteVideo(index) {
+    if (confirm(`Tem certeza que deseja apagar o vídeo "${videoDatabase[index].title}"?`)) {
+      videoDatabase.splice(index, 1);
+      saveData();
+      renderVideos();
+    }
+  }
+
   function renderVideos() {
     const container = document.getElementById('video-list-container');
     const adminPanel = document.getElementById('admin-video-panel');
@@ -746,8 +904,8 @@
     adminPanel.style.display = userData.isAdmin ? 'block' : 'none';
     container.innerHTML = '';
 
-    const videosExibidos = userData.isAdmin 
-      ? videoDatabase 
+    const videosExibidos = userData.isAdmin
+      ? videoDatabase
       : videoDatabase.filter(v => v.turma === 'Todas' || v.turma === userData.turma);
 
     if (videosExibidos.length === 0) {
@@ -755,26 +913,35 @@
       return;
     }
 
+    let ultimoModulo = '';
     videosExibidos.forEach((vid, idx) => {
+      if (vid.modulo && vid.modulo !== ultimoModulo) {
+        const modulo = document.createElement('h3');
+        modulo.style.cssText = 'margin:18px 0 8px; color:var(--primary-purple);';
+        modulo.innerText = '📚 ' + vid.modulo;
+        container.appendChild(modulo);
+        ultimoModulo = vid.modulo;
+      }
+
       const card = document.createElement('div');
       card.className = 'card';
       card.style.cursor = 'default';
 
       let adminButtonsHtml = '';
       if (userData.isAdmin) {
-        adminButtonsHtml = `
-          <div class="admin-controls">
-            <button class="admin-btn btn-delete" onclick="deleteVideo(${idx})">🗑️ Apagar</button>
-          </div>
-        `;
+        adminButtonsHtml = `<div class="admin-controls"><button class="admin-btn btn-delete" onclick="deleteVideo(${idx})">🗑️ Apagar</button></div>`;
       }
+
+      const embedUrl = formatarEmbedUrl(vid.embedUrl || (vid.videoId ? `https://www.youtube.com/embed/${vid.videoId}` : ''));
+      const videoHtml = embedUrl
+        ? `<div class="video-container"><iframe src="${embedUrl}" title="${vid.title.replace(/"/g, '&quot;')}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`
+        : `<div style="margin-top:10px; padding:14px; background:#F8FAFC; border-radius:12px; color:#64748B; text-align:center;">🎥 Link do YouTube ainda não cadastrado.</div>`;
 
       card.innerHTML = `
         <span class="tag-turma">📌 Turma: ${vid.turma}</span><br>
         <strong>🎬 ${vid.title}</strong>
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/${vid.id}" allowfullscreen></iframe>
-        </div>
+        ${vid.descricao ? `<p style="color:#64748B; font-size:0.85rem; margin:6px 0;">${vid.descricao}</p>` : ''}
+        ${videoHtml}
         ${adminButtonsHtml}
       `;
       container.appendChild(card);
@@ -895,28 +1062,40 @@
 
   // --- DEMAIS FUNÇÕES DO JOGO ---
 
+  function shuffleArray(array) {
+    return [...array].sort(() => Math.random() - 0.5);
+  }
+
   function generateQuestions(dificuldade) {
-    let list = [];
-    let factor = dificuldade === 'fácil' ? 10 : dificuldade === 'médio' ? 25 : 50;
+    const turmaQuestions = questionBank.filter(q => q.turma === userData.turma);
 
-    for (let i = 0; i < 5; i++) {
-      let n1 = Math.floor(Math.random() * factor) + 1;
-      let n2 = Math.floor(Math.random() * factor) + 1;
-      let ans = n1 + n2;
-      let options = [ans, ans + 2, Math.max(0, ans - 2)].sort(() => Math.random() - 0.5);
+    if (!turmaQuestions.length) return [];
 
-      list.push({
-        pergunta: `Quanto é ${n1} + ${n2}?`,
-        opcoes: options.map(String),
-        correta: options.indexOf(ans)
-      });
-    }
-    return list;
+    // Se futuramente as questões tiverem o campo "dificuldade", ele será usado.
+    // Como o banco atual não possui esse campo, todas as questões da turma participam do sorteio.
+    const comDificuldade = turmaQuestions.filter(q => q.dificuldade === dificuldade);
+    const pool = comDificuldade.length >= 5 ? comDificuldade : turmaQuestions;
+
+    return shuffleArray(pool).slice(0, Math.min(5, pool.length)).map(q => ({
+      ...q,
+      opcoes: [...q.opcoes]
+    }));
   }
 
   function startGeneratedQuiz(dif) {
+    if (!questionBankReady) {
+      alert('O banco de questões ainda não foi carregado. Verifique se o arquivo questoes.json está na mesma pasta do aplicativo no GitHub.');
+      return;
+    }
+
     currentDifficulty = dif;
     currentQuizGenerated = generateQuestions(dif);
+
+    if (!currentQuizGenerated.length) {
+      alert(`Não há questões cadastradas para ${userData.turma}.`);
+      return;
+    }
+
     currentQuizIndex = 0;
     switchScreen('screen-quiz-player');
     loadGeneratedQuestion();
@@ -925,7 +1104,7 @@
   function loadGeneratedQuestion() {
     const q = currentQuizGenerated[currentQuizIndex];
     document.getElementById('quiz-progress').innerText = `Pergunta ${currentQuizIndex + 1}/5`;
-    document.getElementById('quiz-difficulty-tag').innerText = currentDifficulty.toUpperCase();
+    document.getElementById('quiz-difficulty-tag').innerText = currentDifficulty.toUpperCase() + ' • BANCO';
     document.getElementById('quiz-question-text').innerText = q.pergunta;
 
     const container = document.getElementById('quiz-options-container');
