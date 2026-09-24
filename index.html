@@ -712,7 +712,21 @@
       const data = await response.json();
       if (!Array.isArray(data)) throw new Error('videos.json precisa conter uma lista de vídeos');
       const extras = JSON.parse(localStorage.getItem('mathfun_v6_video_extras')) || [];
-      videoDatabase = [...data, ...extras];
+
+      // O index.html pode conter os links preenchidos em defaultVideos.
+      // Eles têm prioridade sobre campos vazios do videos.json.
+      const linksDoIndex = Object.fromEntries(
+        defaultVideos
+          .filter(v => v.embedUrl && String(v.embedUrl).trim())
+          .map(v => [v.id, v.embedUrl])
+      );
+
+      const videosDoJson = data.map(v => ({
+        ...v,
+        embedUrl: linksDoIndex[v.id] || v.embedUrl || ''
+      }));
+
+      videoDatabase = [...videosDoJson, ...extras];
       videosDatabaseReady = true;
       renderVideos();
     } catch (error) {
