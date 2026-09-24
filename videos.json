@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1ano-a1",
+    "titulo": "Aula 1: Adição com unidade e dezena",
+    "turma": "1º Ano",
+    "modulo": "Módulo 1: Operações Básicas",
+    "embedUrl": "",
+    "descricao": "Aprenda a somar números utilizando unidades e dezenas."
+  },
+  {
+    "id": "1ano-a2",
+    "titulo": "Aula 2: Subtração com unidade e dezena",
+    "turma": "1º Ano",
+    "modulo": "Módulo 1: Operações Básicas",
+    "embedUrl": "",
+    "descricao": "Aprenda a subtrair números com unidades e dezenas."
+  },
+  {
+    "id": "2ano-a1",
+    "titulo": "Aula 1: Adição e subtração com unidades e dezenas",
+    "turma": "2º Ano",
+    "modulo": "Módulo 1: Operações e Início de Multiplicação/Divisão",
+    "embedUrl": "",
+    "descricao": "Revisão e aprofundamento em adição e subtração."
+  },
+  {
+    "id": "2ano-a2",
+    "titulo": "Aula 2: Multiplicação e Divisão com unidades e dezenas",
+    "turma": "2º Ano",
+    "modulo": "Módulo 1: Operações e Início de Multiplicação/Divisão",
+    "embedUrl": "",
+    "descricao": "Primeiros conceitos de multiplicação e divisão com unidades e dezenas."
+  },
+  {
+    "id": "3ano-a1",
+    "titulo": "Aula 1: Medidas de massa",
+    "turma": "3º Ano",
+    "modulo": "Módulo 1: Grandezas e Medidas",
+    "embedUrl": "",
+    "descricao": "Entendendo o conceito de massa, grama (g) e quilograma (kg)."
+  },
+  {
+    "id": "3ano-a2",
+    "titulo": "Aula 2: Conversão e exemplos de Medidas de massa",
+    "turma": "3º Ano",
+    "modulo": "Módulo 1: Grandezas e Medidas",
+    "embedUrl": "",
+    "descricao": "Como converter unidades de medida de massa e exemplos práticos do dia a dia."
+  },
+  {
+    "id": "4ano-a1",
+    "titulo": "Aula 1: Adição e subtração de frações com denominadores iguais",
+    "turma": "4º Ano",
+    "modulo": "Módulo 1: Introdução às Frações",
+    "embedUrl": "",
+    "descricao": "Aprenda a somar e subtrair frações mantendo o denominador."
+  },
+  {
+    "id": "4ano-a2",
+    "titulo": "Aula 2: Frações equivalentes",
+    "turma": "4º Ano",
+    "modulo": "Módulo 1: Introdução às Frações",
+    "embedUrl": "",
+    "descricao": "Identificação e cálculo de frações que representam a mesma parte do todo."
+  },
+  {
+    "id": "5ano-a1",
+    "titulo": "Aula 1: Porcentagem",
+    "turma": "5º Ano",
+    "modulo": "Módulo 1: Porcentagem e Geometria",
+    "embedUrl": "",
+    "descricao": "Conceito de porcentagem e resolução de problemas simples."
+  },
+  {
+    "id": "5ano-a2",
+    "titulo": "Aula 2: Composição e decomposição de Polígonos",
+    "turma": "5º Ano",
+    "modulo": "Módulo 1: Porcentagem e Geometria",
+    "embedUrl": "",
+    "descricao": "Estudo sobre figuras geométricas planas, composição e decomposição de polígonos."
+  }
+]
