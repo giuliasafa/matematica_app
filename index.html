@@ -55,10 +55,37 @@
     }
 
     .logo {
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: var(--primary-purple);
+      display: flex;
+      align-items: center;
       cursor: pointer;
+      min-width: 0;
+    }
+
+    .logo img {
+      display: block;
+      width: 155px;
+      max-width: 42vw;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .setup-logo {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+
+    .setup-logo img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (max-width: 360px) {
+      .logo img { width: 125px; }
+      .user-status { gap: 7px; padding: 6px 8px; font-size: 0.8rem; }
     }
 
     .user-status {
@@ -378,7 +405,9 @@
 
 <div class="app-container">
   <header>
-    <div class="logo" onclick="switchScreen('screen-home')">🎮 MathFun</div>
+    <div class="logo" onclick="switchScreen('screen-home')" aria-label="Ir para o início">
+      <img src="logo-mathfun.jpg" alt="MathFun — Matemática Brincando">
+    </div>
     <div class="user-status">
       <span>⭐ <span id="stars-count">0</span></span>
       <span>🔥 <span id="streak-count">1</span></span>
@@ -387,6 +416,9 @@
 
   <!-- Perfil / Login Inicial -->
   <div id="screen-setup" class="screen active">
+    <div class="setup-logo">
+      <img src="logo-mathfun.jpg" alt="MathFun — Matemática Brincando">
+    </div>
     <h2>Bem-vindo! 👋</h2>
     <p style="color: #64748B;">Digite seu nome e escolha seu avatar:</p>
 
