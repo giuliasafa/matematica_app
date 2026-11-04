@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MathFun - Aprenda Brincando</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
   <style>
     :root {
@@ -667,6 +668,58 @@
 </div>
 
 <script>
+  // Conexão com o Supabase. A chave publishable pode ser usada no navegador;
+  // a proteção dos dados é feita pelas políticas RLS configuradas no banco.
+  const SUPABASE_URL = 'https://kweaxwhamcukdhijvxot.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_bSt4zBHBMNKaAPe8dMhiJg_maM2b22R';
+  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  let currentAuthUser = null;
+
+  async function iniciarAutenticacao() {
+    const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
+    if (sessionError) throw sessionError;
+
+    let authUser = sessionData.session ? sessionData.session.user : null;
+
+    if (authUser) {
+      const { data: adminRow, error: adminError } = await supabaseClient
+        .from('admin_users')
+        .select('user_id')
+        .eq('user_id', authUser.id)
+        .maybeSingle();
+
+      if (adminError) throw adminError;
+
+      if (adminRow) {
+        currentAuthUser = authUser;
+        userData.isAdmin = true;
+        return;
+      }
+
+      // Uma sessão comum não deve herdar acesso administrativo.
+      if (!authUser.is_anonymous) {
+        await supabaseClient.auth.signOut();
+        authUser = null;
+      }
+    }
+
+    if (!authUser) {
+      const { data, error } = await supabaseClient.auth.signInAnonymously();
+      if (error) throw error;
+      authUser = data.user;
+    }
+
+    currentAuthUser = authUser;
+    userData.isAdmin = false;
+  }
+
+  async function restaurarSessaoAluno() {
+    const { data, error } = await supabaseClient.auth.signInAnonymously();
+    if (error) throw error;
+    currentAuthUser = data.user;
+    userData.isAdmin = false;
+  }
+
   let userData = JSON.parse(localStorage.getItem('mathfun_v5_user')) || {
     name: 'Estudante',
     avatar: 'mascote-menina1',
@@ -678,7 +731,7 @@
     streak: 1
   };
 
-  // Migra avatares antigos (emojis) para os novos mascotes em imagem.
+  userData.isAdmin = false;\n\n  // Migra avatares antigos (emojis) para os novos mascotes em imagem.
   const legacyAvatarMap = {
     '🐱': 'mascote-gato', '🦊': 'mascote-cachorro', '🐶': 'mascote-cachorro',
     '🦁': 'mascote-leao', '🐼': 'mascote-panda', '🦄': 'mascote-unicornio',
@@ -776,7 +829,7 @@
 ];
 
   let videoDatabase = [];
-  let duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
+  let duvidasDatabase = [];
   let videosDatabaseReady = false;
 
   async function loadVideoDatabase() {
@@ -855,7 +908,14 @@
   let flashcardIndex = 0;
   let flashcardFlipped = false;
 
-  window.onload = () => {
+  window.onload = async () => {
+    try {
+      await iniciarAutenticacao();
+    } catch (error) {
+      console.error('Erro ao iniciar autenticação do MathFun:', error);
+      alert('Não foi possível conectar ao sistema de dúvidas. Atualize a página e tente novamente.');
+    }
+
     document.getElementById('user-name-input').value = userData.name !== 'Estudante' ? userData.name : '';
     restoreProfileSelections();
     updateUI();
@@ -872,8 +932,8 @@
   };
 
   function saveData() {
-    localStorage.setItem('mathfun_v5_user', JSON.stringify(userData));
-    localStorage.setItem('mathfun_v5_duvidas', JSON.stringify(duvidasDatabase));
+    const perfilSalvo = { ...userData, isAdmin: false };
+    localStorage.setItem('mathfun_v5_user', JSON.stringify(perfilSalvo));
     const extras = videoDatabase.filter(v => v.id && String(v.id).startsWith('manual-'));
     localStorage.setItem('mathfun_v6_video_extras', JSON.stringify(extras));
   }
@@ -894,18 +954,41 @@
     }
   }
 
-  function promptAdminLogin() {
-    const password = prompt("Área Restrita do Professor/Admin.\nDigite a senha de acesso:");
-    if (password === "admin123") {
-      userData.isAdmin = true;
-      saveData();
-      updateUI();
-      renderVideos();
-      renderTutorScreen();
-      alert("Modo Administrador ativado com sucesso!");
-    } else if (password !== null) {
-      alert("Senha incorreta!");
+  async function promptAdminLogin() {
+    const email = prompt('Área restrita do professor. Digite o e-mail cadastrado:');
+    if (!email) return;
+    const password = prompt('Digite sua senha do Supabase:');
+    if (!password) return;
+
+    const { data, error } = await supabaseClient.auth.signInWithPassword({
+      email: email.trim(),
+      password
+    });
+
+    if (error) {
+      alert('Não foi possível entrar. Confira o e-mail e a senha.');
+      return;
     }
+
+    const { data: adminRow, error: adminError } = await supabaseClient
+      .from('admin_users')
+      .select('user_id')
+      .eq('user_id', data.user.id)
+      .maybeSingle();
+
+    if (adminError || !adminRow) {
+      await supabaseClient.auth.signOut();
+      try { await restaurarSessaoAluno(); } catch (e) { console.error(e); }
+      alert('Esta conta não tem permissão de administrador.');
+      return;
+    }
+
+    currentAuthUser = data.user;
+    userData.isAdmin = true;
+    updateUI();
+    renderVideos();
+    await renderTutorScreen();
+    alert('Modo Administrador ativado com sucesso!');
   }
 
   function selectAvatar(avatarId, el) {
@@ -1077,116 +1160,189 @@
     });
   }
 
-  // --- LÓGICA DO TUTOR HUMANO COM ENCERRAMENTO DE CHAT ---
+  // --- TUTOR HUMANO INTEGRADO AO SUPABASE ---
 
-  function enviarDuvida() {
-    const texto = document.getElementById('duvida-texto').value.trim();
+  async function enviarDuvida() {
+    const campo = document.getElementById('duvida-texto');
+    const texto = campo.value.trim();
     if (!texto) {
-      alert("Escreva sua dúvida antes de enviar!");
+      alert('Escreva sua dúvida antes de enviar!');
+      return;
+    }
+    if (!currentAuthUser) {
+      alert('A conexão ainda está sendo iniciada. Atualize a página e tente novamente.');
       return;
     }
 
-    duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
-
-    const novaDuvida = {
-      id: Date.now(),
+    const { error } = await supabaseClient.from('duvidas').insert({
+      user_id: currentAuthUser.id,
       aluno: userData.name || 'Estudante',
       turma: userData.turma || '1º Ano',
       pergunta: texto,
-      resposta: null,
-      status: 'aberta',
-      data: new Date().toLocaleDateString('pt-BR')
-    };
+      status: 'aberta'
+    });
 
-    duvidasDatabase.unshift(novaDuvida);
-    saveData();
-    document.getElementById('duvida-texto').value = '';
-    alert("Dúvida enviada com sucesso! O professor responderá em breve.");
-    renderTutorScreen();
+    if (error) {
+      console.error('Erro ao enviar dúvida:', error);
+      alert('Não foi possível enviar sua dúvida. Tente novamente.');
+      return;
+    }
+
+    campo.value = '';
+    alert('Dúvida enviada com sucesso! O professor poderá visualizá-la no painel administrativo.');
+    await renderTutorScreen();
   }
 
-  function responderDuvida(id) {
-    duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
-    const duvida = duvidasDatabase.find(d => d.id === id);
-    if (!duvida) return;
+  async function responderDuvida(id) {
+    if (!userData.isAdmin || !currentAuthUser) {
+      alert('Apenas o administrador pode responder dúvidas.');
+      return;
+    }
+
+    const { data: duvida, error: buscaError } = await supabaseClient
+      .from('duvidas')
+      .select('aluno, pergunta')
+      .eq('id', id)
+      .maybeSingle();
+
+    if (buscaError || !duvida) {
+      alert('Não foi possível localizar essa dúvida.');
+      return;
+    }
 
     const respostaTexto = prompt(`Responder dúvida de ${duvida.aluno}:\n"${duvida.pergunta}"`);
-    if (respostaTexto && respostaTexto.trim()) {
-      duvida.resposta = respostaTexto.trim();
-      duvida.status = 'encerrada';
-      saveData();
-      renderTutorScreen();
-      alert("Resposta enviada e atendimento encerrado com sucesso!");
+    if (!respostaTexto || !respostaTexto.trim()) return;
+
+    const { error } = await supabaseClient
+      .from('duvidas')
+      .update({ resposta: respostaTexto.trim(), status: 'encerrada' })
+      .eq('id', id);
+
+    if (error) {
+      console.error('Erro ao responder dúvida:', error);
+      alert('Não foi possível salvar a resposta. Tente novamente.');
+      return;
     }
+
+    alert('Resposta enviada e atendimento encerrado com sucesso!');
+    await renderTutorScreen();
   }
 
-  function renderTutorScreen() {
-    duvidasDatabase = JSON.parse(localStorage.getItem('mathfun_v5_duvidas')) || [];
-
+  async function renderTutorScreen() {
     const adminPanel = document.getElementById('admin-tutor-panel');
     const alunoPanel = document.getElementById('aluno-tutor-panel');
+    const container = userData.isAdmin
+      ? document.getElementById('todas-duvidas-lista')
+      : document.getElementById('minhas-duvidas-lista');
 
-    if (userData.isAdmin) {
-      adminPanel.style.display = 'block';
-      alunoPanel.style.display = 'none';
+    adminPanel.style.display = userData.isAdmin ? 'block' : 'none';
+    alunoPanel.style.display = userData.isAdmin ? 'none' : 'block';
+    container.innerHTML = '';
 
-      const container = document.getElementById('todas-duvidas-lista');
-      container.innerHTML = '';
-
-      if (duvidasDatabase.length === 0) {
-        container.innerHTML = '<p style="color:#64748B;">Nenhuma dúvida cadastrada no momento.</p>';
-        return;
-      }
-
-      duvidasDatabase.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'duvida-item';
-
-        const isEncerrado = item.status === 'encerrada';
-        
-        let conteudoStatus = isEncerrado 
-          ? `<div class="resposta-box"><strong>Sua Resposta:</strong> ${item.resposta}<br><span style="font-size:0.75rem; color:#059669;">🔒 Atendimento Encerrado</span></div>` 
-          : `<button class="btn-main" style="padding: 6px; font-size: 0.85rem; margin-top: 8px; background: var(--primary-orange);" onclick="responderDuvida(${item.id})">✏️ Responder e Encerrar</button>`;
-
-        div.innerHTML = `
-          <strong>👤 ${item.aluno} (${item.turma})</strong> <span style="font-size:0.75rem; color:#64748B;">- ${item.data}</span>
-          <p style="margin-top:5px; color:#334155;">"${item.pergunta}"</p>
-          ${conteudoStatus}
-        `;
-        container.appendChild(div);
-      });
-
-    } else {
-      adminPanel.style.display = 'none';
-      alunoPanel.style.display = 'block';
-
-      const container = document.getElementById('minhas-duvidas-lista');
-      container.innerHTML = '';
-
-      const minhasDuvidas = duvidasDatabase.filter(d => d.aluno === userData.name);
-
-      if (minhasDuvidas.length === 0) {
-        container.innerHTML = '<p style="color:#64748B; font-size: 0.9rem;">Você ainda não enviou dúvidas.</p>';
-        return;
-      }
-
-      minhasDuvidas.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'duvida-item';
-
-        const isEncerrado = item.status === 'encerrada';
-
-        let respostaHtml = isEncerrado 
-          ? `<div class="resposta-box"><strong>Professor:</strong> ${item.resposta}<br><span style="font-size:0.75rem; color:#059669;">🔒 Chamado Finalizado</span></div>` 
-          : `<p style="font-size: 0.8rem; color: #F59E0B; margin-top: 5px;">⏳ Aguardando resposta do professor...</p>`;
-
-        div.innerHTML = `
-          <p style="color:#334155;"><strong>Pergunta:</strong> "${item.pergunta}"</p>
-          ${respostaHtml}
-        `;
-        container.appendChild(div);
-      });
+    if (!currentAuthUser) {
+      container.textContent = 'Conectando ao sistema de dúvidas...';
+      return;
     }
+
+    let consulta = supabaseClient
+      .from('duvidas')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if (!userData.isAdmin) {
+      consulta = consulta.eq('user_id', currentAuthUser.id);
+    }
+
+    const { data: duvidas, error } = await consulta;
+    if (error) {
+      console.error('Erro ao carregar dúvidas:', error);
+      container.textContent = 'Não foi possível carregar as dúvidas. Tente novamente.';
+      return;
+    }
+
+    duvidasDatabase = duvidas || [];
+
+    if (duvidasDatabase.length === 0) {
+      container.textContent = userData.isAdmin
+        ? 'Nenhuma dúvida cadastrada no momento.'
+        : 'Você ainda não enviou dúvidas.';
+      return;
+    }
+
+    duvidasDatabase.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'duvida-item';
+
+      const dataFormatada = item.created_at
+        ? new Date(item.created_at).toLocaleDateString('pt-BR')
+        : '';
+
+      if (userData.isAdmin) {
+        const titulo = document.createElement('strong');
+        titulo.textContent = `👤 ${item.aluno} (${item.turma})`;
+        div.appendChild(titulo);
+
+        const dataEl = document.createElement('span');
+        dataEl.style.cssText = 'font-size:0.75rem; color:#64748B;';
+        dataEl.textContent = dataFormatada ? ` - ${dataFormatada}` : '';
+        div.appendChild(dataEl);
+
+        const pergunta = document.createElement('p');
+        pergunta.style.cssText = 'margin-top:5px; color:#334155;';
+        pergunta.textContent = `"${item.pergunta}"`;
+        div.appendChild(pergunta);
+
+        if (item.status === 'encerrada') {
+          const resposta = document.createElement('div');
+          resposta.className = 'resposta-box';
+          const respostaTitulo = document.createElement('strong');
+          respostaTitulo.textContent = 'Sua resposta: ';
+          resposta.appendChild(respostaTitulo);
+          resposta.appendChild(document.createTextNode(item.resposta || ''));
+          const status = document.createElement('div');
+          status.style.cssText = 'font-size:0.75rem; color:#059669;';
+          status.textContent = '🔒 Atendimento encerrado';
+          resposta.appendChild(status);
+          div.appendChild(resposta);
+        } else {
+          const botao = document.createElement('button');
+          botao.className = 'btn-main';
+          botao.style.cssText = 'padding:6px; font-size:0.85rem; margin-top:8px; background:var(--primary-orange);';
+          botao.textContent = '✏️ Responder e Encerrar';
+          botao.addEventListener('click', () => responderDuvida(item.id));
+          div.appendChild(botao);
+        }
+      } else {
+        const pergunta = document.createElement('p');
+        pergunta.style.color = '#334155';
+        const titulo = document.createElement('strong');
+        titulo.textContent = 'Pergunta: ';
+        pergunta.appendChild(titulo);
+        pergunta.appendChild(document.createTextNode(`"${item.pergunta}"`));
+        div.appendChild(pergunta);
+
+        if (item.status === 'encerrada') {
+          const resposta = document.createElement('div');
+          resposta.className = 'resposta-box';
+          const respostaTitulo = document.createElement('strong');
+          respostaTitulo.textContent = 'Professor: ';
+          resposta.appendChild(respostaTitulo);
+          resposta.appendChild(document.createTextNode(item.resposta || ''));
+          const status = document.createElement('div');
+          status.style.cssText = 'font-size:0.75rem; color:#059669;';
+          status.textContent = '🔒 Chamado finalizado';
+          resposta.appendChild(status);
+          div.appendChild(resposta);
+        } else {
+          const aguardando = document.createElement('p');
+          aguardando.style.cssText = 'font-size:0.8rem; color:#F59E0B; margin-top:5px;';
+          aguardando.textContent = '⏳ Aguardando resposta do professor...';
+          div.appendChild(aguardando);
+        }
+      }
+
+      container.appendChild(div);
+    });
   }
 
   // --- DEMAIS FUNÇÕES DO JOGO ---
