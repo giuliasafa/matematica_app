@@ -667,6 +667,11 @@
       <p style="font-size: 0.85rem; color: #64748B;">Alcance 150 XP e Nível 3.</p>
       <span class="badge-status" id="status-badge-5">🔒 Bloqueado</span>
     </div>
+
+    <h3 style="margin-top:24px;">🏅 Ranking da turma</h3>
+    <p style="color:#64748B;font-size:0.9rem;margin-bottom:10px;">Classificação pelo XP acumulado da sua turma.</p>
+    <div id="ranking-status" class="card" style="font-size:0.9rem;">Carregando ranking...</div>
+    <div id="ranking-list"></div>
   </div>
 
   <nav>
@@ -946,6 +951,7 @@
 
     const profileConfigured = localStorage.getItem('mathfun_v5_user') !== null || localStorage.getItem('mathfun_v5_profile_configured') === 'true';
     if (profileConfigured) {
+      if (!userData.isAdmin) await sincronizarPerfilERanking();
       switchScreen('screen-home', document.querySelector('.nav-item'));
     } else {
       switchScreen('screen-setup');
@@ -1035,6 +1041,7 @@
     updateUI();
     renderVideos();
     updateQuestionBankInfo();
+    if (!userData.isAdmin) sincronizarPerfilERanking();
     switchScreen('screen-home', document.querySelectorAll('.nav-item')[0]);
   }
 
@@ -1509,9 +1516,81 @@
 
     saveData();
     updateUI();
+    if (!userData.isAdmin) sincronizarPontuacao();
+  }
+
+  // Sincroniza apenas apelido, turma e XP; nenhum e-mail é enviado ao ranking.
+  async function sincronizarPerfilERanking() {
+    if (!supabaseClient || !currentAuthUser || currentAuthUser.is_anonymous === false && userData.isAdmin) return;
+    const apelido = (userData.name || 'Estudante').trim().slice(0, 30);
+    const { error: perfilError } = await supabaseClient.from('mathfun_perfis').upsert({
+      user_id: currentAuthUser.id,
+      apelido,
+      turma: userData.turma
+    }, { onConflict: 'user_id' });
+    if (perfilError) {
+      console.error('Não foi possível sincronizar o perfil do ranking:', perfilError);
+      return;
+    }
+    await sincronizarPontuacao();
+  }
+
+  async function sincronizarPontuacao() {
+    if (!supabaseClient || !currentAuthUser || userData.isAdmin) return;
+    const apelido = (userData.name || 'Estudante').trim().slice(0, 30);
+    const { error } = await supabaseClient.from('mathfun_ranking').upsert({
+      user_id: currentAuthUser.id,
+      apelido,
+      turma: userData.turma,
+      xp: Number(userData.xp) || 0,
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id' });
+    if (error) console.error('Não foi possível atualizar o XP no ranking:', error);
+  }
+
+  async function carregarRanking() {
+    const status = document.getElementById('ranking-status');
+    const lista = document.getElementById('ranking-list');
+    if (!status || !lista) return;
+    if (!supabaseClient || !currentAuthUser || userData.isAdmin) {
+      status.innerText = 'O ranking ficará disponível quando um perfil de aluno estiver conectado.';
+      lista.innerHTML = '';
+      return;
+    }
+    status.innerText = 'Carregando ranking...';
+    const { data, error } = await supabaseClient
+      .from('mathfun_ranking')
+      .select('apelido, xp')
+      .eq('turma', userData.turma)
+      .order('xp', { ascending: false })
+      .order('apelido', { ascending: true })
+      .limit(50);
+    if (error) {
+      console.error('Erro ao carregar ranking:', error);
+      status.innerText = 'Não foi possível carregar o ranking. Confira se a configuração do Supabase foi concluída.';
+      lista.innerHTML = '';
+      return;
+    }
+    if (!data || data.length === 0) {
+      status.innerText = 'Ainda não há pontuações nesta turma. Jogue para aparecer no ranking!';
+      lista.innerHTML = '';
+      return;
+    }
+    status.innerText = 'Turma: ' + userData.turma;
+    lista.innerHTML = data.map((aluno, index) => {
+      const medalha = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : (index + 1) + 'º';
+      const nome = String(aluno.apelido || 'Estudante').replace(/[&<>"']/g, caractere => ({
+        '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+      }[caractere]));
+      return `<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin:8px 0;padding:12px;">
+        <strong>${medalha} ${nome}</strong>
+        <strong style="color:var(--primary-purple);white-space:nowrap;">${Number(aluno.xp) || 0} XP</strong>
+      </div>`;
+    }).join('');
   }
 
   function renderRewards() {
+    if (!userData.isAdmin) carregarRanking();
     const badges = [
       { id: 'badge-1', statusId: 'status-badge-1', condition: userData.xp >= 10 },
       { id: 'badge-2', statusId: 'status-badge-2', condition: userData.xp >= 50 },
