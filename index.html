@@ -672,10 +672,18 @@
   // a proteção dos dados é feita pelas políticas RLS configuradas no banco.
   const SUPABASE_URL = 'https://kweaxwhamcukdhijvxot.supabase.co';
   const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_bSt4zBHBMNKaAPe8dMhiJg_maM2b22R';
-  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+  // Não interrompe o aplicativo caso a biblioteca do Supabase demore ou falhe ao carregar.
+  // Assim, a escolha de nome, mascote e turma continua funcionando normalmente.
+  const supabaseClient = window.supabase && window.supabase.createClient
+    ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY)
+    : null;
   let currentAuthUser = null;
 
   async function iniciarAutenticacao() {
+    if (!supabaseClient) {
+      console.error('Biblioteca do Supabase não carregou. O perfil poderá ser usado, mas o Tutor Humano ficará indisponível até a conexão voltar.');
+      return;
+    }
     const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
     if (sessionError) throw sessionError;
 
