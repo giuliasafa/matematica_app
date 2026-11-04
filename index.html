@@ -278,6 +278,18 @@
       transition: width 0.3s ease;
     }
 
+    .phase-card { border:2px solid #E2E8F0; border-radius:15px; padding:13px; margin:9px 0; background:#fff; }
+    .phase-card.available { cursor:pointer; border-color:var(--primary-purple); }
+    .phase-card.completed { background:#ECFDF5; border-color:#10B981; opacity:.9; }
+    .phase-card.locked { background:#F8FAFC; color:#94A3B8; cursor:not-allowed; }
+    .phase-card small { display:block; color:#64748B; margin-top:4px; }
+    .quiz-help-panel { display:none; margin-top:15px; padding:15px; border:2px solid #F59E0B; border-radius:15px; background:#FFFBEB; }
+    .quiz-help-panel p { margin:7px 0 12px; }
+    .quiz-help-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .quiz-help-actions button { border:0; border-radius:12px; padding:11px 8px; font-weight:bold; cursor:pointer; }
+    .quiz-help-actions .help-yes { background:#8B5CF6; color:white; }
+    .quiz-help-actions .help-no { background:#E2E8F0; color:#334155; }
+
     .quiz-option {
       background: #F8FAFC;
       border: 2px solid #CBD5E1;
@@ -525,26 +537,16 @@
     </div>
   </div>
 
-  <!-- Quizzes -->
+  <!-- Quizzes por fases -->
   <div id="screen-quizzes" class="screen">
     <h2>Quizzes 🧮</h2>
-    <p style="color: #64748B; margin-bottom: 8px;">Escolha o modo de pontuação:</p>
-    <p id="question-bank-info" style="color:#64748B; font-size:0.85rem; margin-bottom:15px;">📚 Carregando banco de questões...</p>
-
-    <div class="card" style="border-color: var(--primary-green);" onclick="startGeneratedQuiz('fácil')">
-      <strong style="color: var(--primary-green);">🌱 Fácil</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +10 XP por acerto</p>
+    <p style="color:#64748B; margin-bottom:8px;">Complete as fases em ordem. Cada fase tem 10 questões.</p>
+    <p id="question-bank-info" style="color:#64748B; font-size:0.85rem; margin-bottom:12px;">📚 Carregando banco de questões...</p>
+    <div id="phase-progress-summary" class="card" style="cursor:default; border-color:#C4B5FD;">
+      <strong>Seu progresso</strong>
+      <p id="phase-progress-text" style="font-size:.9rem; color:#64748B; margin-top:5px;">Você começa pela Fase 1.</p>
     </div>
-
-    <div class="card" style="border-color: var(--primary-orange);" onclick="startGeneratedQuiz('médio')">
-      <strong style="color: var(--primary-orange);">⭐ Médio</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +15 XP por acerto</p>
-    </div>
-
-    <div class="card" style="border-color: var(--primary-red);" onclick="startGeneratedQuiz('difícil')">
-      <strong style="color: var(--primary-red);">🔥 Difícil</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">5 questões do banco • +20 XP por acerto</p>
-    </div>
+    <div id="phase-list-container"></div>
   </div>
 
   <!-- Player do Quiz -->
@@ -559,6 +561,14 @@
     </div>
 
     <div id="quiz-options-container"></div>
+    <div id="quiz-help-panel" class="quiz-help-panel">
+      <strong>💛 Não tem problema errar!</strong>
+      <p>Quer enviar esta questão ao Tutor Humano para pedir ajuda?</p>
+      <div class="quiz-help-actions">
+        <button class="help-yes" onclick="askTutorAboutCurrentQuestion()">Sim, pedir ajuda</button>
+        <button class="help-no" onclick="retryCurrentQuestion()">Não, tentar novamente</button>
+      </div>
+    </div>
   </div>
 
   <!-- Flashcards -->
@@ -909,7 +919,7 @@
       return;
     }
     const qtd = questionBank.filter(q => q.turma === userData.turma).length;
-    el.innerText = `📚 ${qtd} questões disponíveis para ${userData.turma}`;
+    el.innerText = `📚 ${qtd} questões • 10 fases para ${userData.turma}`;
   }
 
   let currentQuizGenerated = [];
@@ -1037,6 +1047,7 @@
     }
 
     if (screenId === 'screen-videos') renderVideos();
+    if (screenId === 'screen-quizzes') renderPhaseList();
     if (screenId === 'screen-flashcards') showFlashcard();
     if (screenId === 'screen-tutor') renderTutorScreen();
     if (screenId === 'screen-rewards') renderRewards();
@@ -1357,80 +1368,115 @@
 
   // --- DEMAIS FUNÇÕES DO JOGO ---
 
-  function shuffleArray(array) {
-    return [...array].sort(() => Math.random() - 0.5);
+  // --- FASES PROGRESSIVAS DOS QUIZZES ---
+  let currentQuizPhase = 1;
+
+  function getPhaseProgressKey() {
+    const authId = currentAuthUser && currentAuthUser.id ? currentAuthUser.id : 'navegador';
+    const nome = (userData.name || 'Estudante').trim().toLowerCase();
+    return 'mathfun_phase_progress_v1_' + [authId, userData.turma, nome].join('_');
   }
 
-  function generateQuestions(dificuldade) {
-    const turmaQuestions = questionBank.filter(q => q.turma === userData.turma);
-
-    if (!turmaQuestions.length) return [];
-
-    // Se futuramente as questões tiverem o campo "dificuldade", ele será usado.
-    // Como o banco atual não possui esse campo, todas as questões da turma participam do sorteio.
-    const comDificuldade = turmaQuestions.filter(q => q.dificuldade === dificuldade);
-    const pool = comDificuldade.length >= 5 ? comDificuldade : turmaQuestions;
-
-    return shuffleArray(pool).slice(0, Math.min(5, pool.length)).map(q => ({
-      ...q,
-      opcoes: [...q.opcoes]
-    }));
+  function getPhaseProgress() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(getPhaseProgressKey())) || {};
+      return { completedPhases:Array.isArray(saved.completedPhases)?saved.completedPhases:[], currentPhase:Number(saved.currentPhase)||1, questionIndex:Math.max(0,Math.min(9,Number(saved.questionIndex)||0)) };
+    } catch (error) { return { completedPhases:[], currentPhase:1, questionIndex:0 }; }
   }
 
-  function startGeneratedQuiz(dif) {
-    if (!questionBankReady) {
-      alert('O banco de questões ainda não foi carregado. Verifique se o arquivo questoes.json está na mesma pasta do aplicativo no GitHub.');
-      return;
+  function savePhaseProgress(progress) { localStorage.setItem(getPhaseProgressKey(),JSON.stringify(progress)); }
+
+  function getNextPhase(progress=getPhaseProgress()) {
+    for(let fase=1;fase<=10;fase++) if(!progress.completedPhases.includes(fase)) return fase;
+    return null;
+  }
+
+  function renderPhaseList() {
+    const container=document.getElementById('phase-list-container');
+    if(!container) return;
+    if(!questionBankReady){container.innerHTML='<p style="color:#64748B;">Carregando as questões...</p>';return;}
+    const progress=getPhaseProgress();
+    const nextPhase=getNextPhase(progress);
+    document.getElementById('phase-progress-text').innerText=nextPhase? `Você concluiu ${progress.completedPhases.length} de 10 fases. Próxima: Fase ${nextPhase}.`:'🏆 Parabéns! Você concluiu as 10 fases!';
+    container.innerHTML='';
+    for(let fase=1;fase<=10;fase++){
+      const locked=fase>1&&!progress.completedPhases.includes(fase-1);
+      const completed=progress.completedPhases.includes(fase);
+      const dificuldade=fase<=4?'Fácil':fase<=8?'Médio':'Difícil';
+      const icone=fase===10?'👑':fase<=4?'🌱':fase<=8?'⭐':'🔥';
+      const card=document.createElement('div');
+      card.className='phase-card '+(completed?'completed':locked?'locked':'available');
+      const status=completed?'✅ Concluída':locked?'🔒 Bloqueada':'▶️ Disponível';
+      card.innerHTML=`<strong>${icone} Fase ${fase} — ${dificuldade}</strong><small>10 questões • ${status}${fase===10?' • Desafio final':''}</small>`;
+      if(!locked&&!completed)card.addEventListener('click',()=>startPhase(fase));
+      container.appendChild(card);
     }
+  }
 
-    currentDifficulty = dif;
-    currentQuizGenerated = generateQuestions(dif);
-
-    if (!currentQuizGenerated.length) {
-      alert(`Não há questões cadastradas para ${userData.turma}.`);
-      return;
-    }
-
-    currentQuizIndex = 0;
+  function startPhase(fase) {
+    if(!questionBankReady){alert('O banco de questões ainda está carregando. Tente novamente em instantes.');return;}
+    const progress=getPhaseProgress();
+    const nextPhase=getNextPhase(progress);
+    if(fase!==nextPhase&&!progress.completedPhases.includes(fase)){alert('Complete a fase anterior para desbloquear esta.');return;}
+    const perguntas=questionBank.filter(q=>q.turma===userData.turma&&Number(q.fase)===fase);
+    if(perguntas.length!==10){alert(`A Fase ${fase} precisa ter exatamente 10 questões. Encontramos ${perguntas.length}.`);return;}
+    currentQuizPhase=fase;
+    currentDifficulty=fase<=4?'fácil':fase<=8?'médio':'difícil';
+    currentQuizGenerated=perguntas;
+    currentQuizIndex=fase===progress.currentPhase?progress.questionIndex:0;
     switchScreen('screen-quiz-player');
     loadGeneratedQuestion();
   }
 
   function loadGeneratedQuestion() {
-    const q = currentQuizGenerated[currentQuizIndex];
-    document.getElementById('quiz-progress').innerText = `Pergunta ${currentQuizIndex + 1}/5`;
-    document.getElementById('quiz-difficulty-tag').innerText = currentDifficulty.toUpperCase() + ' • BANCO';
-    document.getElementById('quiz-question-text').innerText = q.pergunta;
-
-    const container = document.getElementById('quiz-options-container');
-    container.innerHTML = '';
-
-    q.opcoes.forEach((op, idx) => {
-      const btn = document.createElement('div');
-      btn.className = 'quiz-option';
-      btn.innerText = op;
-      btn.onclick = () => checkGeneratedAnswer(idx);
-      container.appendChild(btn);
+    const q=currentQuizGenerated[currentQuizIndex];
+    if(!q)return;
+    document.getElementById('quiz-progress').innerText=`Fase ${currentQuizPhase} • Pergunta ${currentQuizIndex+1}/10`;
+    document.getElementById('quiz-difficulty-tag').innerText=currentQuizPhase===10?'DESAFIO FINAL':currentDifficulty.toUpperCase();
+    document.getElementById('quiz-question-text').innerText=q.pergunta;
+    document.getElementById('quiz-help-panel').style.display='none';
+    const container=document.getElementById('quiz-options-container');
+    container.style.display='block';
+    container.innerHTML='';
+    q.opcoes.forEach((op,idx)=>{
+      const btn=document.createElement('div');btn.className='quiz-option';btn.innerText=op;
+      btn.onclick=()=>checkGeneratedAnswer(idx);container.appendChild(btn);
     });
   }
 
   function checkGeneratedAnswer(idx) {
-    let xpGained = currentDifficulty === 'fácil' ? 10 : currentDifficulty === 'médio' ? 15 : 20;
-
-    if (idx === currentQuizGenerated[currentQuizIndex].correta) {
-      addXP(xpGained);
-      alert(`✨ Resposta Correta! (+${xpGained} XP)`);
-    } else {
-      alert("❌ Resposta incorreta! Tente a próxima.");
+    const pergunta=currentQuizGenerated[currentQuizIndex];
+    if(idx!==pergunta.correta){
+      document.getElementById('quiz-options-container').style.display='none';
+      document.getElementById('quiz-help-panel').style.display='block';
+      return;
     }
-
+    const xpGained=currentQuizPhase<=4?10:currentQuizPhase<=8?15:20;
+    addXP(xpGained);
     currentQuizIndex++;
-    if (currentQuizIndex < 5) {
-      loadGeneratedQuestion();
-    } else {
-      alert("🎉 Quiz concluído! Confira seu novo progresso.");
+    const progress=getPhaseProgress();
+    progress.currentPhase=currentQuizPhase;progress.questionIndex=currentQuizIndex;
+    savePhaseProgress(progress);
+    if(currentQuizIndex<10){alert(`✨ Muito bem! Resposta correta. +${xpGained} XP`);loadGeneratedQuestion();}
+    else{
+      progress.completedPhases=[...new Set([...progress.completedPhases,currentQuizPhase])].sort((a,b)=>a-b);
+      progress.currentPhase=Math.min(10,currentQuizPhase+1);progress.questionIndex=0;savePhaseProgress(progress);
+      alert(currentQuizPhase===10?'🏆 PARABÉNS! Você concluiu todas as 10 fases do MathFun!':`🎉 Fase ${currentQuizPhase} concluída! A Fase ${currentQuizPhase+1} foi desbloqueada.`);
       switchScreen('screen-quizzes');
     }
+  }
+
+  function retryCurrentQuestion() {
+    document.getElementById('quiz-help-panel').style.display='none';
+    document.getElementById('quiz-options-container').style.display='block';
+  }
+
+  function askTutorAboutCurrentQuestion() {
+    const q=currentQuizGenerated[currentQuizIndex];if(!q)return;
+    const campo=document.getElementById('duvida-texto');
+    const alternativas=q.opcoes.map((op,i)=>String.fromCharCode(65+i)+') '+op).join('\\n');
+    campo.value=`Olá, professor! Tive dificuldade nesta questão e gostaria de ajuda:\\n\\n${q.pergunta}\\n${alternativas}`;
+    switchScreen('screen-tutor');campo.focus();
   }
 
   function showFlashcard() {
