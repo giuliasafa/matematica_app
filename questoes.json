@@ -7,7 +7,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -17,7 +19,9 @@
       "2",
       "4"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -27,7 +31,9 @@
       "7",
       "9"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -37,7 +43,9 @@
       "5",
       "4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -47,7 +55,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -57,7 +67,9 @@
       "2",
       "4"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -67,7 +79,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -77,7 +91,9 @@
       "3",
       "4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -87,7 +103,9 @@
       "8",
       "10"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -97,7 +115,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -107,7 +127,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -117,7 +139,9 @@
       "5",
       "8"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -127,7 +151,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -137,7 +163,9 @@
       "12",
       "13"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -147,7 +175,9 @@
       "14",
       "16"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -157,7 +187,9 @@
       "12",
       "13"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -167,7 +199,9 @@
       "18",
       "19"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -177,7 +211,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -187,7 +223,9 @@
       "18",
       "20"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -197,7 +235,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -207,7 +247,9 @@
       "25",
       "40"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -217,7 +259,9 @@
       "20",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -227,7 +271,9 @@
       "25",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -237,7 +283,9 @@
       "15",
       "22"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -247,7 +295,9 @@
       "25",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -257,7 +307,9 @@
       "24",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -267,7 +319,9 @@
       "35",
       "36"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -277,7 +331,9 @@
       "34",
       "36"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -287,7 +343,9 @@
       "45",
       "46"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -297,7 +355,9 @@
       "40",
       "41"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -307,7 +367,9 @@
       "57",
       "59"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -317,7 +379,9 @@
       "50",
       "55"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -327,7 +391,9 @@
       "20",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -337,7 +403,9 @@
       "10",
       "30"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -347,7 +415,9 @@
       "50",
       "60"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -357,7 +427,9 @@
       "40",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -367,7 +439,9 @@
       "32",
       "34"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -377,7 +451,9 @@
       "25",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -387,7 +463,9 @@
       "48",
       "49"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -397,7 +475,9 @@
       "42",
       "43"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "1º Ano",
@@ -407,7 +487,9 @@
       "7",
       "8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -417,7 +499,9 @@
       "6",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -427,7 +511,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -437,7 +523,9 @@
       "6",
       "8"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -447,7 +535,9 @@
       "16",
       "17"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -457,7 +547,9 @@
       "12",
       "13"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -467,7 +559,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -477,7 +571,9 @@
       "4",
       "6"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -487,7 +583,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -497,7 +595,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -507,7 +607,9 @@
       "20",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -517,7 +619,9 @@
       "10",
       "15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -527,7 +631,9 @@
       "5 dezenas e 1 unidade",
       "2 dezenas"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -537,7 +643,9 @@
       "4 dezenas e 2 unidades",
       "1 dezena e 4 unidades"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -547,7 +655,9 @@
       "13",
       "14"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -557,7 +667,9 @@
       "20",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -567,7 +679,9 @@
       "20",
       "15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -577,7 +691,9 @@
       "20",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -587,7 +703,9 @@
       "4 dezenas",
       "5 dezenas"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -597,7 +715,9 @@
       "73",
       "30"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -607,7 +727,9 @@
       "24",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -617,7 +739,9 @@
       "17",
       "19"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -627,7 +751,9 @@
       "43",
       "44"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -637,7 +763,9 @@
       "35",
       "36"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -647,7 +775,9 @@
       "22",
       "23"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -657,7 +787,9 @@
       "13",
       "15"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -667,7 +799,9 @@
       "24",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -677,7 +811,9 @@
       "12",
       "13"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -687,7 +823,9 @@
       "30",
       "35"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -697,7 +835,9 @@
       "10",
       "20"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -707,7 +847,9 @@
       "21",
       "22"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -717,7 +859,9 @@
       "30",
       "31"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -727,7 +871,9 @@
       "40",
       "41"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -737,7 +883,9 @@
       "48",
       "51"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -747,7 +895,9 @@
       "19",
       "21"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -757,7 +907,9 @@
       "29",
       "31"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -767,7 +919,9 @@
       "38",
       "41"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -777,7 +931,9 @@
       "49",
       "51"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -787,7 +943,9 @@
       "5",
       "50"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -797,7 +955,9 @@
       "0",
       "7"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "1º Ano",
@@ -807,7 +967,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -817,7 +979,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -827,7 +991,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -837,7 +1003,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -847,7 +1015,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -857,7 +1027,9 @@
       "18",
       "19"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -867,7 +1039,9 @@
       "16",
       "17"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -877,7 +1051,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -887,7 +1063,9 @@
       "9",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -897,7 +1075,9 @@
       "10",
       "11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -907,7 +1087,9 @@
       "24",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -917,7 +1099,9 @@
       "31",
       "32"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -927,7 +1111,9 @@
       "45",
       "46"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -937,7 +1123,9 @@
       "43",
       "44"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -947,7 +1135,9 @@
       "19",
       "20"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -957,7 +1147,9 @@
       "13",
       "14"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -967,7 +1159,9 @@
       "29",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -977,7 +1171,9 @@
       "25",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -987,7 +1183,9 @@
       "39",
       "40"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "1º Ano",
@@ -997,7 +1195,9 @@
       "35",
       "36"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1007,7 +1207,9 @@
       "68",
       "69"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1017,7 +1219,9 @@
       "44",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1027,7 +1231,9 @@
       "20",
       "22"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1037,7 +1243,9 @@
       "4",
       "5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1047,7 +1255,9 @@
       "99",
       "97"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1057,7 +1267,9 @@
       "54",
       "55"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1067,7 +1279,9 @@
       "18",
       "19"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1077,7 +1291,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1087,7 +1303,9 @@
       "47",
       "48"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1097,7 +1315,9 @@
       "44",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1107,7 +1327,9 @@
       "14",
       "15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1117,7 +1339,9 @@
       "9",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1127,7 +1351,9 @@
       "76",
       "77"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1137,7 +1363,9 @@
       "34",
       "35"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1147,7 +1375,9 @@
       "24",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1157,7 +1387,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1167,7 +1399,9 @@
       "89",
       "90"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1177,7 +1411,9 @@
       "53",
       "54"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1187,7 +1423,9 @@
       "18",
       "19"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1197,7 +1435,9 @@
       "4",
       "5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1207,7 +1447,9 @@
       "49",
       "50"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1217,7 +1459,9 @@
       "33",
       "34"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1227,7 +1471,9 @@
       "16",
       "18"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1237,7 +1483,9 @@
       "4",
       "5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1247,7 +1495,9 @@
       "69",
       "70"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1257,7 +1507,9 @@
       "44",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1267,7 +1519,9 @@
       "15",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1277,7 +1531,9 @@
       "6",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1287,7 +1543,9 @@
       "99",
       "100"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1297,7 +1555,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1307,7 +1567,9 @@
       "30",
       "32"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1317,7 +1579,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1327,7 +1591,9 @@
       "77",
       "78"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1337,7 +1603,9 @@
       "42",
       "43"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1347,7 +1615,9 @@
       "21",
       "22"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1357,7 +1627,9 @@
       "7",
       "8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1367,7 +1639,9 @@
       "68",
       "69"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1377,7 +1651,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1387,7 +1663,9 @@
       "40",
       "50"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1397,7 +1675,9 @@
       "10",
       "12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "2º Ano",
@@ -1407,7 +1687,9 @@
       "15",
       "18"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1417,7 +1699,9 @@
       "6",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1427,7 +1711,9 @@
       "24",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1437,7 +1723,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1447,7 +1735,9 @@
       "16",
       "18"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1457,7 +1747,9 @@
       "6",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1467,7 +1759,9 @@
       "20",
       "22"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1477,7 +1771,9 @@
       "3",
       "4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1487,7 +1783,9 @@
       "18",
       "20"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1497,7 +1795,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1507,7 +1807,9 @@
       "25",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1517,7 +1819,9 @@
       "7",
       "8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1527,7 +1831,9 @@
       "88",
       "89"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1537,7 +1843,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1547,7 +1855,9 @@
       "27",
       "28"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1557,7 +1867,9 @@
       "9",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1567,7 +1879,9 @@
       "79",
       "80"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1577,7 +1891,9 @@
       "33",
       "34"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1587,7 +1903,9 @@
       "32",
       "34"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1597,7 +1915,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1607,7 +1927,9 @@
       "87",
       "88"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1617,7 +1939,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1627,7 +1951,9 @@
       "24",
       "26"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1637,7 +1963,9 @@
       "7",
       "8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1647,7 +1975,9 @@
       "89",
       "90"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1657,7 +1987,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1667,7 +1999,9 @@
       "28",
       "30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1677,7 +2011,9 @@
       "9",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1687,7 +2023,9 @@
       "78",
       "79"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1697,7 +2035,9 @@
       "32",
       "33"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1707,7 +2047,9 @@
       "16",
       "18"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1717,7 +2059,9 @@
       "7",
       "8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1727,7 +2071,9 @@
       "77",
       "78"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1737,7 +2083,9 @@
       "31",
       "32"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1747,7 +2095,9 @@
       "27",
       "28"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1757,7 +2107,9 @@
       "6",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1767,7 +2119,9 @@
       "78",
       "79"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1777,7 +2131,9 @@
       "44",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1787,7 +2143,9 @@
       "30",
       "32"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1797,7 +2155,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "2º Ano",
@@ -1807,7 +2167,9 @@
       "99",
       "100"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1817,7 +2179,9 @@
       "42",
       "43"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1827,7 +2191,9 @@
       "20",
       "22"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1837,7 +2203,9 @@
       "10",
       "12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1847,7 +2215,9 @@
       "87",
       "88"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1857,7 +2227,9 @@
       "43",
       "44"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1867,7 +2239,9 @@
       "20",
       "22"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1877,7 +2251,9 @@
       "10",
       "12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1887,7 +2263,9 @@
       "88",
       "89"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "2º Ano",
@@ -1897,7 +2275,9 @@
       "52",
       "53"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -1907,7 +2287,9 @@
       "1000 g",
       "10000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1917,7 +2299,9 @@
       "Balança",
       "Termômetro"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1927,7 +2311,9 @@
       "Metro (m)",
       "Litro (L)"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1937,7 +2323,9 @@
       "Algodão",
       "Têm o mesmo peso"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1947,7 +2335,9 @@
       "500 g",
       "750 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1957,7 +2347,9 @@
       "kg",
       "mg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1967,7 +2359,9 @@
       "kg",
       "l"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1977,7 +2371,9 @@
       "Quilograma (kg)",
       "Tonelada (t)"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1987,7 +2383,9 @@
       "Quilograma (kg)",
       "Tonelada (t)"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -1997,7 +2395,9 @@
       "500 kg",
       "1000 kg"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2007,7 +2407,9 @@
       "4 pacotes",
       "5 pacotes"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2017,7 +2419,9 @@
       "2 kg",
       "500 g"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2027,7 +2431,9 @@
       "500 g",
       "600 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2037,7 +2443,9 @@
       "60 kg",
       "70 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2047,7 +2455,9 @@
       "5000 g",
       "50 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2057,7 +2467,9 @@
       "500 g (meio kg)",
       "600 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2067,7 +2479,9 @@
       "400 g",
       "500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2077,7 +2491,9 @@
       "Batatas",
       "Fita adesiva"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2087,7 +2503,9 @@
       "800 g",
       "1 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2097,7 +2515,9 @@
       "250 g",
       "350 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2107,7 +2527,9 @@
       "300 g",
       "400 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2117,7 +2539,9 @@
       "15 kg",
       "16 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2127,7 +2551,9 @@
       "Uma folha de papel",
       "Um livro pesado"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2137,7 +2563,9 @@
       "Uma balança",
       "Um copo medidor"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2147,7 +2575,9 @@
       "3 kg",
       "5 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2157,7 +2587,9 @@
       "5 pacotes",
       "6 pacotes"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2167,7 +2599,9 @@
       "2 kg",
       "1005 g"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2177,7 +2611,9 @@
       "500 g",
       "750 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2187,7 +2623,9 @@
       "Carne moída",
       "Tecido para roupa"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2197,7 +2635,9 @@
       "200 g",
       "300 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2207,7 +2647,9 @@
       "1 kg",
       "2 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2217,7 +2659,9 @@
       "6 kg",
       "7 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2227,7 +2671,9 @@
       "R$ 16",
       "R$ 20"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2237,7 +2683,9 @@
       "Quilograma (kg)",
       "Tonelada (t)"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2247,7 +2695,9 @@
       "2 kg",
       "4 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2257,7 +2707,9 @@
       "2 kg",
       "20 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2267,7 +2719,9 @@
       "35 kg",
       "300 kg"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2277,7 +2731,9 @@
       "2 kg",
       "3 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2287,7 +2743,9 @@
       "300 g",
       "350 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2297,7 +2755,9 @@
       "2 kg",
       "800 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "3º Ano",
@@ -2307,7 +2767,9 @@
       "3000 g",
       "30000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2317,7 +2779,9 @@
       "500 g",
       "600 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2327,7 +2791,9 @@
       "três pacotes de 250 g",
       "dois pacotes de 500 g"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2337,7 +2803,9 @@
       "400 g",
       "500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2347,7 +2815,9 @@
       "5 kg",
       "6 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2357,7 +2827,9 @@
       "12 maçãs",
       "15 maçãs"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2367,7 +2839,9 @@
       "Balança de pratos",
       "Termômetro"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2377,7 +2851,9 @@
       "500 g",
       "750 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2387,7 +2863,9 @@
       "250 g",
       "500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2397,7 +2875,9 @@
       "1 kg",
       "1200 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2407,7 +2887,9 @@
       "1 kg",
       "São iguais"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2417,7 +2899,9 @@
       "10000 g",
       "100000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2427,7 +2911,9 @@
       "4 vezes",
       "5 vezes"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2437,7 +2923,9 @@
       "2 kg",
       "3 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2447,7 +2935,9 @@
       "2000 g (2 kg)",
       "2500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2457,7 +2947,9 @@
       "4 kg",
       "2 kg"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2467,7 +2959,9 @@
       "3000 kg",
       "30000 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2477,7 +2971,9 @@
       "Grama (g)",
       "Quilograma (kg)"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2487,7 +2983,9 @@
       "Quilograma (kg)",
       "Tonelada (t)"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2497,7 +2995,9 @@
       "250 g",
       "350 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2507,7 +3007,9 @@
       "R$ 30",
       "R$ 45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2517,7 +3019,9 @@
       "Quilogramas",
       "Metros"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2527,7 +3031,9 @@
       "1 kg e meio (1500 g)",
       "800 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2537,7 +3043,9 @@
       "1 kg",
       "10 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2547,7 +3055,9 @@
       "Quilograma",
       "Miligrama"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2557,7 +3067,9 @@
       "Quilograma",
       "Miligrama"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2567,7 +3079,9 @@
       "1000 g (1 kg)",
       "1100 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2577,7 +3091,9 @@
       "250 g",
       "300 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2587,7 +3103,9 @@
       "1500 g (1,5 kg)",
       "2000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2597,7 +3115,9 @@
       "1 kg (1000 g)",
       "1100 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2607,7 +3127,9 @@
       "Não 200 g a menos",
       "São exatamente iguais"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2617,7 +3139,9 @@
       "1500 g",
       "2000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2627,7 +3151,9 @@
       "5 g",
       "6 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2637,7 +3163,9 @@
       "Miligrama",
       "Micro grama"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2647,7 +3175,9 @@
       "Quilograma",
       "Quilo geral"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2657,7 +3187,9 @@
       "4 sacos",
       "5 sacos"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2667,7 +3199,9 @@
       "600 g",
       "700 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2677,7 +3211,9 @@
       "6 pacotes",
       "8 pacotes"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2687,7 +3223,9 @@
       "1500 g",
       "1800 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2697,7 +3235,9 @@
       "Massa",
       "Tempo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "3º Ano",
@@ -2707,7 +3247,9 @@
       "50 g",
       "500 g"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2717,7 +3259,9 @@
       "1000 g (1 kg)",
       "1200 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2727,7 +3271,9 @@
       "1000 g (1 kg)",
       "2000 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2737,7 +3283,9 @@
       "Balança culinária de precisão",
       "Balança de gado"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2747,7 +3295,9 @@
       "1250 g",
       "1500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2757,7 +3307,9 @@
       "6 kg",
       "8 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2767,7 +3319,9 @@
       "500 g",
       "600 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2777,7 +3331,9 @@
       "500 g",
       "5 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2787,7 +3343,9 @@
       "Dividir por 1000",
       "Somar 100"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2797,7 +3355,9 @@
       "Dividir por 1000",
       "Subtrair 1000"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2807,7 +3367,9 @@
       "1050 g",
       "999 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2817,7 +3379,9 @@
       "400 g",
       "500 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2827,7 +3391,9 @@
       "4 kg",
       "4,5 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2837,7 +3403,9 @@
       "1 kg",
       "2 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2847,7 +3415,9 @@
       "500 kg",
       "1000 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2857,7 +3427,9 @@
       "1000 g é igual a 1 kg",
       "2000 g é menor que 1 kg"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2867,7 +3439,9 @@
       "500 g",
       "700 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2877,7 +3451,9 @@
       "R$ 20",
       "R$ 30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2887,7 +3463,9 @@
       "2500 g",
       "2005 g"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "3º Ano",
@@ -2897,7 +3475,9 @@
       "Grama",
       "Tonelada"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -2907,7 +3487,9 @@
       "50",
       "75"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2917,7 +3499,9 @@
       "50",
       "100"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2927,7 +3511,9 @@
       "50%",
       "100%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2937,7 +3523,9 @@
       "50%",
       "75%"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2947,7 +3535,9 @@
       "Acutângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2957,7 +3547,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2967,7 +3559,9 @@
       "Obtusângulo",
       "Equilátero"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2977,7 +3571,9 @@
       "180°",
       "360°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2987,7 +3583,9 @@
       "Retângulo ou Quadrado",
       "Pentágono"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -2997,7 +3595,9 @@
       "5",
       "6"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3007,7 +3607,9 @@
       "10",
       "16"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3017,7 +3619,9 @@
       "45",
       "90"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3027,7 +3631,9 @@
       "R$ 80",
       "R$ 90"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3037,7 +3643,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3047,7 +3655,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3057,7 +3667,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3067,7 +3679,9 @@
       "Triângulos retângulos",
       "Trapézios"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3077,7 +3691,9 @@
       "Círculo",
       "Triângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3087,7 +3703,9 @@
       "150",
       "175"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3097,7 +3715,9 @@
       "10%",
       "100%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3107,7 +3727,9 @@
       "50%",
       "500%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3117,7 +3739,9 @@
       "70°",
       "80°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3127,7 +3751,9 @@
       "Reto",
       "Obtuso"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3137,7 +3763,9 @@
       "Reto",
       "Obtuso"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3147,7 +3775,9 @@
       "Pentágono",
       "Octógono"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3157,7 +3787,9 @@
       "Dois círculos",
       "Três triângulos"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3167,7 +3799,9 @@
       "20",
       "25"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3177,7 +3811,9 @@
       "R$ 88",
       "R$ 90"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3187,7 +3823,9 @@
       "10",
       "15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3197,7 +3835,9 @@
       "Não pois a soma ultrapassaria 180°",
       "Sim se for grande"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3207,7 +3847,9 @@
       "Não",
       "Apenas se for isósceles"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3217,7 +3859,9 @@
       "3",
       "4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3227,7 +3871,9 @@
       "Casinha",
       "Esfera"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3237,7 +3883,9 @@
       "10",
       "50"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3247,7 +3895,9 @@
       "30%",
       "300%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3257,7 +3907,9 @@
       "20%",
       "25%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3267,7 +3919,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3277,7 +3931,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3287,7 +3943,9 @@
       "Dividi-la em figuras menores",
       "Mudar sua cor"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3297,7 +3955,9 @@
       "Medir seus ângulos com transferidor",
       "Apagar os vértices"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "5º Ano",
@@ -3307,7 +3967,9 @@
       "40",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3317,7 +3979,9 @@
       "8",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3327,7 +3991,9 @@
       "90°",
       "180°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3337,7 +4003,9 @@
       "Menos de 90°",
       "Mais de 90°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3347,7 +4015,9 @@
       "Exatamente 90°",
       "Entre 90° e 180°"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3357,7 +4027,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3367,7 +4039,9 @@
       "Quadrilátero",
       "Pentágono"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3377,7 +4051,9 @@
       "8",
       "10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3387,7 +4063,9 @@
       "30",
       "40"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3397,7 +4075,9 @@
       "R$ 20",
       "R$ 30"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3407,7 +4087,9 @@
       "30",
       "40"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3417,7 +4099,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3427,7 +4111,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3437,7 +4123,9 @@
       "70°",
       "80°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3447,7 +4135,9 @@
       "5",
       "7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3457,7 +4147,9 @@
       "7",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3467,7 +4159,9 @@
       "R$ 45",
       "R$ 48"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3477,7 +4171,9 @@
       "35",
       "45"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3487,7 +4183,9 @@
       "40%",
       "100%"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3497,7 +4195,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3507,7 +4207,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3517,7 +4219,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3527,7 +4231,9 @@
       "Quadrado",
       "Hexágono"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3537,7 +4243,9 @@
       "Espessura",
       "Volume em litros"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3547,7 +4255,9 @@
       "27",
       "36"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3557,7 +4267,9 @@
       "30",
       "40"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3567,7 +4279,9 @@
       "50",
       "500"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3577,7 +4291,9 @@
       "Reto",
       "Obtuso"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3587,7 +4303,9 @@
       "Reto",
       "Obtuso"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3597,7 +4315,9 @@
       "50°",
       "60°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3607,7 +4327,9 @@
       "Hexágono regular",
       "Octógono"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3617,7 +4339,9 @@
       "Dois quadrados",
       "Dois trapézios"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3627,7 +4351,9 @@
       "0,75",
       "7,5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3637,7 +4363,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3647,7 +4375,9 @@
       "30",
       "35"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3657,7 +4387,9 @@
       "Acutângulo, Retângulo e Obtusângulo",
       "Plano, Espacial e Curvo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3667,7 +4399,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3677,7 +4411,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3687,7 +4423,9 @@
       "6 lados",
       "8 lados"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3697,7 +4435,9 @@
       "4",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "5º Ano",
@@ -3707,7 +4447,9 @@
       "2",
       "9"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3717,7 +4459,9 @@
       "80",
       "100"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3727,7 +4471,9 @@
       "25%",
       "30%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3737,7 +4483,9 @@
       "2",
       "3"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3747,7 +4495,9 @@
       "Exatamente 2",
       "Todos os 3"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3757,7 +4507,9 @@
       "Dois",
       "Três"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3767,7 +4519,9 @@
       "Um retângulo e dois triângulos",
       "Apenas linhas curvas"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3777,7 +4531,9 @@
       "25%",
       "50%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3787,7 +4543,9 @@
       "R$ 30",
       "R$ 40"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3797,7 +4555,9 @@
       "10%",
       "100%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3807,7 +4567,9 @@
       "40%",
       "60%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3817,7 +4579,9 @@
       "90°",
       "180°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3827,7 +4591,9 @@
       "60°",
       "90°"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3837,7 +4603,9 @@
       "Retângulo",
       "Obtusângulo"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3847,7 +4615,9 @@
       "Círculo",
       "Pentágono"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "5º Ano",
@@ -3857,7 +4627,9 @@
       "100%",
       "200%"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -3867,7 +4639,9 @@
       "2/4",
       "3/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3877,7 +4651,9 @@
       "3/4",
       "2/6"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3887,7 +4663,9 @@
       "5/6",
       "9/10"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3897,7 +4675,9 @@
       "1/2",
       "1/4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3907,7 +4687,9 @@
       "3/9",
       "2/5"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3917,7 +4699,9 @@
       "1/2",
       "2/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3927,7 +4711,9 @@
       "2/5 e 4/8",
       "3/7 e 6/10"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3937,7 +4723,9 @@
       "9/15",
       "6/15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3947,7 +4735,9 @@
       "1/2",
       "2/3"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3957,7 +4747,9 @@
       "4 pedaços",
       "6 pedaços"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 1,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3967,7 +4759,9 @@
       "2/5",
       "4/10"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3977,7 +4771,9 @@
       "2/14",
       "6/14"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3987,7 +4783,9 @@
       "3/6",
       "2/3"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -3997,7 +4795,9 @@
       "10/20",
       "4/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4007,7 +4807,9 @@
       "1/4",
       "1/2"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4017,7 +4819,9 @@
       "3",
       "4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4027,7 +4831,9 @@
       "12",
       "15"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4037,7 +4843,9 @@
       "8",
       "9"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4047,7 +4855,9 @@
       "4",
       "8"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4057,7 +4867,9 @@
       "16",
       "18"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 2,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4067,7 +4879,9 @@
       "2",
       "3"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4077,7 +4891,9 @@
       "4",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4087,7 +4903,9 @@
       "18",
       "20"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4097,7 +4915,9 @@
       "5",
       "6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4107,7 +4927,9 @@
       "6",
       "8"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4117,7 +4939,9 @@
       "90",
       "100"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4127,7 +4951,9 @@
       "8",
       "9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4137,7 +4963,9 @@
       "5",
       "2"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4147,7 +4975,9 @@
       "32",
       "16"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4157,7 +4987,9 @@
       "3",
       "5"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 3,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4167,7 +4999,9 @@
       "A Maria",
       "Comeram a mesma quantidade"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4177,7 +5011,9 @@
       "O Pedro pintou mais",
       "Pintaram partes equivalentes"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4187,7 +5023,9 @@
       "2",
       "3"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4197,7 +5035,9 @@
       "As duas comeram frações equivalentes",
       "A Rita comeu mais"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4207,7 +5047,9 @@
       "A Beatriz",
       "Acertaram o mesmo"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4217,7 +5059,9 @@
       "3/4",
       "2/3"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4227,7 +5071,9 @@
       "1/4",
       "1/2"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4237,7 +5083,9 @@
       "Não o primeiro tem mais",
       "Não o segundo tem mais"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4247,7 +5095,9 @@
       "2 partes (2/3)",
       "3 partes (3/3)"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4257,7 +5107,9 @@
       "O atleta B está mais avançado",
       "Ambas as distâncias são iguais"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 4,
+    "dificuldade": "fácil"
   },
   {
     "turma": "4º Ano",
@@ -4267,7 +5119,9 @@
       "3/5",
       "2/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4277,7 +5131,9 @@
       "6/14",
       "8/7"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4287,7 +5143,9 @@
       "4/8",
       "2/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4297,7 +5155,9 @@
       "10/9",
       "7/9"
     ],
-    "correta": 2
+    "correta": 2,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4307,7 +5167,9 @@
       "3/4",
       "2/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4317,7 +5179,9 @@
       "9/10",
       "1/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4327,7 +5191,9 @@
       "5/12",
       "1/6"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4337,7 +5203,9 @@
       "2/3",
       "1/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4347,7 +5215,9 @@
       "9/12",
       "1/12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4357,7 +5227,9 @@
       "9/15",
       "14/15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 5,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4367,7 +5239,9 @@
       "4/7",
       "2/7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4377,7 +5251,9 @@
       "8/22",
       "2/11"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4387,7 +5263,9 @@
       "6/6 (ou 1 inteiro)",
       "2/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4397,7 +5275,9 @@
       "8/9",
       "16/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4407,7 +5287,9 @@
       "6/8",
       "5/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4417,7 +5299,9 @@
       "5/8",
       "1/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4427,7 +5311,9 @@
       "7/10",
       "1/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4437,7 +5323,9 @@
       "4/5 de litro",
       "1/5 de litro"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4447,7 +5335,9 @@
       "4/6",
       "2/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4457,7 +5347,9 @@
       "5/7",
       "1/7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 6,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4467,7 +5359,9 @@
       "3/4 de xícara",
       "1/4 de xícara"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4477,7 +5371,9 @@
       "7/9",
       "1/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4487,7 +5383,9 @@
       "9/12",
       "5/12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4497,7 +5395,9 @@
       "12/15",
       "4/15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4507,7 +5407,9 @@
       "4/5",
       "2/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4517,7 +5419,9 @@
       "7/10",
       "3/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4527,7 +5431,9 @@
       "5/6",
       "1/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4537,7 +5443,9 @@
       "8/14",
       "2/14"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4547,7 +5455,9 @@
       "9/11",
       "1/11"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4557,7 +5467,9 @@
       "5/8",
       "3/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 7,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4567,7 +5479,9 @@
       "3/5",
       "5/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4577,7 +5491,9 @@
       "4/0",
       "4/14"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4587,7 +5503,9 @@
       "3/8",
       "7/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4597,7 +5515,9 @@
       "3/9",
       "13/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4607,7 +5527,9 @@
       "2/0",
       "4/4"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4617,7 +5539,9 @@
       "5/10",
       "5/20"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4627,7 +5551,9 @@
       "3/12",
       "7/6"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4637,7 +5563,9 @@
       "1/3",
       "1/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4647,7 +5575,9 @@
       "7/12",
       "15/12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4657,7 +5587,9 @@
       "5/15",
       "19/15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 8,
+    "dificuldade": "médio"
   },
   {
     "turma": "4º Ano",
@@ -4667,7 +5599,9 @@
       "3/16",
       "11/8"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4677,7 +5611,9 @@
       "1/22",
       "11/11"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4687,7 +5623,9 @@
       "2/0",
       "10/6"
     ],
-    "correta": 0
+    "correta": 0,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4697,7 +5635,9 @@
       "7/9",
       "9/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4707,7 +5647,9 @@
       "4/10",
       "10/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4717,7 +5659,9 @@
       "4/8",
       "10/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4727,7 +5671,9 @@
       "3/10 de litro",
       "15/10 de litro"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4737,7 +5683,9 @@
       "3/6",
       "7/6"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4747,7 +5695,9 @@
       "3/7",
       "11/7"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4757,7 +5707,9 @@
       "5/12",
       "11/12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 9,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4767,7 +5719,9 @@
       "2/5",
       "6/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4777,7 +5731,9 @@
       "4/10 km",
       "14/10 km"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4787,7 +5743,9 @@
       "5/8",
       "7/8"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4797,7 +5755,9 @@
       "6/9",
       "10/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4807,7 +5767,9 @@
       "1/4",
       "5/4"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4817,7 +5779,9 @@
       "7/15",
       "15/15"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4827,7 +5791,9 @@
       "2/12",
       "22/12"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4837,7 +5803,9 @@
       "4/9",
       "10/9"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4847,7 +5815,9 @@
       "3/5",
       "7/5"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   },
   {
     "turma": "4º Ano",
@@ -4857,6 +5827,176 @@
       "5/10",
       "13/10"
     ],
-    "correta": 1
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Ana tinha 3 pacotes com 8 figurinhas cada e deu 5 figurinhas à amiga. Com quantas ficou?",
+    "opcoes": [
+      "18",
+      "19",
+      "20"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "48 balas serão divididas igualmente entre 6 crianças. Quantas balas cada criança receberá?",
+    "opcoes": [
+      "6",
+      "7",
+      "8"
+    ],
+    "correta": 2,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Uma escola comprou 3 caixas com 7 lápis em cada uma. Depois comprou mais 105 lápis. Quantos lápis comprou ao todo?",
+    "opcoes": [
+      "121",
+      "126",
+      "129"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Uma papelaria tinha 90 cadernos, vendeu 25 e recebeu mais 18. Quantos cadernos tem agora?",
+    "opcoes": [
+      "73",
+      "83",
+      "93"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Há 8 caixas com 5 brinquedos em cada. Se os brinquedos forem divididos igualmente entre 4 salas, quantos cada sala receberá?",
+    "opcoes": [
+      "8",
+      "10",
+      "12"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Uma loja tem 36 ovos organizados em caixas com 3 ovos cada. Quantas caixas completas consegue montar?",
+    "opcoes": [
+      "9",
+      "12",
+      "18"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Calcule: 24 + 18 - 9.",
+    "opcoes": [
+      "31",
+      "33",
+      "35"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Em uma gincana, 5 equipes fizeram 9 pontos cada. Depois ganharam mais 7 pontos. Quantos pontos fizeram?",
+    "opcoes": [
+      "45",
+      "52",
+      "55"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Uma professora distribuiu 72 lápis igualmente entre 8 grupos e depois entregou mais 14 lápis a cada grupo. Quantos lápis cada grupo recebeu?",
+    "opcoes": [
+      "21",
+      "23",
+      "25"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "2º Ano",
+    "pergunta": "Quatro caixas têm 12 lápis cada. Todos os lápis serão divididos igualmente entre 8 alunos. Quantos lápis cada aluno receberá?",
+    "opcoes": [
+      "4",
+      "6",
+      "8"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Uma mochila custa R$ 240 e recebeu desconto de 25%. Qual é o preço depois do desconto?",
+    "opcoes": [
+      "R$ 160",
+      "R$ 180",
+      "R$ 200"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um triângulo tem dois ângulos que medem 45° e 65°. Quanto mede o terceiro ângulo?",
+    "opcoes": [
+      "60°",
+      "70°",
+      "80°"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Uma turma tem 150 alunos. Se 3/5 participam de uma atividade, quantos alunos participam?",
+    "opcoes": [
+      "60",
+      "90",
+      "100"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
+  },
+  {
+    "turma": "5º Ano",
+    "pergunta": "Um terreno retangular mede 12 m de comprimento e 8 m de largura. Qual é sua área?",
+    "opcoes": [
+      "40 m²",
+      "96 m²",
+      "120 m²"
+    ],
+    "correta": 1,
+    "fase": 10,
+    "dificuldade": "difícil"
   }
 ]
