@@ -167,14 +167,25 @@
     .avatar-option {
       border: 3px solid #E2E8F0;
       border-radius: 15px;
-      padding: 8px;
+      padding: 5px;
+      min-height: 94px;
       text-align: center;
       cursor: pointer;
       background: #FAFAFA;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.8rem;
+      overflow: hidden;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+
+    .avatar-option:hover { transform: scale(1.04); }
+
+    .avatar-option img {
+      display: block;
+      width: 100%;
+      height: 82px;
+      object-fit: contain;
     }
 
     .avatar-option.selected {
@@ -183,15 +194,22 @@
     }
 
     .avatar-display-img {
-      width: 60px;
-      height: 60px;
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
       border-radius: 50%;
       border: 3px solid var(--primary-purple);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
+      overflow: hidden;
       background: #F3F0FF;
+    }
+
+    .avatar-display-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .turma-grid {
@@ -426,18 +444,30 @@
 
     <h3 style="margin-top: 15px;">Escolha seu Mascote</h3>
     <div class="avatar-grid">
-      <div class="avatar-option selected" onclick="selectAvatar('🦉', this)">🦉</div>
-      <div class="avatar-option" onclick="selectAvatar('🤖', this)">🤖</div>
-      <div class="avatar-option" onclick="selectAvatar('🐱', this)">🐱</div>
-      <div class="avatar-option" onclick="selectAvatar('🦊', this)">🦊</div>
-      <div class="avatar-option" onclick="selectAvatar('🐶', this)">🐶</div>
-      <div class="avatar-option" onclick="selectAvatar('🦋', this)">🦋</div>
-      <div class="avatar-option" onclick="selectAvatar('🦁', this)">🦁</div>
-      <div class="avatar-option" onclick="selectAvatar('🐼', this)">🐼</div>
-      <div class="avatar-option" onclick="selectAvatar('🦄', this)">🦄</div>
-      <div class="avatar-option" onclick="selectAvatar('🐲', this)">🐲</div>
-      <div class="avatar-option" onclick="selectAvatar('🦖', this)">🦖</div>
-      <div class="avatar-option" onclick="selectAvatar('👨‍🚀', this)">👨‍🚀</div>
+      <button type="button" class="avatar-option selected" data-avatar="mascote-menina1" onclick="selectAvatar('mascote-menina1', this)" aria-label="Selecionar menina1"><img src="Mascotes/mascote-menina1.webp" alt="menina1" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina3" onclick="selectAvatar('mascote-menina3', this)" aria-label="Selecionar menina3"><img src="Mascotes/mascote-menina3.webp" alt="menina3" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina5" onclick="selectAvatar('mascote-menina5', this)" aria-label="Selecionar menina5"><img src="Mascotes/mascote-menina5.webp" alt="menina5" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina7" onclick="selectAvatar('mascote-menina7', this)" aria-label="Selecionar menina7"><img src="Mascotes/mascote-menina7.webp" alt="menina7" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina8" onclick="selectAvatar('mascote-menina8', this)" aria-label="Selecionar menina8"><img src="Mascotes/mascote-menina8.webp" alt="menina8" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina10" onclick="selectAvatar('mascote-menina10', this)" aria-label="Selecionar menina10"><img src="Mascotes/mascote-menina10.webp" alt="menina10" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina12" onclick="selectAvatar('mascote-menina12', this)" aria-label="Selecionar menina12"><img src="Mascotes/mascote-menina12.webp" alt="menina12" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menina14" onclick="selectAvatar('mascote-menina14', this)" aria-label="Selecionar menina14"><img src="Mascotes/mascote-menina14.webp" alt="menina14" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino1" onclick="selectAvatar('mascote-menino1', this)" aria-label="Selecionar menino1"><img src="Mascotes/mascote-menino1.webp" alt="menino1" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino2" onclick="selectAvatar('mascote-menino2', this)" aria-label="Selecionar menino2"><img src="Mascotes/mascote-menino2.webp" alt="menino2" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino3" onclick="selectAvatar('mascote-menino3', this)" aria-label="Selecionar menino3"><img src="Mascotes/mascote-menino3.webp" alt="menino3" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino5" onclick="selectAvatar('mascote-menino5', this)" aria-label="Selecionar menino5"><img src="Mascotes/mascote-menino5.webp" alt="menino5" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino7" onclick="selectAvatar('mascote-menino7', this)" aria-label="Selecionar menino7"><img src="Mascotes/mascote-menino7.webp" alt="menino7" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino9" onclick="selectAvatar('mascote-menino9', this)" aria-label="Selecionar menino9"><img src="Mascotes/mascote-menino9.webp" alt="menino9" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino11" onclick="selectAvatar('mascote-menino11', this)" aria-label="Selecionar menino11"><img src="Mascotes/mascote-menino11.webp" alt="menino11" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-menino14" onclick="selectAvatar('mascote-menino14', this)" aria-label="Selecionar menino14"><img src="Mascotes/mascote-menino14.webp" alt="menino14" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-cachorro" onclick="selectAvatar('mascote-cachorro', this)" aria-label="Selecionar cachorro"><img src="Mascotes/mascote-cachorro.webp" alt="cachorro" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-coelho" onclick="selectAvatar('mascote-coelho', this)" aria-label="Selecionar coelho"><img src="Mascotes/mascote-coelho.webp" alt="coelho" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-dino" onclick="selectAvatar('mascote-dino', this)" aria-label="Selecionar dino"><img src="Mascotes/mascote-dino.webp" alt="dino" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-et" onclick="selectAvatar('mascote-et', this)" aria-label="Selecionar et"><img src="Mascotes/mascote-et.webp" alt="et" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-gato" onclick="selectAvatar('mascote-gato', this)" aria-label="Selecionar gato"><img src="Mascotes/mascote-gato.webp" alt="gato" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-leao" onclick="selectAvatar('mascote-leao', this)" aria-label="Selecionar leao"><img src="Mascotes/mascote-leao.webp" alt="leao" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-panda" onclick="selectAvatar('mascote-panda', this)" aria-label="Selecionar panda"><img src="Mascotes/mascote-panda.webp" alt="panda" loading="lazy"></button>
+      <button type="button" class="avatar-option" data-avatar="mascote-unicornio" onclick="selectAvatar('mascote-unicornio', this)" aria-label="Selecionar unicornio"><img src="Mascotes/mascote-unicornio.webp" alt="unicornio" loading="lazy"></button>
     </div>
 
     <h3>Sua Turma</h3>
@@ -456,7 +486,7 @@
   <!-- Home -->
   <div id="screen-home" class="screen">
     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-      <div id="display-avatar-container" class="avatar-display-img">🦉</div>
+      <div id="display-avatar-container" class="avatar-display-img"><img src="Mascotes/mascote-menina1.webp" alt="Mascote do perfil"></div>
       <div>
         <h3>Olá, <span id="display-user-name">Estudante</span>! <span id="admin-indicator" class="admin-badge" style="display:none;">ADMIN</span></h3>
         <p id="display-turma" style="color: #64748B; font-weight: bold;">Turma: 1º Ano</p>
@@ -639,7 +669,7 @@
 <script>
   let userData = JSON.parse(localStorage.getItem('mathfun_v5_user')) || {
     name: 'Estudante',
-    avatar: '🦉',
+    avatar: 'mascote-menina1',
     turma: '1º Ano',
     isAdmin: false,
     xp: 0,
@@ -647,6 +677,18 @@
     stars: 0,
     streak: 1
   };
+
+  // Migra avatares antigos (emojis) para os novos mascotes em imagem.
+  const legacyAvatarMap = {
+    '🐱': 'mascote-gato', '🦊': 'mascote-cachorro', '🐶': 'mascote-cachorro',
+    '🦁': 'mascote-leao', '🐼': 'mascote-panda', '🦄': 'mascote-unicornio',
+    '🐲': 'mascote-dino', '🤖': 'mascote-et', '🦉': 'mascote-menina1',
+    '🦋': 'mascote-menina1', '👨‍🚀': 'mascote-menino11'
+  };
+  if (legacyAvatarMap[userData.avatar]) {
+    userData.avatar = legacyAvatarMap[userData.avatar];
+    localStorage.setItem('mathfun_v5_user', JSON.stringify(userData));
+  }
 
   // Vídeo-aulas estruturadas por turma/módulo.
   // Para cadastrar um vídeo, coloque o link do YouTube em "embedUrl".
@@ -838,7 +880,7 @@
 
   function restoreProfileSelections() {
     document.querySelectorAll('.avatar-option').forEach(el => {
-      el.classList.toggle('selected', el.textContent.trim() === userData.avatar);
+      el.classList.toggle('selected', el.dataset.avatar === userData.avatar);
     });
     document.querySelectorAll('.turma-option').forEach(el => {
       el.classList.toggle('selected', el.textContent.trim() === userData.turma);
@@ -866,10 +908,11 @@
     }
   }
 
-  function selectAvatar(emoji, el) {
-    userData.avatar = emoji;
+  function selectAvatar(avatarId, el) {
+    userData.avatar = avatarId;
     document.querySelectorAll('.avatar-option').forEach(e => e.classList.remove('selected'));
     el.classList.add('selected');
+    updateUI();
   }
 
   function selectTurma(turma, el) {
@@ -1280,7 +1323,7 @@
 
   function updateUI() {
     document.getElementById('display-user-name').innerText = userData.name;
-    document.getElementById('display-avatar-container').innerText = userData.avatar;
+    document.getElementById('display-avatar-container').innerHTML = `<img src="Mascotes/${userData.avatar}.webp" alt="Mascote do perfil">`;
     document.getElementById('display-turma').innerText = 'Turma: ' + userData.turma;
     document.getElementById('stars-count').innerText = userData.stars;
     document.getElementById('streak-count').innerText = userData.streak;
