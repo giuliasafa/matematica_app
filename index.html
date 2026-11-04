@@ -903,6 +903,7 @@
       questionBank = data;
       questionBankReady = true;
       updateQuestionBankInfo();
+      renderPhaseList();
     } catch (error) {
       console.error('Erro ao carregar banco de questões:', error);
       questionBank = [];
