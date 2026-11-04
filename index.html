@@ -451,7 +451,8 @@
       <img src="logo-mathfun.jpg" alt="MathFun — Matemática Brincando">
     </div>
     <h2>Bem-vindo! 👋</h2>
-    <p style="color: #64748B;">Digite seu nome e escolha seu avatar:</p>
+    <p style="color: #64748B;">Digite seu nome ou apelido e escolha seu avatar:</p>
+    <div id="nome-pendente-aviso" style="display:none; background:#FEF3C7; border:2px solid #F59E0B; padding:12px; border-radius:12px; margin:12px 0; color:#92400E;"><strong>⚠️ Precisamos que você escolha outro apelido.</strong><p style="margin-top:5px;">Enquanto isso, seu nome aparecerá como Estudante para os demais usuários.</p></div>
 
     <input type="text" id="user-name-input" class="input-field" placeholder="Seu nome ou apelido" onkeypress="handleEnter(event, saveProfile)">
 
@@ -628,6 +629,9 @@
         <strong>⚙️ Modo Administrador</strong>
         <p style="font-size: 0.85rem;">Aqui você pode visualizar e responder às dúvidas enviadas por todos os alunos.</p>
       </div>
+      <h3>Moderação de nomes</h3>
+      <p style="font-size:.85rem;color:#64748B;margin:5px 0 10px;">Se um apelido for inadequado, solicite a alteração. O aluno aparecerá como Estudante até escolher outro.</p>
+      <div id="moderacao-nomes-lista" style="margin-bottom:18px;"></div>
       <h3>Dúvidas Enviadas:</h3>
       <div id="todas-duvidas-lista" style="margin-top: 10px;"></div>
     </div>
@@ -693,6 +697,7 @@
     ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY)
     : null;
   let currentAuthUser = null;
+  let nomePendenteAlteracao = false;
 
   async function iniciarAutenticacao() {
     if (!supabaseClient) {
@@ -950,7 +955,8 @@
     loadVideoDatabase();
 
     const profileConfigured = localStorage.getItem('mathfun_v5_user') !== null || localStorage.getItem('mathfun_v5_profile_configured') === 'true';
-    if (profileConfigured) {
+    if (profileConfigured && !userData.isAdmin) await verificarSolicitacaoNome();
+    if (profileConfigured && !nomePendenteAlteracao) {
       if (!userData.isAdmin) await sincronizarPerfilERanking();
       switchScreen('screen-home', document.querySelector('.nav-item'));
     } else {
@@ -1032,16 +1038,29 @@
     updateQuestionBankInfo();
   }
 
-  function saveProfile() {
+  async function saveProfile() {
     const nameInput = document.getElementById('user-name-input').value.trim();
-    if (nameInput) userData.name = nameInput;
+    if (!nameInput) { alert('Digite um nome ou apelido para continuar.'); return; }
+    if (nameInput.length > 30) { alert('Use um apelido com até 30 caracteres.'); return; }
+    userData.name = nameInput;
+    if (nomePendenteAlteracao && supabaseClient && currentAuthUser) {
+      const { error } = await supabaseClient.rpc('finalizar_troca_nome', { novo_apelido: nameInput });
+      if (error) {
+        console.error('Erro ao concluir alteração de apelido:', error);
+        alert('Não foi possível salvar o novo apelido. Confira a conexão e tente novamente.');
+        userData.name = 'Estudante';
+        return;
+      }
+      nomePendenteAlteracao = false;
+      document.getElementById('nome-pendente-aviso').style.display = 'none';
+    }
     saveData();
     localStorage.setItem('mathfun_v5_profile_configured', 'true');
     restoreProfileSelections();
     updateUI();
     renderVideos();
     updateQuestionBankInfo();
-    if (!userData.isAdmin) sincronizarPerfilERanking();
+    if (!userData.isAdmin) await sincronizarPerfilERanking();
     switchScreen('screen-home', document.querySelectorAll('.nav-item')[0]);
   }
 
@@ -1266,6 +1285,7 @@
 
     adminPanel.style.display = userData.isAdmin ? 'block' : 'none';
     alunoPanel.style.display = userData.isAdmin ? 'none' : 'block';
+    if (userData.isAdmin) await renderModeracaoNomes();
     container.innerHTML = '';
 
     if (!currentAuthUser) {
@@ -1517,6 +1537,71 @@
     saveData();
     updateUI();
     if (!userData.isAdmin) sincronizarPontuacao();
+  }
+
+  async function verificarSolicitacaoNome() {
+    if (!supabaseClient || !currentAuthUser || userData.isAdmin) return;
+    const { data, error } = await supabaseClient.from('mathfun_perfis')
+      .select('apelido, turma, nome_pendente').eq('user_id', currentAuthUser.id).maybeSingle();
+    if (error) { console.error('Não foi possível verificar a moderação do apelido:', error); return; }
+    if (data && data.nome_pendente) {
+      nomePendenteAlteracao = true;
+      userData.name = 'Estudante';
+      localStorage.setItem('mathfun_v5_user', JSON.stringify({ ...userData, name: 'Estudante', isAdmin: false }));
+      document.getElementById('user-name-input').value = '';
+      document.getElementById('nome-pendente-aviso').style.display = 'block';
+    }
+  }
+
+  async function renderModeracaoNomes() {
+    const container = document.getElementById('moderacao-nomes-lista');
+    if (!container || !userData.isAdmin || !supabaseClient) return;
+    container.textContent = 'Carregando alunos...';
+    const { data, error } = await supabaseClient.from('mathfun_perfis')
+      .select('user_id, apelido, turma, nome_pendente')
+      .order('turma', { ascending: true }).order('apelido', { ascending: true });
+    if (error) {
+      console.error('Erro ao carregar perfis para moderação:', error);
+      container.textContent = 'Não foi possível carregar a lista. Verifique a configuração do Supabase.';
+      return;
+    }
+    container.innerHTML = '';
+    if (!data || data.length === 0) { container.textContent = 'Nenhum perfil de aluno cadastrado ainda.'; return; }
+    data.forEach(perfil => {
+      const item = document.createElement('div'); item.className = 'duvida-item';
+      const titulo = document.createElement('strong');
+      titulo.textContent = (perfil.nome_pendente ? 'Estudante' : (perfil.apelido || 'Estudante')) + ' — ' + perfil.turma;
+      item.appendChild(titulo);
+      const status = document.createElement('p');
+      status.style.cssText = 'font-size:.8rem;color:#64748B;margin:4px 0;';
+      status.textContent = perfil.nome_pendente ? 'Aguardando novo apelido' : 'Apelido visível';
+      item.appendChild(status);
+      if (!perfil.nome_pendente) {
+        const botao = document.createElement('button'); botao.className = 'admin-btn';
+        botao.style.cssText = 'background:var(--primary-orange);padding:8px 10px;';
+        botao.textContent = 'Solicitar alteração de nome';
+        botao.addEventListener('click', () => solicitarAlteracaoNome(perfil));
+        item.appendChild(botao);
+      }
+      container.appendChild(item);
+    });
+  }
+
+  async function solicitarAlteracaoNome(perfil) {
+    if (!userData.isAdmin || !currentAuthUser) return;
+    if (!confirm('Solicitar que este aluno escolha outro apelido? O nome ficará como “Estudante” até a alteração.')) return;
+    const { error: perfilError } = await supabaseClient.from('mathfun_perfis')
+      .update({ nome_pendente: true }).eq('user_id', perfil.user_id);
+    if (perfilError) {
+      console.error('Erro ao solicitar alteração de nome:', perfilError);
+      alert('Não foi possível registrar a solicitação. Confira a configuração do Supabase.');
+      return;
+    }
+    const { error: rankingError } = await supabaseClient.from('mathfun_ranking')
+      .update({ apelido: 'Estudante' }).eq('user_id', perfil.user_id);
+    if (rankingError) console.error('Não foi possível ocultar o apelido no ranking:', rankingError);
+    alert('Solicitação registrada. O aluno aparecerá como Estudante até escolher outro apelido.');
+    await renderModeracaoNomes();
   }
 
   // Sincroniza apenas apelido, turma e XP; nenhum e-mail é enviado ao ranking.
