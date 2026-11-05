@@ -664,40 +664,11 @@
     </div>
   </div>
 
-  <!-- Recompensas Expandidas -->
+  <!-- Recompensas progressivas -->
   <div id="screen-rewards" class="screen">
     <h2>Minhas Recompensas 🏆</h2>
-    <p style="color: #64748B; margin-bottom: 15px;">Jogue e evolua para desbloquear os selos:</p>
-
-    <div class="card badge-card" id="badge-1">
-      <strong>🥇 Primeiro Passo</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">Alcance seus primeiros 10 XP.</p>
-      <span class="badge-status" id="status-badge-1">🔒 Bloqueado</span>
-    </div>
-
-    <div class="card badge-card" id="badge-2">
-      <strong>⭐ Aprendiz Dedicado</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">Acumule 50 XP no aplicativo.</p>
-      <span class="badge-status" id="status-badge-2">🔒 Bloqueado</span>
-    </div>
-
-    <div class="card badge-card" id="badge-3">
-      <strong>🚀 Subindo de Nível</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">Chegue ao Nível 2.</p>
-      <span class="badge-status" id="status-badge-3">🔒 Bloqueado</span>
-    </div>
-
-    <div class="card badge-card" id="badge-4">
-      <strong>🔥 Colecionador de Estrelas</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">Junte pelo menos 20 Estrelas.</p>
-      <span class="badge-status" id="status-badge-4">🔒 Bloqueado</span>
-    </div>
-
-    <div class="card badge-card" id="badge-5">
-      <strong>🏆 Mestre da Matemática</strong>
-      <p style="font-size: 0.85rem; color: #64748B;">Alcance 150 XP e Nível 3.</p>
-      <span class="badge-status" id="status-badge-5">🔒 Bloqueado</span>
-    </div>
+    <p style="color:#64748B;margin-bottom:15px;">Conclua as fases dos quizzes para conquistar seus 10 selos especiais!</p>
+    <div id="badges-container"></div>
 
     <h3 style="margin-top:24px;">🏅 Ranking da turma</h3>
     <p style="color:#64748B;font-size:0.9rem;margin-bottom:10px;">Classificação pelo XP acumulado da sua turma.</p>
@@ -1833,3 +1804,45 @@
 
 </body>
 </html>
+  function renderRewards() {
+    if (!userData.isAdmin) carregarRanking();
+    const container = document.getElementById('badges-container');
+    if (!container) return;
+
+    const progress = typeof getPhaseProgress === 'function'
+      ? getPhaseProgress()
+      : { completedPhases: [] };
+    const completed = Array.isArray(progress.completedPhases)
+      ? progress.completedPhases
+      : [];
+
+    const rewards = [
+      ['🌱','Primeiros Passos','Conclua a Fase 1.','First Steps','Complete Phase 1.'],
+      ['⭐','Aprendiz em Ação','Conclua a Fase 2.','Active Learner','Complete Phase 2.'],
+      ['🧠','Mente Curiosa','Conclua a Fase 3.','Curious Mind','Complete Phase 3.'],
+      ['🚀','Pequeno Explorador','Conclua a Fase 4.','Little Explorer','Complete Phase 4.'],
+      ['🏅','Desafio Intermediário','Conclua a Fase 5.','Intermediate Challenge','Complete Phase 5.'],
+      ['🔥','Mestre da Persistência','Conclua a Fase 6.','Persistence Master','Complete Phase 6.'],
+      ['💎','Gênio em Evolução','Conclua a Fase 7.','Rising Math Star','Complete Phase 7.'],
+      ['🎯','Quase Lá!','Conclua a Fase 8.','Almost There!','Complete Phase 8.'],
+      ['👑','Grande Desafiador','Conclua a Fase 9.','Great Challenger','Complete Phase 9.'],
+      ['🏆','Lenda do MathFun','Conclua a Fase 10 e finalize todos os desafios.','MathFun Legend','Complete Phase 10 and finish every challenge.']
+    ];
+
+    const ingles = appLanguage === 'en';
+    container.innerHTML = rewards.map((reward,index) => {
+      const fase = index + 1;
+      const unlocked = completed.includes(fase);
+      const nome = ingles ? reward[3] : reward[1];
+      const descricao = ingles ? reward[4] : reward[2];
+      const status = unlocked
+        ? (ingles ? '✅ Earned!' : '✅ Conquistado!')
+        : (ingles ? '🔒 Locked' : '🔒 Bloqueado');
+      return `<div class="card badge-card ${unlocked?'unlocked':''}" id="badge-${fase}">
+        <strong>${reward[0]} ${ingles?'Phase':'Fase'} ${fase} — ${nome}</strong>
+        <p style="font-size:0.85rem;color:#64748B;">${descricao}</p>
+        <span class="badge-status" id="status-badge-${fase}">${status}</span>
+      </div>`;
+    }).join('');
+  }
+
