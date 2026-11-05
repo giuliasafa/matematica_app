@@ -778,6 +778,7 @@
     applyAppLanguage();
     if (typeof renderPhaseList === 'function') renderPhaseList();
     if (typeof updatePhaseProgressDisplay === 'function') updatePhaseProgressDisplay();
+    if (typeof showFlashcard === 'function' && document.getElementById('screen-flashcards')?.classList.contains('active')) showFlashcard();
     if (typeof updateQuestionBankInfo === 'function') updateQuestionBankInfo();
     if (typeof renderRewards === 'function') renderRewards();
     if (typeof renderVideos === 'function') renderVideos();
@@ -978,10 +979,31 @@
     }
   }
 
-  const flashcardsAvancados = [
-    { frente: "📐 Perímetro vs Área", verso: "Perímetro: Soma dos lados.\nÁrea: Espaço interno (Base x Altura)." },
-    { frente: "🍕 Fração", verso: "Numerador (cima): Partes consideradas.\nDenominador (baixo): Total de partes." }
-  ];
+  let flashcardsAvancados = [];
+  let flashcardsDatabaseReady = false;
+
+  async function loadFlashcards() {
+    try {
+      const url = new URL('flashcards.json', document.baseURI).href;
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status} ao acessar ${url}`);
+      const data = await response.json();
+      if (!Array.isArray(data)) throw new Error('flashcards.json precisa conter uma lista de cartões');
+      flashcardsAvancados = data;
+      flashcardsDatabaseReady = true;
+      flashcardIndex = 0;
+      if (document.getElementById('screen-flashcards')?.classList.contains('active')) showFlashcard();
+    } catch (error) {
+      console.error('Erro ao carregar flashcards.json:', error);
+      flashcardsAvancados = [];
+      flashcardsDatabaseReady = false;
+      showFlashcard();
+    }
+  }
+
+  function getFlashcardsForCurrentClass() {
+    return flashcardsAvancados.filter(card => card.turma === userData.turma);
+  }
 
   // Banco de questões externo. O arquivo questoes.json fica na mesma pasta deste HTML.
   let questionBank = [];
@@ -1039,6 +1061,7 @@
     applyAppLanguage();
     loadQuestionBank();
     loadVideoDatabase();
+    loadFlashcards();
 
     const profileConfigured = localStorage.getItem('mathfun_v5_user') !== null || localStorage.getItem('mathfun_v5_profile_configured') === 'true';
     if (profileConfigured && !userData.isAdmin) await verificarSolicitacaoNome();
@@ -1596,19 +1619,42 @@
   }
 
   function showFlashcard() {
+    const text = document.getElementById('flashcard-text');
+    if (!text) return;
     flashcardFlipped = false;
-    document.getElementById('flashcard-text').innerText = flashcardsAvancados[flashcardIndex].frente;
+    const cards = getFlashcardsForCurrentClass();
+
+    if (!flashcardsDatabaseReady) {
+      text.innerText = appLanguage === 'en' ? 'Loading flashcards...' : 'Carregando flashcards...';
+      return;
+    }
+    if (!cards.length) {
+      text.innerText = appLanguage === 'en'
+        ? 'No flashcards are available for this grade yet.'
+        : 'Ainda não há flashcards disponíveis para esta turma.';
+      return;
+    }
+
+    flashcardIndex = Math.min(flashcardIndex, cards.length - 1);
+    const card = cards[flashcardIndex];
+    text.innerText = appLanguage === 'en' ? (card.frente_en || card.frente) : card.frente;
   }
 
   function flipFlashcard() {
+    const text = document.getElementById('flashcard-text');
+    const cards = getFlashcardsForCurrentClass();
+    if (!text || !cards.length || !flashcardsDatabaseReady) return;
     flashcardFlipped = !flashcardFlipped;
-    document.getElementById('flashcard-text').innerText = flashcardFlipped 
-      ? flashcardsAvancados[flashcardIndex].verso 
-      : flashcardsAvancados[flashcardIndex].frente;
+    const card = cards[flashcardIndex];
+    text.innerText = flashcardFlipped
+      ? (appLanguage === 'en' ? (card.verso_en || card.verso) : card.verso)
+      : (appLanguage === 'en' ? (card.frente_en || card.frente) : card.frente);
   }
 
   function nextFlashcard() {
-    flashcardIndex = (flashcardIndex + 1) % flashcardsAvancados.length;
+    const cards = getFlashcardsForCurrentClass();
+    if (!cards.length || !flashcardsDatabaseReady) return;
+    flashcardIndex = (flashcardIndex + 1) % cards.length;
     showFlashcard();
   }
 
