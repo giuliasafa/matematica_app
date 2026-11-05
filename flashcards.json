@@ -1,0 +1,452 @@
+[
+  {
+    "id": "1-1",
+    "turma": "1º Ano",
+    "assunto": "O que é adição?",
+    "frente": "➕ O que é adição?",
+    "verso": "É juntar ou acrescentar quantidades. Exemplo: 3 + 2 = 5.",
+    "frente_en": "What is addition?",
+    "verso_en": "It means putting quantities together. Example: 3 + 2 = 5."
+  },
+  {
+    "id": "1-2",
+    "turma": "1º Ano",
+    "assunto": "O que é subtração?",
+    "frente": "➖ O que é subtração?",
+    "verso": "É retirar ou comparar quantidades. Exemplo: 7 − 3 = 4.",
+    "frente_en": "What is subtraction?",
+    "verso_en": "It means taking away or comparing quantities. Example: 7 − 3 = 4."
+  },
+  {
+    "id": "1-3",
+    "turma": "1º Ano",
+    "assunto": "O que é uma unidade?",
+    "frente": "🔟 O que é uma unidade?",
+    "verso": "É um elemento sozinho. O número 6 tem 6 unidades.",
+    "frente_en": "What is a unit?",
+    "verso_en": "It is one single item. The number 6 has 6 units."
+  },
+  {
+    "id": "1-4",
+    "turma": "1º Ano",
+    "assunto": "O que é uma dezena?",
+    "frente": "🔟 O que é uma dezena?",
+    "verso": "Uma dezena corresponde a 10 unidades.",
+    "frente_en": "What is a ten?",
+    "verso_en": "One ten is equal to 10 units."
+  },
+  {
+    "id": "1-5",
+    "turma": "1º Ano",
+    "assunto": "Como decompor o número 14?",
+    "frente": "🔢 Como decompor o número 14?",
+    "verso": "14 = 10 + 4: uma dezena e quatro unidades.",
+    "frente_en": "How can you split 14?",
+    "verso_en": "14 = 10 + 4: one ten and four units."
+  },
+  {
+    "id": "1-6",
+    "turma": "1º Ano",
+    "assunto": "Quanto é 8 + 5?",
+    "frente": "➕ Quanto é 8 + 5?",
+    "verso": "13. Podemos fazer 8 + 2 + 3 = 13.",
+    "frente_en": "What is 8 + 5?",
+    "verso_en": "13. We can calculate 8 + 2 + 3 = 13."
+  },
+  {
+    "id": "1-7",
+    "turma": "1º Ano",
+    "assunto": "Quanto é 12 − 4?",
+    "frente": "➖ Quanto é 12 − 4?",
+    "verso": "8. Tirando 4 de 12, restam 8.",
+    "frente_en": "What is 12 − 4?",
+    "verso_en": "8. Taking 4 away from 12 leaves 8."
+  },
+  {
+    "id": "1-8",
+    "turma": "1º Ano",
+    "assunto": "Qual operação usamos para descobrir quanto falta?",
+    "frente": "🔄 Qual operação usamos para descobrir quanto falta?",
+    "verso": "A subtração. Exemplo: faltam 3 para chegar de 7 a 10 (10 − 7 = 3).",
+    "frente_en": "Which operation tells us how many are missing?",
+    "verso_en": "Subtraction. Example: 3 are needed to go from 7 to 10 (10 − 7 = 3)."
+  },
+  {
+    "id": "1-9",
+    "turma": "1º Ano",
+    "assunto": "O que acontece ao somar zero?",
+    "frente": "🧮 O que acontece ao somar zero?",
+    "verso": "O número não muda: 5 + 0 = 5.",
+    "frente_en": "What happens when we add zero?",
+    "verso_en": "The number stays the same: 5 + 0 = 5."
+  },
+  {
+    "id": "1-10",
+    "turma": "1º Ano",
+    "assunto": "O que acontece ao subtrair zero?",
+    "frente": "🧮 O que acontece ao subtrair zero?",
+    "verso": "O número não muda: 9 − 0 = 9.",
+    "frente_en": "What happens when we subtract zero?",
+    "verso_en": "The number stays the same: 9 − 0 = 9."
+  },
+  {
+    "id": "2-1",
+    "turma": "2º Ano",
+    "assunto": "Como somar dezenas e unidades?",
+    "frente": "➕ Como somar dezenas e unidades?",
+    "verso": "Some os valores correspondentes. Exemplo: 45 + 23 = 60 + 8 = 68.",
+    "frente_en": "How do you add tens and units?",
+    "verso_en": "Add the matching place values. Example: 45 + 23 = 60 + 8 = 68."
+  },
+  {
+    "id": "2-2",
+    "turma": "2º Ano",
+    "assunto": "Como calcular 78 − 34?",
+    "frente": "➖ Como calcular 78 − 34?",
+    "verso": "Subtraia unidades e dezenas: 8 − 4 = 4 e 7 dezenas − 3 dezenas = 4 dezenas. Resultado: 44.",
+    "frente_en": "How do you calculate 78 − 34?",
+    "verso_en": "Subtract units and tens: 8 − 4 = 4 and 7 tens − 3 tens = 4 tens. Answer: 44."
+  },
+  {
+    "id": "2-3",
+    "turma": "2º Ano",
+    "assunto": "O que é multiplicação?",
+    "frente": "✖️ O que é multiplicação?",
+    "verso": "É uma adição de parcelas iguais. Exemplo: 4 × 3 = 3 + 3 + 3 + 3 = 12.",
+    "frente_en": "What is multiplication?",
+    "verso_en": "It is repeated addition. Example: 4 × 3 = 3 + 3 + 3 + 3 = 12."
+  },
+  {
+    "id": "2-4",
+    "turma": "2º Ano",
+    "assunto": "Quanto é 5 × 4?",
+    "frente": "✖️ Quanto é 5 × 4?",
+    "verso": "20. São 5 grupos com 4 elementos em cada grupo.",
+    "frente_en": "What is 5 × 4?",
+    "verso_en": "20. That is 5 groups with 4 items in each group."
+  },
+  {
+    "id": "2-5",
+    "turma": "2º Ano",
+    "assunto": "O que é divisão?",
+    "frente": "➗ O que é divisão?",
+    "verso": "É repartir em partes iguais ou descobrir quantos grupos podemos formar.",
+    "frente_en": "What is division?",
+    "verso_en": "It means sharing equally or finding how many groups can be made."
+  },
+  {
+    "id": "2-6",
+    "turma": "2º Ano",
+    "assunto": "Quanto é 12 ÷ 3?",
+    "frente": "➗ Quanto é 12 ÷ 3?",
+    "verso": "4. Se repartirmos 12 em 3 grupos iguais, cada grupo terá 4.",
+    "frente_en": "What is 12 ÷ 3?",
+    "verso_en": "4. If we share 12 into 3 equal groups, each group has 4."
+  },
+  {
+    "id": "2-7",
+    "turma": "2º Ano",
+    "assunto": "O que é uma centena?",
+    "frente": "🔢 O que é uma centena?",
+    "verso": "Uma centena corresponde a 100 unidades ou 10 dezenas.",
+    "frente_en": "What is one hundred?",
+    "verso_en": "One hundred is equal to 100 units or 10 tens."
+  },
+  {
+    "id": "2-8",
+    "turma": "2º Ano",
+    "assunto": "Qual operação pode conferir uma subtração?",
+    "frente": "🔄 Qual operação pode conferir uma subtração?",
+    "verso": "A adição. Exemplo: 78 − 34 = 44; confira: 44 + 34 = 78.",
+    "frente_en": "Which operation can check a subtraction?",
+    "verso_en": "Addition. Example: 78 − 34 = 44; check: 44 + 34 = 78."
+  },
+  {
+    "id": "2-9",
+    "turma": "2º Ano",
+    "assunto": "Quanto é 6 × 3?",
+    "frente": "🧮 Quanto é 6 × 3?",
+    "verso": "18. São 6 grupos de 3 ou 3 grupos de 6.",
+    "frente_en": "What is 6 × 3?",
+    "verso_en": "18. That is 6 groups of 3, or 3 groups of 6."
+  },
+  {
+    "id": "2-10",
+    "turma": "2º Ano",
+    "assunto": "Como descobrir o resultado de 20 ÷ 4?",
+    "frente": "🧩 Como descobrir o resultado de 20 ÷ 4?",
+    "verso": "Pense: qual número multiplicado por 4 resulta em 20? É 5.",
+    "frente_en": "How can you solve 20 ÷ 4?",
+    "verso_en": "Think: what number multiplied by 4 equals 20? It is 5."
+  },
+  {
+    "id": "3-1",
+    "turma": "3º Ano",
+    "assunto": "O que é massa?",
+    "frente": "⚖️ O que é massa?",
+    "verso": "É a grandeza que indica a quantidade de matéria de um corpo.",
+    "frente_en": "What is mass?",
+    "verso_en": "It is the quantity of matter in an object."
+  },
+  {
+    "id": "3-2",
+    "turma": "3º Ano",
+    "assunto": "Qual é a unidade grama?",
+    "frente": "⚖️ Qual é a unidade grama?",
+    "verso": "O grama (g) é usado para medir massas menores.",
+    "frente_en": "What is a gram?",
+    "verso_en": "A gram (g) is used to measure smaller masses."
+  },
+  {
+    "id": "3-3",
+    "turma": "3º Ano",
+    "assunto": "Quantos gramas há em 1 quilograma?",
+    "frente": "⚖️ Quantos gramas há em 1 quilograma?",
+    "verso": "1 quilograma (kg) = 1.000 gramas (g).",
+    "frente_en": "How many grams are in 1 kilogram?",
+    "verso_en": "1 kilogram (kg) = 1,000 grams (g)."
+  },
+  {
+    "id": "3-4",
+    "turma": "3º Ano",
+    "assunto": "Quanto é meio quilograma?",
+    "frente": "📦 Quanto é meio quilograma?",
+    "verso": "Meio quilograma corresponde a 500 gramas.",
+    "frente_en": "How much is half a kilogram?",
+    "verso_en": "Half a kilogram is 500 grams."
+  },
+  {
+    "id": "3-5",
+    "turma": "3º Ano",
+    "assunto": "Qual instrumento mede a massa?",
+    "frente": "⚖️ Qual instrumento mede a massa?",
+    "verso": "A balança.",
+    "frente_en": "Which instrument measures mass?",
+    "verso_en": "A scale."
+  },
+  {
+    "id": "3-6",
+    "turma": "3º Ano",
+    "assunto": "Quando usamos gramas?",
+    "frente": "📏 Quando usamos gramas?",
+    "verso": "Para objetos leves, como um clipe ou pequenas porções de alimentos.",
+    "frente_en": "When do we use grams?",
+    "verso_en": "For light objects, such as a paper clip or small portions of food."
+  },
+  {
+    "id": "3-7",
+    "turma": "3º Ano",
+    "assunto": "Quando usamos quilogramas?",
+    "frente": "🐘 Quando usamos quilogramas?",
+    "verso": "Para massas maiores, como a de uma pessoa ou de um animal.",
+    "frente_en": "When do we use kilograms?",
+    "verso_en": "For larger masses, such as a person or an animal."
+  },
+  {
+    "id": "3-8",
+    "turma": "3º Ano",
+    "assunto": "Quanto vale 1 tonelada?",
+    "frente": "🚚 Quanto vale 1 tonelada?",
+    "verso": "1 tonelada equivale a 1.000 quilogramas.",
+    "frente_en": "How much is one tonne?",
+    "verso_en": "1 tonne is equal to 1,000 kilograms."
+  },
+  {
+    "id": "3-9",
+    "turma": "3º Ano",
+    "assunto": "Quantos pacotes de 250 g formam 1 kg?",
+    "frente": "☕ Quantos pacotes de 250 g formam 1 kg?",
+    "verso": "Quatro pacotes, pois 4 × 250 g = 1.000 g.",
+    "frente_en": "How many 250 g packs make 1 kg?",
+    "verso_en": "Four packs, because 4 × 250 g = 1,000 g."
+  },
+  {
+    "id": "3-10",
+    "turma": "3º Ano",
+    "assunto": "Quanto pesam dois pacotes de 500 g?",
+    "frente": "🌾 Quanto pesam dois pacotes de 500 g?",
+    "verso": "Juntos, pesam 1.000 g, ou seja, 1 kg.",
+    "frente_en": "How much do two 500 g packs weigh?",
+    "verso_en": "Together, they weigh 1,000 g, which is 1 kg."
+  },
+  {
+    "id": "4-1",
+    "turma": "4º Ano",
+    "assunto": "O que é uma fração?",
+    "frente": "🍕 O que é uma fração?",
+    "verso": "É uma forma de representar partes iguais de um todo.",
+    "frente_en": "What is a fraction?",
+    "verso_en": "It represents equal parts of a whole."
+  },
+  {
+    "id": "4-2",
+    "turma": "4º Ano",
+    "assunto": "O que indica o numerador?",
+    "frente": "🔢 O que indica o numerador?",
+    "verso": "O número de cima indica quantas partes estão sendo consideradas.",
+    "frente_en": "What does the numerator show?",
+    "verso_en": "The top number shows how many parts are being considered."
+  },
+  {
+    "id": "4-3",
+    "turma": "4º Ano",
+    "assunto": "O que indica o denominador?",
+    "frente": "🔢 O que indica o denominador?",
+    "verso": "O número de baixo indica em quantas partes iguais o todo foi dividido.",
+    "frente_en": "What does the denominator show?",
+    "verso_en": "The bottom number shows how many equal parts the whole was divided into."
+  },
+  {
+    "id": "4-4",
+    "turma": "4º Ano",
+    "assunto": "Qual fração é equivalente a 1/2?",
+    "frente": "½ Qual fração é equivalente a 1/2?",
+    "verso": "2/4, 3/6 e 4/8 são exemplos de frações equivalentes a 1/2.",
+    "frente_en": "Which fraction is equivalent to 1/2?",
+    "verso_en": "2/4, 3/6 and 4/8 are examples of fractions equivalent to 1/2."
+  },
+  {
+    "id": "4-5",
+    "turma": "4º Ano",
+    "assunto": "O que são frações equivalentes?",
+    "frente": "🔄 O que são frações equivalentes?",
+    "verso": "São frações diferentes que representam a mesma quantidade.",
+    "frente_en": "What are equivalent fractions?",
+    "verso_en": "They are different fractions that represent the same amount."
+  },
+  {
+    "id": "4-6",
+    "turma": "4º Ano",
+    "assunto": "Como criar uma fração equivalente?",
+    "frente": "✖️ Como criar uma fração equivalente?",
+    "verso": "Multiplique o numerador e o denominador pelo mesmo número diferente de zero.",
+    "frente_en": "How do you make an equivalent fraction?",
+    "verso_en": "Multiply the numerator and denominator by the same non-zero number."
+  },
+  {
+    "id": "4-7",
+    "turma": "4º Ano",
+    "assunto": "Como simplificar uma fração?",
+    "frente": "➗ Como simplificar uma fração?",
+    "verso": "Divida o numerador e o denominador pelo mesmo divisor comum.",
+    "frente_en": "How do you simplify a fraction?",
+    "verso_en": "Divide the numerator and denominator by the same common divisor."
+  },
+  {
+    "id": "4-8",
+    "turma": "4º Ano",
+    "assunto": "2/4 é equivalente a qual fração simples?",
+    "frente": "🍕 2/4 é equivalente a qual fração simples?",
+    "verso": "1/2. Dividimos o numerador e o denominador por 2.",
+    "frente_en": "Which simple fraction is equivalent to 2/4?",
+    "verso_en": "1/2. Divide the numerator and denominator by 2."
+  },
+  {
+    "id": "4-9",
+    "turma": "4º Ano",
+    "assunto": "Como somar frações com denominadores iguais?",
+    "frente": "➕ Como somar frações com denominadores iguais?",
+    "verso": "Some os numeradores e mantenha o denominador. Exemplo: 1/5 + 2/5 = 3/5.",
+    "frente_en": "How do you add fractions with equal denominators?",
+    "verso_en": "Add the numerators and keep the denominator. Example: 1/5 + 2/5 = 3/5."
+  },
+  {
+    "id": "4-10",
+    "turma": "4º Ano",
+    "assunto": "Como subtrair frações com denominadores iguais?",
+    "frente": "➖ Como subtrair frações com denominadores iguais?",
+    "verso": "Subtraia os numeradores e mantenha o denominador. Exemplo: 4/7 − 2/7 = 2/7.",
+    "frente_en": "How do you subtract fractions with equal denominators?",
+    "verso_en": "Subtract the numerators and keep the denominator. Example: 4/7 − 2/7 = 2/7."
+  },
+  {
+    "id": "5-1",
+    "turma": "5º Ano",
+    "assunto": "O que significa porcentagem?",
+    "frente": "💯 O que significa porcentagem?",
+    "verso": "Porcentagem significa uma parte de cada 100. O símbolo é %.",
+    "frente_en": "What does percentage mean?",
+    "verso_en": "A percentage is a part out of 100. Its symbol is %."
+  },
+  {
+    "id": "5-2",
+    "turma": "5º Ano",
+    "assunto": "Quanto é 50%?",
+    "frente": "💯 Quanto é 50%?",
+    "verso": "50% significa metade, ou 50 partes de cada 100.",
+    "frente_en": "What is 50%?",
+    "verso_en": "50% means one half, or 50 parts out of 100."
+  },
+  {
+    "id": "5-3",
+    "turma": "5º Ano",
+    "assunto": "A fração 1/4 equivale a quantos por cento?",
+    "frente": "¼ A fração 1/4 equivale a quantos por cento?",
+    "verso": "25%, pois 1/4 de 100 é 25.",
+    "frente_en": "What percentage is 1/4?",
+    "verso_en": "25%, because 1/4 of 100 is 25."
+  },
+  {
+    "id": "5-4",
+    "turma": "5º Ano",
+    "assunto": "A fração 1/2 equivale a quantos por cento?",
+    "frente": "½ A fração 1/2 equivale a quantos por cento?",
+    "verso": "50%.",
+    "frente_en": "What percentage is 1/2?",
+    "verso_en": "50%."
+  },
+  {
+    "id": "5-5",
+    "turma": "5º Ano",
+    "assunto": "O que é um triângulo acutângulo?",
+    "frente": "📐 O que é um triângulo acutângulo?",
+    "verso": "É o triângulo que tem os três ângulos internos menores que 90°.",
+    "frente_en": "What is an acute triangle?",
+    "verso_en": "A triangle with all three interior angles smaller than 90°."
+  },
+  {
+    "id": "5-6",
+    "turma": "5º Ano",
+    "assunto": "O que é um triângulo retângulo?",
+    "frente": "📐 O que é um triângulo retângulo?",
+    "verso": "É o triângulo que tem um ângulo interno igual a 90°.",
+    "frente_en": "What is a right triangle?",
+    "verso_en": "A triangle with one interior angle equal to 90°."
+  },
+  {
+    "id": "5-7",
+    "turma": "5º Ano",
+    "assunto": "O que é um triângulo obtusângulo?",
+    "frente": "📐 O que é um triângulo obtusângulo?",
+    "verso": "É o triângulo que tem um ângulo interno maior que 90°.",
+    "frente_en": "What is an obtuse triangle?",
+    "verso_en": "A triangle with one interior angle greater than 90°."
+  },
+  {
+    "id": "5-8",
+    "turma": "5º Ano",
+    "assunto": "Qual é a soma dos ângulos internos de um triângulo?",
+    "frente": "🔺 Qual é a soma dos ângulos internos de um triângulo?",
+    "verso": "A soma é sempre 180°.",
+    "frente_en": "What is the sum of a triangle's interior angles?",
+    "verso_en": "The sum is always 180°."
+  },
+  {
+    "id": "5-9",
+    "turma": "5º Ano",
+    "assunto": "Quantos triângulos formam um hexágono regular a partir do centro?",
+    "frente": "⬡ Quantos triângulos formam um hexágono regular a partir do centro?",
+    "verso": "Seis triângulos.",
+    "frente_en": "How many triangles can be formed from the center of a regular hexagon?",
+    "verso_en": "Six triangles."
+  },
+  {
+    "id": "5-10",
+    "turma": "5º Ano",
+    "assunto": "Qual é a diferença entre perímetro e área?",
+    "frente": "📏 Qual é a diferença entre perímetro e área?",
+    "verso": "Perímetro é a medida do contorno. Área é a medida da superfície interna.",
+    "frente_en": "What is the difference between perimeter and area?",
+    "verso_en": "Perimeter measures the outline. Area measures the inside surface."
+  }
+]
