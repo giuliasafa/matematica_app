@@ -1760,26 +1760,46 @@
 
   function renderRewards() {
     if (!userData.isAdmin) carregarRanking();
-    const badges = [
-      { id: 'badge-1', statusId: 'status-badge-1', condition: userData.xp >= 10 },
-      { id: 'badge-2', statusId: 'status-badge-2', condition: userData.xp >= 50 },
-      { id: 'badge-3', statusId: 'status-badge-3', condition: userData.level >= 2 },
-      { id: 'badge-4', statusId: 'status-badge-4', condition: userData.stars >= 20 },
-      { id: 'badge-5', statusId: 'status-badge-5', condition: userData.xp >= 150 && userData.level >= 3 }
+
+    const container = document.getElementById('badges-container');
+    if (!container) return;
+
+    const progress = typeof getPhaseProgress === 'function'
+      ? getPhaseProgress()
+      : { completedPhases: [] };
+    const completed = Array.isArray(progress.completedPhases)
+      ? progress.completedPhases.map(Number)
+      : [];
+
+    const rewards = [
+      ['🌱','Primeiros Passos','Conclua a Fase 1.','First Steps','Complete Phase 1.'],
+      ['⭐','Aprendiz em Ação','Conclua a Fase 2.','Active Learner','Complete Phase 2.'],
+      ['🧠','Mente Curiosa','Conclua a Fase 3.','Curious Mind','Complete Phase 3.'],
+      ['🚀','Pequeno Explorador','Conclua a Fase 4.','Little Explorer','Complete Phase 4.'],
+      ['🏅','Desafio Intermediário','Conclua a Fase 5.','Intermediate Challenge','Complete Phase 5.'],
+      ['🔥','Mestre da Persistência','Conclua a Fase 6.','Persistence Master','Complete Phase 6.'],
+      ['💎','Gênio em Evolução','Conclua a Fase 7.','Rising Math Star','Complete Phase 7.'],
+      ['🎯','Quase Lá!','Conclua a Fase 8.','Almost There!','Complete Phase 8.'],
+      ['👑','Grande Desafiador','Conclua a Fase 9.','Great Challenger','Complete Phase 9.'],
+      ['🏆','Lenda do MathFun','Conclua a Fase 10 e finalize todos os desafios.','MathFun Legend','Complete Phase 10 and finish every challenge.']
     ];
 
-    badges.forEach(b => {
-      const card = document.getElementById(b.id);
-      const statusText = document.getElementById(b.statusId);
+    const ingles = appLanguage === 'en';
+    container.innerHTML = rewards.map((reward, index) => {
+      const fase = index + 1;
+      const unlocked = completed.includes(fase);
+      const nome = ingles ? reward[3] : reward[1];
+      const descricao = ingles ? reward[4] : reward[2];
+      const status = unlocked
+        ? (ingles ? '✅ Earned!' : '✅ Conquistado!')
+        : (ingles ? '🔒 Locked' : '🔒 Bloqueado');
 
-      if (b.condition) {
-        card.classList.add('unlocked');
-        statusText.innerText = '✅ Conquistado!';
-      } else {
-        card.classList.remove('unlocked');
-        statusText.innerText = '🔒 Bloqueado';
-      }
-    });
+      return `<div class="card badge-card ${unlocked ? 'unlocked' : ''}" id="badge-${fase}">
+        <strong>${reward[0]} ${ingles ? 'Phase' : 'Fase'} ${fase} — ${nome}</strong>
+        <p style="font-size:0.85rem;color:#64748B;">${descricao}</p>
+        <span class="badge-status" id="status-badge-${fase}">${status}</span>
+      </div>`;
+    }).join('');
   }
 
   function updateUI() {
@@ -1804,45 +1824,3 @@
 
 </body>
 </html>
-  function renderRewards() {
-    if (!userData.isAdmin) carregarRanking();
-    const container = document.getElementById('badges-container');
-    if (!container) return;
-
-    const progress = typeof getPhaseProgress === 'function'
-      ? getPhaseProgress()
-      : { completedPhases: [] };
-    const completed = Array.isArray(progress.completedPhases)
-      ? progress.completedPhases
-      : [];
-
-    const rewards = [
-      ['🌱','Primeiros Passos','Conclua a Fase 1.','First Steps','Complete Phase 1.'],
-      ['⭐','Aprendiz em Ação','Conclua a Fase 2.','Active Learner','Complete Phase 2.'],
-      ['🧠','Mente Curiosa','Conclua a Fase 3.','Curious Mind','Complete Phase 3.'],
-      ['🚀','Pequeno Explorador','Conclua a Fase 4.','Little Explorer','Complete Phase 4.'],
-      ['🏅','Desafio Intermediário','Conclua a Fase 5.','Intermediate Challenge','Complete Phase 5.'],
-      ['🔥','Mestre da Persistência','Conclua a Fase 6.','Persistence Master','Complete Phase 6.'],
-      ['💎','Gênio em Evolução','Conclua a Fase 7.','Rising Math Star','Complete Phase 7.'],
-      ['🎯','Quase Lá!','Conclua a Fase 8.','Almost There!','Complete Phase 8.'],
-      ['👑','Grande Desafiador','Conclua a Fase 9.','Great Challenger','Complete Phase 9.'],
-      ['🏆','Lenda do MathFun','Conclua a Fase 10 e finalize todos os desafios.','MathFun Legend','Complete Phase 10 and finish every challenge.']
-    ];
-
-    const ingles = appLanguage === 'en';
-    container.innerHTML = rewards.map((reward,index) => {
-      const fase = index + 1;
-      const unlocked = completed.includes(fase);
-      const nome = ingles ? reward[3] : reward[1];
-      const descricao = ingles ? reward[4] : reward[2];
-      const status = unlocked
-        ? (ingles ? '✅ Earned!' : '✅ Conquistado!')
-        : (ingles ? '🔒 Locked' : '🔒 Bloqueado');
-      return `<div class="card badge-card ${unlocked?'unlocked':''}" id="badge-${fase}">
-        <strong>${reward[0]} ${ingles?'Phase':'Fase'} ${fase} — ${nome}</strong>
-        <p style="font-size:0.85rem;color:#64748B;">${descricao}</p>
-        <span class="badge-status" id="status-badge-${fase}">${status}</span>
-      </div>`;
-    }).join('');
-  }
-
