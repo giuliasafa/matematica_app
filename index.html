@@ -430,6 +430,31 @@
     .nav-item.active {
       color: var(--primary-purple);
     }
+
+    .home-image-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .home-image-card {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 18px;
+      overflow: hidden;
+      transition: transform 0.12s ease;
+      outline-offset: 3px;
+    }
+
+    .home-image-card:active { transform: scale(0.98); }
+
+    .home-image-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
@@ -524,22 +549,18 @@
     </div>
 
     <h3>O que vamos fazer?</h3>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
-      <div class="card" style="border-color: #93C5FD; text-align: center;" onclick="switchScreen('screen-quizzes')">
-        <div style="font-size: 2rem;">🧮</div>
-        <strong>Quizzes</strong>
+    <div class="home-image-cards">
+      <div class="home-image-card" role="button" tabindex="0" aria-label="Quizzes" onclick="switchScreen('screen-quizzes')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-quizzes')}">
+        <img src="card-quizzes.png" alt="Quizzes">
       </div>
-      <div class="card" style="border-color: #FBCFE8; text-align: center;" onclick="switchScreen('screen-flashcards')">
-        <div style="font-size: 2rem;">🃏</div>
-        <strong>Flashcards</strong>
+      <div class="home-image-card" role="button" tabindex="0" aria-label="Flashcards" onclick="switchScreen('screen-flashcards')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-flashcards')}">
+        <img src="card-flashcards.png" alt="Flashcards">
       </div>
-      <div class="card" style="border-color: #FDE047; text-align: center;" onclick="switchScreen('screen-videos')">
-        <div style="font-size: 2rem;">📺</div>
-        <strong>Vídeo-Aulas</strong>
+      <div class="home-image-card" role="button" tabindex="0" aria-label="Vídeo-Aulas" onclick="switchScreen('screen-videos')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-videos')}">
+        <img src="card-videos.png" alt="Vídeo-Aulas">
       </div>
-      <div class="card" style="border-color: #A7F3D0; text-align: center;" onclick="switchScreen('screen-tutor')">
-        <div style="font-size: 2rem;">👨‍🏫</div>
-        <strong>Tutor Humano</strong>
+      <div class="home-image-card" role="button" tabindex="0" aria-label="Tutor Humano" onclick="switchScreen('screen-tutor')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-tutor')}">
+        <img src="card-tutor.png" alt="Tutor Humano">
       </div>
     </div>
   </div>
