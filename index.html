@@ -539,13 +539,14 @@
     </div>
 
     <div class="card" style="border-color: #C084FC; cursor: default;">
-      <div style="display: flex; justify-content: space-between;">
-        <span id="display-level" style="font-weight: bold; color: var(--primary-purple);">Nível 1</span>
-        <span id="display-xp" style="font-size: 0.9rem;">0/50 XP</span>
+      <div style="display: flex; justify-content: space-between; align-items:center; gap:10px;">
+        <span id="display-phase-progress" style="font-weight: bold; color: var(--primary-purple);">Fases concluídas: 0/10</span>
+        <span id="display-xp" style="font-size: 0.9rem;">0 XP</span>
       </div>
-      <div class="level-bar-container">
-        <div id="xp-bar" class="level-bar-fill"></div>
+      <div class="level-bar-container" aria-label="Progresso das fases">
+        <div id="phase-progress-bar" class="level-bar-fill" style="width:0%;"></div>
       </div>
+      <small id="next-phase-text" style="display:block;margin-top:7px;color:#64748B;">Próxima conquista: Fase 1</small>
     </div>
 
     <h3>O que vamos fazer?</h3>
@@ -776,6 +777,7 @@
     localStorage.setItem('mathfun_language_v1', appLanguage);
     applyAppLanguage();
     if (typeof renderPhaseList === 'function') renderPhaseList();
+    if (typeof updatePhaseProgressDisplay === 'function') updatePhaseProgressDisplay();
     if (typeof updateQuestionBankInfo === 'function') updateQuestionBankInfo();
     if (typeof renderRewards === 'function') renderRewards();
     if (typeof renderVideos === 'function') renderVideos();
@@ -1573,6 +1575,8 @@
     else{
       progress.completedPhases=[...new Set([...progress.completedPhases,currentQuizPhase])].sort((a,b)=>a-b);
       progress.currentPhase=Math.min(10,currentQuizPhase+1);progress.questionIndex=0;savePhaseProgress(progress);
+      updatePhaseProgressDisplay();
+      renderRewards();
       alert(currentQuizPhase===10?'🏆 PARABÉNS! Você concluiu todas as 10 fases do MathFun!':`🎉 Fase ${currentQuizPhase} concluída! A Fase ${currentQuizPhase+1} foi desbloqueada.`);
       switchScreen('screen-quizzes');
     }
@@ -1802,6 +1806,28 @@
     }).join('');
   }
 
+  function updatePhaseProgressDisplay() {
+    const progress = typeof getPhaseProgress === 'function'
+      ? getPhaseProgress()
+      : { completedPhases: [] };
+    const completed = Array.isArray(progress.completedPhases)
+      ? progress.completedPhases.length
+      : 0;
+    const percentage = Math.min(100, Math.round((completed / 10) * 100));
+    const ingles = appLanguage === 'en';
+    const count = document.getElementById('display-phase-progress');
+    const bar = document.getElementById('phase-progress-bar');
+    const next = document.getElementById('next-phase-text');
+
+    if (count) count.innerText = ingles
+      ? `Phases completed: ${completed}/10`
+      : `Fases concluídas: ${completed}/10`;
+    if (bar) bar.style.width = percentage + '%';
+    if (next) next.innerText = completed >= 10
+      ? (ingles ? '🏆 All phases completed!' : '🏆 Todas as fases concluídas!')
+      : (ingles ? `Next achievement: Phase ${completed + 1}` : `Próxima conquista: Fase ${completed + 1}`);
+  }
+
   function updateUI() {
     document.getElementById('display-user-name').innerText = userData.name;
     document.getElementById('display-avatar-container').innerHTML = `<img src="Mascotes/${userData.avatar}.webp" alt="Mascote do perfil">`;
@@ -1810,12 +1836,8 @@
     document.getElementById('streak-count').innerText = userData.streak;
     document.getElementById('admin-indicator').style.display = userData.isAdmin ? 'inline-block' : 'none';
 
-    let nextLevelXp = userData.level * 50;
-    let percentage = (userData.xp / nextLevelXp) * 100;
-
-    document.getElementById('display-level').innerText = `Nível ${userData.level}`;
-    document.getElementById('display-xp').innerText = `${userData.xp}/${nextLevelXp} XP`;
-    document.getElementById('xp-bar').style.width = `${Math.min(percentage, 100)}%`;
+    document.getElementById('display-xp').innerText = `${Number(userData.xp) || 0} XP`;
+    updatePhaseProgressDisplay();
 
     renderRewards();
     applyAppLanguage();
