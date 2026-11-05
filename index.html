@@ -439,9 +439,15 @@
     <div class="logo" onclick="switchScreen('screen-home')" aria-label="Ir para o início">
       <img src="logo-mathfun.jpg" alt="MathFun — Matemática Brincando">
     </div>
-    <div class="user-status">
-      <span>⭐ <span id="stars-count">0</span></span>
-      <span>🔥 <span id="streak-count">1</span></span>
+    <div style="display:flex;align-items:center;gap:8px;">
+      <select id="language-selector" aria-label="Idioma do aplicativo" onchange="setAppLanguage(this.value)" style="border:2px solid #E2E8F0;border-radius:10px;padding:7px 5px;background:white;font-size:.78rem;font-weight:bold;max-width:126px;">
+        <option value="pt">🇧🇷 Português</option>
+        <option value="en">🇺🇸 English</option>
+      </select>
+      <div class="user-status">
+        <span>⭐ <span id="stars-count">0</span></span>
+        <span>🔥 <span id="streak-count">1</span></span>
+      </div>
     </div>
   </header>
 
@@ -699,6 +705,90 @@
   let currentAuthUser = null;
   let nomePendenteAlteracao = false;
 
+  // O idioma fica separado do perfil para preservar XP, turma e progresso.
+  let appLanguage = localStorage.getItem('mathfun_language_v1') || 'pt';
+  const translationsPTEN = {
+    'Bem-vindo! 👋':'Welcome! 👋',
+    'Digite seu nome ou apelido e escolha seu avatar:':'Enter your name or nickname and choose your avatar:',
+    '⚠️ Precisamos que você escolha outro apelido.':'⚠️ Please choose another nickname.',
+    'Enquanto isso, seu nome aparecerá como Estudante para os demais usuários.':'Until then, other users will see your name as Student.',
+    'Seu nome ou apelido':'Your name or nickname',
+    'Escolha seu Mascote':'Choose your Mascot','Sua Turma':'Your Grade',
+    'Entrar no Jogo!':'Start Playing!','Olá,':'Hello,','Turma:':'Grade:',
+    'O que vamos fazer?':'What shall we do?','Quizzes':'Quizzes',
+    'Vídeo-Aulas':'Video Lessons','Tutor Humano':'Teacher Help',
+    'Início':'Home','Prêmios':'Rewards','Perfil':'Profile',
+    'Complete as fases em ordem. Cada fase tem 10 questões.':'Complete the phases in order. Each phase has 10 questions.',
+    'Seu progresso':'Your Progress','Você começa pela Fase 1.':'You start at Phase 1.',
+    'Pergunta 1/5':'Question 1/5','Fácil':'Easy','Médio':'Medium','Difícil':'Hard',
+    'DESAFIO FINAL':'FINAL CHALLENGE','💛 Não tem problema errar!':'💛 It is okay to make mistakes!',
+    'Quer enviar esta questão ao Tutor Humano para pedir ajuda?':'Would you like to send this question to Teacher Help?',
+    'Sim, pedir ajuda':'Yes, ask for help','Não, tentar novamente':'No, try again',
+    'Toque no cartão para ver a resposta:':'Tap the card to see the answer:',
+    'Clique para iniciar':'Click to start','Próximo Cartão ➔':'Next Card ➔',
+    '➕ Cadastrar Aula (Admin)':'➕ Add Lesson (Admin)','Título da Aula':'Lesson Title',
+    'Link do YouTube':'YouTube Link','Direcionar para a Turma:':'Assign to Grade:',
+    'Todas as Turmas':'All Grades','Adicionar Vídeo':'Add Video',
+    'Escreva sua dúvida abaixo. O professor responderá em breve!':'Write your question below. The teacher will reply soon!',
+    'Enviar Dúvida':'Send Question','Minhas Dúvidas:':'My Questions:',
+    '⚙️ Modo Administrador':'⚙️ Administrator Mode',
+    'Aqui você pode visualizar e responder às dúvidas enviadas por todos os alunos.':'Here you can view and answer questions sent by all students.',
+    'Moderação de nomes':'Nickname Moderation',
+    'Se um apelido for inadequado, solicite a alteração. O aluno aparecerá como Estudante até escolher outro.':'If a nickname is inappropriate, request a change. The student will appear as Student until choosing another.',
+    'Dúvidas Enviadas:':'Submitted Questions:','Minhas Recompensas 🏆':'My Rewards 🏆',
+    'Jogue e evolua para desbloquear os selos:':'Play and level up to unlock badges:',
+    '🥇 Primeiro Passo':'🥇 First Step','Alcance seus primeiros 10 XP.':'Earn your first 10 XP.',
+    '⭐ Aprendiz Dedicado':'⭐ Dedicated Learner','Acumule 50 XP no aplicativo.':'Earn 50 XP in the app.',
+    '🚀 Subindo de Nível':'🚀 Leveling Up','Chegue ao Nível 2.':'Reach Level 2.',
+    '🔥 Colecionador de Estrelas':'🔥 Star Collector','Junte pelo menos 20 Estrelas.':'Collect at least 20 Stars.',
+    '🏆 Mestre da Matemática':'🏆 Math Master','Alcance 150 XP e Nível 3.':'Reach 150 XP and Level 3.',
+    '🏅 Ranking da turma':'🏅 Class Ranking',
+    'Classificação pelo XP acumulado da sua turma.':'Ranking by the total XP earned in your grade.',
+    'Carregando ranking...':'Loading ranking...','🔒 Bloqueado':'🔒 Locked',
+    '✅ Conquistado!':'✅ Earned!','⚙️ Admin':'⚙️ Admin'
+  };
+
+  function translateAppText(text) {
+    const value = String(text || '');
+    if (appLanguage === 'en') return translationsPTEN[value] || value;
+    const reverse = Object.fromEntries(Object.entries(translationsPTEN).map(([pt,en])=>[en,pt]));
+    return reverse[value] || value;
+  }
+
+  function applyAppLanguage() {
+    document.documentElement.lang = appLanguage === 'en' ? 'en' : 'pt-BR';
+    const selector = document.getElementById('language-selector');
+    if (selector) selector.value = appLanguage;
+    const root = document.querySelector('.app-container');
+    if (!root) return;
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      if (!node.parentElement || ['SCRIPT','STYLE','OPTION'].includes(node.parentElement.tagName)) return;
+      const before = node.nodeValue;
+      const trimmed = before.trim();
+      if (!trimmed) return;
+      const translated = translateAppText(trimmed);
+      if (translated !== trimmed) node.nodeValue = before.replace(trimmed, translated);
+    });
+    document.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(el => {
+      const before = el.getAttribute('placeholder');
+      const translated = translateAppText(before);
+      if (translated !== before) el.setAttribute('placeholder', translated);
+    });
+  }
+
+  function setAppLanguage(language) {
+    appLanguage = language === 'en' ? 'en' : 'pt';
+    localStorage.setItem('mathfun_language_v1', appLanguage);
+    applyAppLanguage();
+    if (typeof renderPhaseList === 'function') renderPhaseList();
+    if (typeof updateQuestionBankInfo === 'function') updateQuestionBankInfo();
+    if (typeof renderRewards === 'function') renderRewards();
+    if (typeof renderVideos === 'function') renderVideos();
+  }
+
   async function iniciarAutenticacao() {
     if (!supabaseClient) {
       console.error('Biblioteca do Supabase não carregou. O perfil poderá ser usado, mas o Tutor Humano ficará indisponível até a conexão voltar.');
@@ -914,6 +1004,7 @@
       questionBankReady = true;
       updateQuestionBankInfo();
       renderPhaseList();
+      applyAppLanguage();
     } catch (error) {
       console.error('Erro ao carregar banco de questões:', error);
       questionBank = [];
@@ -951,6 +1042,7 @@
     restoreProfileSelections();
     updateUI();
     updateQuestionBankInfo();
+    applyAppLanguage();
     loadQuestionBank();
     loadVideoDatabase();
 
@@ -1714,6 +1806,7 @@
     document.getElementById('xp-bar').style.width = `${Math.min(percentage, 100)}%`;
 
     renderRewards();
+    applyAppLanguage();
   }
 </script>
 
