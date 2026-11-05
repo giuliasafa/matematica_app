@@ -439,12 +439,14 @@
     }
 
     .home-image-card {
+      position: relative;
       width: 100%;
       cursor: pointer;
       border-radius: 18px;
       overflow: hidden;
       transition: transform 0.12s ease;
       outline-offset: 3px;
+      line-height: 0;
     }
 
     .home-image-card:active { transform: scale(0.98); }
@@ -454,6 +456,24 @@
       width: 100%;
       height: auto;
       object-fit: contain;
+    }
+
+    .home-image-card-label {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 9%;
+      display: block;
+      padding: 7px 5px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.92);
+      color: #334155;
+      box-shadow: 0 2px 8px rgba(15,23,42,.12);
+      font-size: clamp(.78rem, 3.5vw, .98rem);
+      line-height: 1.2;
+      font-weight: 800;
+      text-align: center;
+      pointer-events: none;
     }
   </style>
 </head>
@@ -552,16 +572,20 @@
     <h3>O que vamos fazer?</h3>
     <div class="home-image-cards">
       <div class="home-image-card" role="button" tabindex="0" aria-label="Quizzes" onclick="switchScreen('screen-quizzes')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-quizzes')}">
-        <img src="card-quizzes.png" alt="Quizzes">
+        <img src="card-quizzes.png" alt="">
+        <span class="home-image-card-label">Quizzes</span>
       </div>
       <div class="home-image-card" role="button" tabindex="0" aria-label="Flashcards" onclick="switchScreen('screen-flashcards')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-flashcards')}">
-        <img src="card-flashcards.png" alt="Flashcards">
+        <img src="card-flashcards.png" alt="">
+        <span class="home-image-card-label">Flashcards</span>
       </div>
       <div class="home-image-card" role="button" tabindex="0" aria-label="Vídeo-Aulas" onclick="switchScreen('screen-videos')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-videos')}">
-        <img src="card-videos.png" alt="Vídeo-Aulas">
+        <img src="card-videos.png" alt="">
+        <span class="home-image-card-label">Vídeo-Aulas</span>
       </div>
       <div class="home-image-card" role="button" tabindex="0" aria-label="Tutor Humano" onclick="switchScreen('screen-tutor')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchScreen('screen-tutor')}">
-        <img src="card-tutor.png" alt="Tutor Humano">
+        <img src="card-tutor.png" alt="">
+        <span class="home-image-card-label">Tutor Humano</span>
       </div>
     </div>
   </div>
@@ -709,7 +733,7 @@
     'Escolha seu Mascote':'Choose your Mascot','Sua Turma':'Your Grade',
     'Entrar no Jogo!':'Start Playing!','Olá,':'Hello,','Turma:':'Grade:',
     'O que vamos fazer?':'What shall we do?','Quizzes':'Quizzes',
-    'Vídeo-Aulas':'Video Lessons','Tutor Humano':'Teacher Help',
+    'Flashcards':'Study Cards','Vídeo-Aulas':'Video Lessons','Tutor Humano':'Teacher Help',
     'Início':'Home','Prêmios':'Rewards','Perfil':'Profile',
     'Complete as fases em ordem. Cada fase tem 10 questões.':'Complete the phases in order. Each phase has 10 questions.',
     'Seu progresso':'Your Progress','Você começa pela Fase 1.':'You start at Phase 1.',
